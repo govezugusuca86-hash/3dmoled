@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3DModled — Интернет-магазин 3D принтеров</title>
+<meta name="description" content="Купить 3D принтер в интернет-магазине 3DModled. Широкий выбор: Bambu Lab, Creality, Elegoo, Anycubic. Доставка по всей России. Гарантия.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="header-root"></div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-badge">🎯 Официальные поставки</div>
+      <h1>Магазин<br><span>3D принтеров</span><br>и расходников</h1>
+      <p>Bambu Lab, Creality, Elegoo, Anycubic — быстрая доставка по России, гарантия и поддержка.</p>
+      <div class="hero-btns">
+        <a href="#catalog" class="btn btn-primary">Смотреть каталог</a>
+        <a href="pages/delivery.html" class="btn btn-outline">Условия доставки</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><strong>75+</strong><span>товаров</span></div>
+      <div class="hero-stat"><strong>5</strong><span>брендов</span></div>
+      <div class="hero-stat"><strong>По РФ</strong><span>доставка</span></div>
+      <div class="hero-stat"><strong>12 мес</strong><span>гарантия</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ADVANTAGES -->
+<section class="section">
+  <div class="container">
+    <div class="adv-grid">
+      <div class="adv-card">
+        <div class="adv-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+        <div class="adv-text"><h4>Быстрая доставка</h4><p>СДЭК, ПЭК, Деловые линии по всей России</p></div>
+      </div>
+      <div class="adv-card">
+        <div class="adv-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <div class="adv-text"><h4>Гарантия</h4><p>От 3 до 12 месяцев на все товары</p></div>
+      </div>
+      <div class="adv-card">
+        <div class="adv-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.7a16 16 0 0 0 6.29 6.29l1.06-.97a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+        <div class="adv-text"><h4>Консультация</h4><p>Помогаем выбрать принтер под задачи</p></div>
+      </div>
+      <div class="adv-card">
+        <div class="adv-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <div class="adv-text"><h4>Выгодные цены</h4><p>Скидки до 55% на популярные модели</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HITS -->
+<section class="section section-gray">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title">🔥 Хиты <span>продаж</span></h2>
+    </div>
+    <div class="product-grid" id="hits-grid"></div>
+  </div>
+</section>
+
+<!-- CATALOG -->
+<section class="section" id="catalog">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title" id="catalog-heading">Весь <span>каталог</span></h2>
+      <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+        <button id="filter-toggle" style="display:none;border:1.5px solid var(--border-dark);background:#fff;border-radius:6px;padding:8px 14px;font-size:14px;cursor:pointer">⚙️ Фильтры</button>
+        <select class="sort-select" id="sort-select">
+          <option value="popular">По популярности</option>
+          <option value="price-asc">Цена: дешевле</option>
+          <option value="price-desc">Цена: дороже</option>
+          <option value="discount">По скидке</option>
+        </select>
+      </div>
+    </div>
+    <div class="catalog-layout">
+      <aside class="filters" id="filters">
+        <div class="filter-title">Фильтры <span class="filter-reset" onclick="resetFilters()">Сбросить</span></div>
+        <div class="filter-group">
+          <div class="filter-group-title">Категория</div>
+          <label class="filter-check"><input type="radio" name="cat" value="" checked> Все товары</label>
+          <label class="filter-check"><input type="radio" name="cat" value="3D принтеры персональные"> 3D Принтеры</label>
+          <label class="filter-check"><input type="radio" name="cat" value="Для 3D принтеров"> Аксессуары</label>
+        </div>
+        <div class="filter-group">
+          <div class="filter-group-title">Бренд</div>
+          <div id="brand-filters"></div>
+        </div>
+        <div class="filter-group">
+          <div class="filter-group-title">Технология</div>
+          <div id="tech-filters"></div>
+        </div>
+        <div class="filter-group">
+          <div class="filter-group-title">Цена, ₽</div>
+          <div class="price-range">
+            <input type="number" id="price-min" placeholder="От">
+            <input type="number" id="price-max" placeholder="До">
+          </div>
+          <button onclick="applyFilters()" style="margin-top:10px;width:100%;background:var(--green);color:#fff;border:none;border-radius:6px;padding:9px;font-size:14px;cursor:pointer">Применить</button>
+        </div>
+        <div class="filter-group">
+          <label class="filter-check"><input type="checkbox" id="filter-sale"> Только со скидкой</label>
+          <label class="filter-check" style="margin-top:6px"><input type="checkbox" id="filter-stock" checked> Только в наличии</label>
+        </div>
+      </aside>
+      <div>
+        <div class="sort-bar">
+          <div class="sort-bar-left">Найдено: <strong id="count-label">0</strong> товаров</div>
+        </div>
+        <div class="product-grid" id="catalog-grid"></div>
+        <div class="pagination" id="pagination"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-root"></div>
+
+<script src="js/products.js"></script>
+<script src="js/app.js"></script>
+<script src="js/layout.js"></script>
+<script>
+document.getElementById('header-root').innerHTML = renderHeader({ page: 'home' });
+document.getElementById('footer-root').innerHTML = renderFooter({});
+initSearch('#header-search', '');
+
+const PAGE_SIZE = 24;
+let currentPage = 1;
+let filtered = [];
+
+// Parse URL params
+const urlParams = new URLSearchParams(location.search);
+const urlCat = urlParams.get('cat') || '';
+const urlQ = urlParams.get('q') || '';
+const urlSort = urlParams.get('sort') || '';
+
+if (urlQ) document.querySelector('#header-search').value = urlQ;
+if (urlCat) {
+  const radio = document.querySelector(`input[name="cat"][value="${urlCat}"]`);
+  if (radio) radio.checked = true;
+}
+if (urlSort === 'discount') document.getElementById('sort-select').value = 'discount';
+
+// Build brand/tech filter checkboxes
+function buildSideFilters() {
+  const brands = [...new Set(products.map(p => p.brand).filter(Boolean))].sort();
+  document.getElementById('brand-filters').innerHTML = brands.map(b =>
+    `<label class="filter-check"><input type="checkbox" class="brand-cb" value="${b}"> ${b}</label>`
+  ).join('');
+  const techs = [...new Set(products.map(p => p.technology).filter(Boolean))].sort();
+  document.getElementById('tech-filters').innerHTML = techs.map(t =>
+    `<label class="filter-check"><input type="checkbox" class="tech-cb" value="${t}"> ${t}</label>`
+  ).join('');
+}
+
+function getFilters() {
+  const cat = document.querySelector('input[name="cat"]:checked')?.value || '';
+  const brands = [...document.querySelectorAll('.brand-cb:checked')].map(el => el.value);
+  const techs = [...document.querySelectorAll('.tech-cb:checked')].map(el => el.value);
+  const priceMin = parseInt(document.getElementById('price-min').value) || 0;
+  const priceMax = parseInt(document.getElementById('price-max').value) || Infinity;
+  const onlySale = document.getElementById('filter-sale').checked;
+  const onlyStock = document.getElementById('filter-stock').checked;
+  const sort = document.getElementById('sort-select').value;
+  const q = urlQ;
+  return { cat, brands, techs, priceMin, priceMax, onlySale, onlyStock, sort, q };
+}
+
+function applyFilters() {
+  const f = getFilters();
+  filtered = products.filter(p => {
+    if (f.onlyStock && !p.inStock) return false;
+    if (f.cat && p.category !== f.cat) return false;
+    if (f.brands.length && !f.brands.includes(p.brand)) return false;
+    if (f.techs.length && !f.techs.includes(p.technology)) return false;
+    if (p.price < f.priceMin || p.price > f.priceMax) return false;
+    if (f.onlySale && p.discount <= 0) return false;
+    if (f.q) {
+      const q = f.q.toLowerCase();
+      if (!p.name.toLowerCase().includes(q) && !(p.brand||'').toLowerCase().includes(q)) return false;
+    }
+    return true;
+  });
+  if (f.sort === 'price-asc') filtered.sort((a,b) => a.price - b.price);
+  else if (f.sort === 'price-desc') filtered.sort((a,b) => b.price - a.price);
+  else if (f.sort === 'discount') filtered.sort((a,b) => b.discount - a.discount);
+  currentPage = 1;
+  render();
+}
+
+function render() {
+  const start = (currentPage - 1) * PAGE_SIZE;
+  const page = filtered.slice(start, start + PAGE_SIZE);
+  const grid = document.getElementById('catalog-grid');
+  document.getElementById('count-label').textContent = filtered.length;
+  if (filtered.length === 0) {
+    grid.innerHTML = `<div class="empty-state" style="grid-column:1/-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><h3>Ничего не найдено</h3><p>Попробуйте изменить фильтры или поисковый запрос</p><button class="btn btn-primary" onclick="resetFilters()">Сбросить фильтры</button></div>`;
+  } else {
+    grid.innerHTML = page.map(p => productCard(p, { root: '' })).join('');
+  }
+  renderPagination();
+}
+
+function renderPagination() {
+  const total = Math.ceil(filtered.length / PAGE_SIZE);
+  const pg = document.getElementById('pagination');
+  if (total <= 1) { pg.innerHTML = ''; return; }
+  let html = `<button class="page-btn" onclick="goPage(${currentPage-1})" ${currentPage===1?'disabled':''}>‹</button>`;
+  for (let i = 1; i <= total; i++) {
+    if (i === 1 || i === total || Math.abs(i - currentPage) <= 2)
+      html += `<button class="page-btn${i===currentPage?' active':''}" onclick="goPage(${i})">${i}</button>`;
+    else if (Math.abs(i - currentPage) === 3)
+      html += `<span style="padding:0 4px;line-height:38px">…</span>`;
+  }
+  html += `<button class="page-btn" onclick="goPage(${currentPage+1})" ${currentPage===total?'disabled':''}>›</button>`;
+  pg.innerHTML = html;
+}
+
+function goPage(n) {
+  currentPage = n;
+  render();
+  document.getElementById('catalog').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function resetFilters() {
+  document.querySelector('input[name="cat"][value=""]').checked = true;
+  document.querySelectorAll('.brand-cb, .tech-cb').forEach(cb => cb.checked = false);
+  document.getElementById('price-min').value = '';
+  document.getElementById('price-max').value = '';
+  document.getElementById('filter-sale').checked = false;
+  document.getElementById('filter-stock').checked = true;
+  applyFilters();
+}
+
+// Hits
+function renderHits() {
+  const hits = products.filter(p => p.discount > 0).sort((a,b) => b.discount - a.discount).slice(0,4);
+  document.getElementById('hits-grid').innerHTML = hits.map(p => productCard(p)).join('');
+}
+
+// Filter toggle mobile
+document.getElementById('filter-toggle').addEventListener('click', () => {
+  document.getElementById('filters').classList.toggle('open');
+});
+
+// Listen changes
+document.querySelectorAll('input[name="cat"]').forEach(el => el.addEventListener('change', applyFilters));
+document.getElementById('sort-select').addEventListener('change', applyFilters);
+
+// Heading
+if (urlCat) {
+  const names = { '3D принтеры персональные': '3D <span style="color:var(--green)">Принтеры</span>', 'Для 3D принтеров': 'Аксессуары и <span style="color:var(--green)">расходники</span>' };
+  if (names[urlCat]) document.getElementById('catalog-heading').innerHTML = names[urlCat];
+}
+if (urlQ) document.getElementById('catalog-heading').innerHTML = `Поиск: <span style="color:var(--green)">${urlQ}</span>`;
+
+// Init
+buildSideFilters();
+renderHits();
+applyFilters();
+
+// Mobile filter btn
+if (window.innerWidth <= 768) document.getElementById('filter-toggle').style.display = 'block';
+</script>
+</body>
+</html>

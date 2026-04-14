@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Политика конфиденциальности — 3DModled</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div id="header-root"></div>
+<div class="page-header"><h1 class="container">Политика конфиденциальности</h1></div>
+
+<div class="page-content">
+  <p>Настоящая политика конфиденциальности описывает, как 3DModled собирает, использует и защищает ваши персональные данные.</p>
+
+  <h2>1. Сбор информации</h2>
+  <p>Мы собираем только ту информацию, которую вы добровольно предоставляете при оформлении заказа: имя, номер телефона, адрес доставки и адрес электронной почты.</p>
+
+  <h2>2. Использование информации</h2>
+  <p>Ваши данные используются исключительно для:</p>
+  <ul>
+    <li>Обработки и доставки заказа</li>
+    <li>Связи с вами по вопросам заказа</li>
+    <li>Информирования об акциях и новинках (с вашего согласия)</li>
+  </ul>
+
+  <h2>3. Передача третьим лицам</h2>
+  <p>Мы не передаём ваши персональные данные третьим лицам, кроме служб доставки, которые получают только необходимые для доставки сведения.</p>
+
+  <h2>4. Хранение данных</h2>
+  <p>Данные хранятся на защищённых серверах. Мы принимаем технические и организационные меры для защиты ваших персональных данных.</p>
+
+  <h2>5. Ваши права</h2>
+  <p>Вы имеете право запросить, изменить или удалить ваши персональные данные. Для этого напишите нам на info@3dmoled.ru.</p>
+
+  <h2>6. Cookies</h2>
+  <p>Сайт использует cookies для корзины и избранного. Данные хранятся только в вашем браузере и не передаются на сервер.</p>
+
+  <p style="margin-top:24px;color:var(--text-light);font-size:13px">Дата обновления: 01.01.2025</p>
+</div>
+
+<div id="footer-root"></div>
+<script src="../js/products.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/layout.js"></script>
+<script>
+document.getElementById('header-root').innerHTML = renderHeader({ root: '../' });
+document.getElementById('footer-root').innerHTML = renderFooter({ root: '../' });
+initSearch('#header-search', '../');
+</script>
+</body>
+</html>

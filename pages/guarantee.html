@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Гарантия и возврат — 3DModled</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div id="header-root"></div>
+<div class="page-header"><h1 class="container">🛡️ Гарантия и возврат</h1></div>
+
+<div class="page-content">
+  <h2>Гарантийные условия</h2>
+  <p>На все товары в нашем магазине предоставляется гарантия производителя. Срок гарантии указан в карточке каждого товара:</p>
+  <ul>
+    <li><strong>Bambu Lab</strong> — 12 месяцев</li>
+    <li><strong>Creality</strong> — 3 месяца</li>
+    <li><strong>Elegoo</strong> — 3 месяца</li>
+    <li><strong>Anycubic</strong> — 3 месяца</li>
+    <li><strong>Flashforge</strong> — 12 месяцев</li>
+  </ul>
+  <p>Гарантия распространяется на производственные дефекты и неисправности, возникшие при соблюдении условий эксплуатации.</p>
+
+  <h2>Гарантия не распространяется на</h2>
+  <ul>
+    <li>Механические повреждения, возникшие по вине пользователя</li>
+    <li>Повреждения из-за неправильной эксплуатации или хранения</li>
+    <li>Расходные материалы (сопла, платформы, фотополимер)</li>
+    <li>Естественный износ деталей</li>
+  </ul>
+
+  <h2>Возврат товара надлежащего качества</h2>
+  <p>Вы можете вернуть товар надлежащего качества в течение <strong>14 дней</strong> с момента получения при соблюдении следующих условий:</p>
+  <ul>
+    <li>Товар не был в употреблении</li>
+    <li>Сохранены оригинальная упаковка и комплектация</li>
+    <li>Сохранён товарный вид</li>
+    <li>Имеется чек или подтверждение покупки</li>
+  </ul>
+  <p>Расходы на обратную доставку при возврате товара надлежащего качества несёт покупатель.</p>
+
+  <h2>Возврат бракованного товара</h2>
+  <p>При получении товара с дефектом:</p>
+  <ul>
+    <li>Сфотографируйте дефект и упаковку</li>
+    <li>Напишите нам в ВКонтакте с описанием проблемы и фото</li>
+    <li>Мы организуем замену или возврат денег в течение 7 рабочих дней</li>
+  </ul>
+  <p>Расходы на доставку бракованного товара несёт продавец.</p>
+
+  <div style="margin-top:28px;padding:20px;background:var(--green-light);border-radius:12px;border-left:4px solid var(--green)">
+    <strong>Нужна помощь?</strong><br>
+    <p style="margin-top:6px">По вопросам гарантии и возврата пишите в <a href="https://vk.com/3dmoled" target="_blank" style="color:var(--green)">ВКонтакте</a>.</p>
+  </div>
+</div>
+
+<div id="footer-root"></div>
+<script src="../js/products.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/layout.js"></script>
+<script>
+document.getElementById('header-root').innerHTML = renderHeader({ root: '../', page: 'guarantee' });
+document.getElementById('footer-root').innerHTML = renderFooter({ root: '../' });
+initSearch('#header-search', '../');
+</script>
+</body>
+</html>

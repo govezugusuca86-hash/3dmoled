@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Избранное — 3DModled</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div id="header-root"></div>
+<div class="page-header"><h1 class="container">❤️ Избранное</h1></div>
+
+<section class="section">
+  <div class="container" id="favs-root"></div>
+</section>
+
+<div id="footer-root"></div>
+<script src="../js/products.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/layout.js"></script>
+<script>
+document.getElementById('header-root').innerHTML = renderHeader({ root: '../' });
+document.getElementById('footer-root').innerHTML = renderFooter({ root: '../' });
+initSearch('#header-search', '../');
+
+function render() {
+  const ids = Favs.get();
+  const root = document.getElementById('favs-root');
+  if (ids.length === 0) {
+    root.innerHTML = `<div class="empty-state"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg><h3>Избранное пусто</h3><p>Добавляйте понравившиеся товары, нажав ♡ на карточке</p><a href="../index.html" class="btn btn-primary">Перейти в каталог</a></div>`;
+    return;
+  }
+  const favProducts = ids.map(id => products.find(p => p.id === id)).filter(Boolean);
+  root.innerHTML = `<p style="margin-bottom:16px;color:var(--text-muted)">${favProducts.length} товаров в избранном</p><div class="product-grid">${favProducts.map(p => productCard(p, {root:'../'})).join('')}</div>`;
+}
+
+render();
+</script>
+</body>
+</html>

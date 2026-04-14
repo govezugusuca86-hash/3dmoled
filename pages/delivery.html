@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Доставка и оплата — 3DModled</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div id="header-root"></div>
+<div class="page-header"><h1 class="container">🚚 Доставка и оплата</h1></div>
+
+<div class="page-content">
+  <h2>Способы доставки</h2>
+  <p>Мы доставляем товары по всей России следующими службами:</p>
+  <ul>
+    <li><strong>СДЭК</strong> — доставка до пункта выдачи или курьером до двери. Срок: 2–10 рабочих дней.</li>
+    <li><strong>ПЭК</strong> — доставка крупногабаритных грузов. Срок: 3–14 рабочих дней.</li>
+    <li><strong>Деловые линии</strong> — для больших и тяжёлых заказов.</li>
+    <li><strong>Самовывоз</strong> — уточняйте наличие и адрес через ВКонтакте.</li>
+  </ul>
+  <p>Стоимость доставки рассчитывается индивидуально в зависимости от веса, габаритов товара и региона. Уточняйте у менеджера.</p>
+
+  <h2>Способы оплаты</h2>
+  <ul>
+    <li><strong>Перевод на карту</strong> — Сбербанк, Тинькофф.</li>
+    <li><strong>Оплата при получении</strong> — наложенный платёж через СДЭК (доступна не во всех регионах).</li>
+    <li><strong>Безналичный расчёт</strong> — для юридических лиц, выставим счёт.</li>
+  </ul>
+
+  <h2>Порядок оформления заказа</h2>
+  <ul>
+    <li>1. Добавьте товар в корзину или напишите нам напрямую в ВКонтакте.</li>
+    <li>2. Менеджер свяжется с вами для подтверждения заказа и уточнения деталей доставки.</li>
+    <li>3. После оплаты заказ отправляется в течение 1–2 рабочих дней.</li>
+    <li>4. Трек-номер для отслеживания предоставляется сразу после отправки.</li>
+  </ul>
+
+  <h2>Упаковка</h2>
+  <p>Все 3D принтеры отправляются в оригинальной упаковке производителя. Дополнительно укладываем пузырчатую плёнку для защиты при транспортировке.</p>
+
+  <div style="margin-top:28px;padding:20px;background:var(--green-light);border-radius:12px;border-left:4px solid var(--green)">
+    <strong>Есть вопросы по доставке?</strong><br>
+    <p style="margin-top:6px">Напишите нам в <a href="https://vk.com/3dmoled" target="_blank" style="color:var(--green)">ВКонтакте</a> — ответим в течение 30 минут в рабочее время.</p>
+  </div>
+</div>
+
+<div id="footer-root"></div>
+<script src="../js/products.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/layout.js"></script>
+<script>
+document.getElementById('header-root').innerHTML = renderHeader({ root: '../', page: 'delivery' });
+document.getElementById('footer-root').innerHTML = renderFooter({ root: '../' });
+initSearch('#header-search', '../');
+</script>
+</body>
+</html>

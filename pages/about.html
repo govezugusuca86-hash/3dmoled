@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>О магазине — 3DModled</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div id="header-root"></div>
+<div class="page-header"><h1 class="container">О магазине 3DModled</h1></div>
+
+<div class="page-content">
+  <p style="font-size:17px;color:var(--text);margin-bottom:20px">3DModled — интернет-магазин 3D принтеров и расходных материалов. Мы помогаем выбрать и купить профессиональный или домашний 3D принтер с гарантией и быстрой доставкой по всей России.</p>
+
+  <h2>Что мы предлагаем</h2>
+  <ul>
+    <li>Персональные 3D принтеры Bambu Lab, Creality, Elegoo, Anycubic, Flashforge</li>
+    <li>Расходные материалы и аксессуары для 3D печати</li>
+    <li>Консультации по выбору принтера и материалов</li>
+    <li>Помощь в настройке и запуске оборудования</li>
+  </ul>
+
+  <h2>Наши преимущества</h2>
+  <ul>
+    <li>Официальные поставки от проверенных дистрибьюторов</li>
+    <li>Гарантия на все товары от 3 до 12 месяцев</li>
+    <li>Доставка по всей России СДЭК, ПЭК, Деловыми линиями</li>
+    <li>Оперативная поддержка через ВКонтакте</li>
+    <li>Выгодные цены и регулярные акции</li>
+  </ul>
+
+  <h2>Реквизиты</h2>
+  <p>Наименование: ИП [Заполнить]<br>
+  ИНН: [Заполнить]<br>
+  ОГРНИП: [Заполнить]<br>
+  Адрес: [Заполнить]</p>
+
+  <h2>Контакты</h2>
+  <p>Email: info@3dmoled.ru<br>
+  Телефон: +7 (800) 000-00-00<br>
+  ВКонтакте: <a href="https://vk.com/3dmoled" target="_blank" style="color:var(--green)">vk.com/3dmoled</a></p>
+</div>
+
+<div id="footer-root"></div>
+<script src="../js/products.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/layout.js"></script>
+<script>
+document.getElementById('header-root').innerHTML = renderHeader({ root: '../', page: 'about' });
+document.getElementById('footer-root').innerHTML = renderFooter({ root: '../' });
+initSearch('#header-search', '../');
+</script>
+</body>
+</html>
