@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>3DModled — Интернет-магазин 3D принтеров</title>
 <meta name="description" content="Купить 3D принтер в интернет-магазине 3DModled. Широкий выбор: Bambu Lab, Creality, Elegoo, Anycubic. Доставка по всей России. Гарантия.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -22,44 +23,26 @@
         <a href="pages/delivery.html" class="btn btn-outline">Условия доставки</a>
       </div>
     </div>
-    <div class="hero-stats">
-      <div class="hero-stat"><strong>75+</strong><span>товаров</span></div>
-      <div class="hero-stat"><strong>5</strong><span>брендов</span></div>
-      <div class="hero-stat"><strong>По РФ</strong><span>доставка</span></div>
-      <div class="hero-stat"><strong>12 мес</strong><span>гарантия</span></div>
-    </div>
+
   </div>
 </section>
 
-<!-- ADVANTAGES -->
-<section class="section">
-  <div class="container">
-    <div class="adv-grid">
-      <div class="adv-card">
-        <div class="adv-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
-        <div class="adv-text"><h4>Быстрая доставка</h4><p>СДЭК, ПЭК, Деловые линии по всей России</p></div>
-      </div>
-      <div class="adv-card">
-        <div class="adv-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-        <div class="adv-text"><h4>Гарантия</h4><p>От 3 до 12 месяцев на все товары</p></div>
-      </div>
-      <div class="adv-card">
-        <div class="adv-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.7a16 16 0 0 0 6.29 6.29l1.06-.97a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
-        <div class="adv-text"><h4>Консультация</h4><p>Помогаем выбрать принтер под задачи</p></div>
-      </div>
-      <div class="adv-card">
-        <div class="adv-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
-        <div class="adv-text"><h4>Выгодные цены</h4><p>Скидки до 55% на популярные модели</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- HITS -->
+<!-- BRANDS -->
 <section class="section section-gray">
   <div class="container">
     <div class="section-head">
-      <h2 class="section-title">🔥 Хиты <span>продаж</span></h2>
+      <h2 class="section-title">Популярные <span>бренды</span></h2>
+    </div>
+    <div class="brands-grid" id="brands-grid"></div>
+  </div>
+</section>
+
+<!-- TOP SALES -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title">Топ <span>продаж</span></h2>
+      <a href="#catalog" class="link-more">Смотреть все</a>
     </div>
     <div class="product-grid" id="hits-grid"></div>
   </div>
@@ -84,18 +67,8 @@
       <aside class="filters" id="filters">
         <div class="filter-title">Фильтры <span class="filter-reset" onclick="resetFilters()">Сбросить</span></div>
         <div class="filter-group">
-          <div class="filter-group-title">Категория</div>
-          <label class="filter-check"><input type="radio" name="cat" value="" checked> Все товары</label>
-          <label class="filter-check"><input type="radio" name="cat" value="3D принтеры персональные"> 3D Принтеры</label>
-          <label class="filter-check"><input type="radio" name="cat" value="Для 3D принтеров"> Аксессуары</label>
-        </div>
-        <div class="filter-group">
           <div class="filter-group-title">Бренд</div>
           <div id="brand-filters"></div>
-        </div>
-        <div class="filter-group">
-          <div class="filter-group-title">Технология</div>
-          <div id="tech-filters"></div>
         </div>
         <div class="filter-group">
           <div class="filter-group-title">Цена, ₽</div>
@@ -142,35 +115,26 @@ const urlQ = urlParams.get('q') || '';
 const urlSort = urlParams.get('sort') || '';
 
 if (urlQ) document.querySelector('#header-search').value = urlQ;
-if (urlCat) {
-  const radio = document.querySelector(`input[name="cat"][value="${urlCat}"]`);
-  if (radio) radio.checked = true;
-}
 if (urlSort === 'discount') document.getElementById('sort-select').value = 'discount';
 
-// Build brand/tech filter checkboxes
+// Build brand filter checkboxes
 function buildSideFilters() {
   const brands = [...new Set(products.map(p => p.brand).filter(Boolean))].sort();
   document.getElementById('brand-filters').innerHTML = brands.map(b =>
     `<label class="filter-check"><input type="checkbox" class="brand-cb" value="${b}"> ${b}</label>`
   ).join('');
-  const techs = [...new Set(products.map(p => p.technology).filter(Boolean))].sort();
-  document.getElementById('tech-filters').innerHTML = techs.map(t =>
-    `<label class="filter-check"><input type="checkbox" class="tech-cb" value="${t}"> ${t}</label>`
-  ).join('');
 }
 
 function getFilters() {
-  const cat = document.querySelector('input[name="cat"]:checked')?.value || '';
   const brands = [...document.querySelectorAll('.brand-cb:checked')].map(el => el.value);
-  const techs = [...document.querySelectorAll('.tech-cb:checked')].map(el => el.value);
   const priceMin = parseInt(document.getElementById('price-min').value) || 0;
   const priceMax = parseInt(document.getElementById('price-max').value) || Infinity;
   const onlySale = document.getElementById('filter-sale').checked;
   const onlyStock = document.getElementById('filter-stock').checked;
   const sort = document.getElementById('sort-select').value;
+  const cat = urlCat;
   const q = urlQ;
-  return { cat, brands, techs, priceMin, priceMax, onlySale, onlyStock, sort, q };
+  return { cat, brands, priceMin, priceMax, onlySale, onlyStock, sort, q };
 }
 
 function applyFilters() {
@@ -179,7 +143,6 @@ function applyFilters() {
     if (f.onlyStock && !p.inStock) return false;
     if (f.cat && p.category !== f.cat) return false;
     if (f.brands.length && !f.brands.includes(p.brand)) return false;
-    if (f.techs.length && !f.techs.includes(p.technology)) return false;
     if (p.price < f.priceMin || p.price > f.priceMax) return false;
     if (f.onlySale && p.discount <= 0) return false;
     if (f.q) {
@@ -230,8 +193,7 @@ function goPage(n) {
 }
 
 function resetFilters() {
-  document.querySelector('input[name="cat"][value=""]').checked = true;
-  document.querySelectorAll('.brand-cb, .tech-cb').forEach(cb => cb.checked = false);
+  document.querySelectorAll('.brand-cb').forEach(cb => cb.checked = false);
   document.getElementById('price-min').value = '';
   document.getElementById('price-max').value = '';
   document.getElementById('filter-sale').checked = false;
@@ -239,10 +201,41 @@ function resetFilters() {
   applyFilters();
 }
 
-// Hits
+// Top sales — фиксированные модели: P1S, P2S, A1
 function renderHits() {
-  const hits = products.filter(p => p.discount > 0).sort((a,b) => b.discount - a.discount).slice(0,4);
+  const topIds = ['47170', '56507', '51972'];
+  const hits = topIds.map(id => products.find(p => p.id === id)).filter(Boolean);
   document.getElementById('hits-grid').innerHTML = hits.map(p => productCard(p)).join('');
+}
+
+// Brands block
+function renderBrands() {
+  const brandIcons = {
+    'Bambu Lab': '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 8h2l1 3 2-5 1 3h2"/></svg>',
+    'Creality': '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 22 8 22 16 12 22 2 16 2 8"/><polyline points="12 2 12 22"/><line x1="2" y1="8" x2="22" y2="8"/><line x1="2" y1="16" x2="22" y2="16"/></svg>',
+    'Elegoo': '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3.6 9h16.8M3.6 15h16.8"/><path d="M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>',
+    'Anycubic': '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>',
+    'Flashforge': '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>'
+  };
+  const brandCounts = {};
+  products.forEach(p => { if(p.brand) brandCounts[p.brand] = (brandCounts[p.brand]||0)+1; });
+  const html = Object.entries(brandCounts).map(([name, count]) => `
+    <a href="index.html?brand=${encodeURIComponent(name)}" class="brand-card" onclick="filterByBrand('${name}');return false;">
+      <div class="brand-card-icon">${brandIcons[name]||''}</div>
+      <div>
+        <div class="brand-card-name">${name}</div>
+        <div class="brand-card-count">${count} товаров</div>
+      </div>
+    </a>`).join('');
+  document.getElementById('brands-grid').innerHTML = html;
+}
+
+function filterByBrand(brand) {
+  document.getElementById('catalog').scrollIntoView({behavior:'smooth'});
+  setTimeout(() => {
+    document.querySelectorAll('.brand-cb').forEach(cb => { cb.checked = cb.value === brand; });
+    applyFilters();
+  }, 400);
 }
 
 // Filter toggle mobile
@@ -263,6 +256,7 @@ if (urlQ) document.getElementById('catalog-heading').innerHTML = `Поиск: <s
 
 // Init
 buildSideFilters();
+renderBrands();
 renderHits();
 applyFilters();
 
