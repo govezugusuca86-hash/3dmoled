@@ -10,9 +10,9 @@ const products = [
     "discount": 30,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2023/09/3d-printer-bambu-lab-p1s-combo-s-ams-sistemoj-10.jpg",
-      "https://3d-m.ru/wp-content/uploads/2023/09/3d-printer-bambu-lab-p1s-combo-s-ams-sistemoj-11.jpg",
-      "https://3d-m.ru/wp-content/uploads/2023/09/3d-printer-bambu-lab-p1s-combo-s-ams-sistemoj-12.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435756/3dmoled/3d-printer-bambu-lab-p1s-combo-s-ams-sistemoj-10.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435758/3dmoled/3d-printer-bambu-lab-p1s-combo-s-ams-sistemoj-11.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435760/3dmoled/3d-printer-bambu-lab-p1s-combo-s-ams-sistemoj-12.webp"
     ],
     "description": "Это высокопроизводительный принтер для многоцветной 3Д печати. Отличительные характеристики – 3Д принтер оснащен закрытой камерой, автоматической калибровкой и системой подачи нескольких филаментов. Имеет отличные отзывы покупателей, идеально подходит для профессионального использования, позволяя создавать сложные модели с высокой точностью.",
     "specs": {
@@ -37,8 +37,7 @@ const products = [
       "Производитель": "Bambu Lab",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-bambu-lab-p1s-combo-s-ams-sistemoj/"
+    }
   },
   {
     "id": "48425",
@@ -51,11 +50,11 @@ const products = [
     "discount": 53,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2024/02/3d-printer-creality-k1c-11-2.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/02/3d-printer-creality-k1c-13.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/02/3d-printer-creality-k1c-14.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/02/3d-printer-creality-k1c-12-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/02/3d-printer-creality-k1c-10-1.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435762/3dmoled/3d-printer-creality-k1c-11-2.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435764/3dmoled/3d-printer-creality-k1c-13.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435765/3dmoled/3d-printer-creality-k1c-14.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435768/3dmoled/3d-printer-creality-k1c-12-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435770/3dmoled/3d-printer-creality-k1c-10-1.webp"
     ],
     "description": "Мощный и надежный Creality K1C с системой прямого привода и подогреваемой платформой обеспечивает высокоскоростную 3д печать без потери качества. Усовершенствованная система охлаждения и поддержка различных материалов, включая PLA, PETG, ABS и нейлон, делают его универсальным выбором для профессионалов и энтузиастов.",
     "specs": {
@@ -91,8 +90,7 @@ const products = [
       "Производитель": "Creality3D",
       "Страна про-ва": "Китай",
       "Гарантия": "3 месяца"
-    },
-    "url": "https://3d-m.ru/3d-printer-creality-k1c/"
+    }
   },
   {
     "id": "52016",
@@ -105,10 +103,10 @@ const products = [
     "discount": 45,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2025/06/3d-printer-elegoo-saturn-4-ultra-16k-1.png",
-      "https://3d-m.ru/wp-content/uploads/2025/06/3d-printer-elegoo-saturn-4-ultra-16k-3.jpg",
-      "https://3d-m.ru/wp-content/uploads/2025/06/3d-printer-elegoo-saturn-4-ultra-16k-2.png",
-      "https://3d-m.ru/wp-content/uploads/2025/06/3d-printer-elegoo-saturn-4-ultra-16k-4.png"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435772/3dmoled/3d-printer-elegoo-saturn-4-ultra-16k-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435773/3dmoled/3d-printer-elegoo-saturn-4-ultra-16k-3.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435776/3dmoled/3d-printer-elegoo-saturn-4-ultra-16k-2.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435777/3dmoled/3d-printer-elegoo-saturn-4-ultra-16k-4.webp"
     ],
     "description": "Это высокоточный принтер с передовым 16K монохромным экраном для печати детализированных моделей. 3Д принтер оснащен мощной UV-системой и усовершенствованной кинематикой, обеспечивающей стабильную и быструю печать. Поддерживает работу с различными фотополимерными смолами, что делает его отличным выбором для профессионалов. Идеален для создания сложных прототипов, технических деталей, стоматологический моделей с высокой точностью.",
     "specs": {
@@ -133,8 +131,7 @@ const products = [
       "Производитель": "Elegoo",
       "Страна про-ва": "Китай",
       "Гарантия": "3 месяца"
-    },
-    "url": "https://3d-m.ru/3d-printer-elegoo-saturn-4-ultra-16k/"
+    }
   },
   {
     "id": "51972",
@@ -142,14 +139,14 @@ const products = [
     "name": "Bambu Lab A1 (EU-версия)",
     "brand": "Bambu Lab",
     "technology": "FDM",
-    "price": 5,
+    "price": 26500,
     "oldPrice": 34500,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2025/06/3d-printer-bambu-lab-a1-eu-versiya-12.png",
-      "https://3d-m.ru/wp-content/uploads/2025/06/3d-printer-bambu-lab-a1-eu-versiya-13.png",
-      "https://3d-m.ru/wp-content/uploads/2025/06/3d-printer-bambu-lab-a1-eu-versiya-11.jpeg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435779/3dmoled/3d-printer-bambu-lab-a1-eu-versiya-12.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435781/3dmoled/3d-printer-bambu-lab-a1-eu-versiya-13.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435783/3dmoled/3d-printer-bambu-lab-a1-eu-versiya-11.webp"
     ],
     "description": "Это надежный и удобный в использовании 3Д принтер для высокоскоростной печати. Оснащен системой автоматической калибровки, поддерживает работу с различными материалами, включая PLA, PETG и TPU, делая его универсальным решением с хорошими характеристики.",
     "specs": {
@@ -178,8 +175,7 @@ const products = [
       "Производитель": "Bambu Lab",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-bambu-lab-a1-eu-versiya/"
+    }
   },
   {
     "id": "54706",
@@ -187,14 +183,14 @@ const products = [
     "name": "Bambu Lab H2S (EU-версия)",
     "brand": "Bambu Lab",
     "technology": "FDM, FFF",
-    "price": 6,
+    "price": 118400,
     "oldPrice": 153900,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2025/08/3d-printer-bambu-lab-h2s-1.png",
-      "https://3d-m.ru/wp-content/uploads/2025/08/3d-printer-bambu-lab-h2s-3.png",
-      "https://3d-m.ru/wp-content/uploads/2025/08/3d-printer-bambu-lab-h2s-2.png"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435785/3dmoled/3d-printer-bambu-lab-h2s-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435787/3dmoled/3d-printer-bambu-lab-h2s-3.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435789/3dmoled/3d-printer-bambu-lab-h2s-2.webp"
     ],
     "description": "Bambu Lab H2S — это высокоскоростной 3D-принтер, который позволяет печатать разными материалами для создания сложных моделей с высокой точностью. Он оснащён автонастройкой уровня стола, камерой для контроля печати и поддержкой Wi-Fi, что делает процесс печати удобным. Благодаря закрытой камере и эффективной системе охлаждения, принтер обеспечивает отличное качество печати с инженерными материалами.",
     "specs": {
@@ -211,8 +207,7 @@ const products = [
       "Производитель": "Bambu Lab",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-bambu-lab-h2s/"
+    }
   },
   {
     "id": "56507",
@@ -220,14 +215,14 @@ const products = [
     "name": "Bambu Lab P2S (EU-версия)",
     "brand": "Bambu Lab",
     "technology": "FDM, FFF",
-    "price": 7,
+    "price": 58400,
     "oldPrice": 75900,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2025/10/3d-printer-bambu-lab-p2s-eu-versiya-1.png",
-      "https://3d-m.ru/wp-content/uploads/2025/10/3d-printer-bambu-lab-p2s-eu-versiya-2.png",
-      "https://3d-m.ru/wp-content/uploads/2025/10/3d-printer-bambu-lab-p2s-eu-versiya-3.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435791/3dmoled/3d-printer-bambu-lab-p2s-eu-versiya-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435793/3dmoled/3d-printer-bambu-lab-p2s-eu-versiya-2.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435795/3dmoled/3d-printer-bambu-lab-p2s-eu-versiya-3.webp"
     ],
     "description": "Bambu Lab P2S — это высокоскоростной 3D-принтер с поддержкой многоцветной печати через систему AMS (опция). Замкнутая термокамера позволяет работать с широким спектром пластиков, включая инженерные. Принтер предлагает профессиональное качество и надежность, будучи готовым к работе сразу после распаковки.",
     "specs": {
@@ -250,8 +245,7 @@ const products = [
       "Производитель": "Bambu Lab",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-bambu-lab-p2s/"
+    }
   },
   {
     "id": "56519",
@@ -264,9 +258,9 @@ const products = [
     "discount": 32,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2025/10/3d-printer-bambu-lab-p2s-combo-eu-versiya-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2025/10/3d-printer-bambu-lab-p2s-combo-eu-versiya-3.jpg",
-      "https://3d-m.ru/wp-content/uploads/2025/10/3d-printer-bambu-lab-p2s-combo-eu-versiya-2.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435797/3dmoled/3d-printer-bambu-lab-p2s-combo-eu-versiya-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435800/3dmoled/3d-printer-bambu-lab-p2s-combo-eu-versiya-3.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435802/3dmoled/3d-printer-bambu-lab-p2s-combo-eu-versiya-2.webp"
     ],
     "description": "Bambu Lab P2S Combo — это высокоскоростной 3Д принтер, готовый к работе сразу после распаковки. Его ключевая особенность — встроенная система AMS для автоматической многокрасочной печати, которая открывает безграничные возможности. Замкнутая камера с постоянным подогревом обеспечивает идеальные условия для печати инженерными пластиками, такими как ABS и ASA.",
     "specs": {
@@ -290,8 +284,7 @@ const products = [
       "Производитель": "Bambu Lab",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-bambu-lab-p2s-combo/"
+    }
   },
   {
     "id": "51207",
@@ -304,9 +297,9 @@ const products = [
     "discount": 51,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2024/11/3d-printer-elegoo-centauri-carbon-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/11/3d-printer-elegoo-centauri-carbon-2.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/11/3d-printer-elegoo-centauri-carbon-3.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435804/3dmoled/3d-printer-elegoo-centauri-carbon-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435806/3dmoled/3d-printer-elegoo-centauri-carbon-2.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435807/3dmoled/3d-printer-elegoo-centauri-carbon-3.webp"
     ],
     "description": "Это профессиональный 3Д принтер, обеспечивающее высокоточную и прочную печать благодаря передовым технологиям. Оснащен усовершенствованной системой нагрева, что позволяет работать с инженерными пластиками. Поддерживает широкий спектр филаментов, включая углеродные и композитные. Отличительные характеристики – идеально подходит для инженерных задач, прототипирования и производства функциональных деталей.",
     "specs": {
@@ -337,8 +330,7 @@ const products = [
       "Производитель": "Elegoo",
       "Страна про-ва": "Китай",
       "Гарантия": "3 месяца"
-    },
-    "url": "https://3d-m.ru/3d-printer-elegoo-centauri-carbon/"
+    }
   },
   {
     "id": "51983",
@@ -351,9 +343,9 @@ const products = [
     "discount": 26,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2025/06/3d-printer-bambu-lab-h2d-combo-2.jpg",
-      "https://3d-m.ru/wp-content/uploads/2025/06/3d-printer-bambu-lab-h2d-combo-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2025/06/3d-printer-bambu-lab-h2d-combo-3.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435811/3dmoled/3d-printer-bambu-lab-h2d-combo-2.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435812/3dmoled/3d-printer-bambu-lab-h2d-combo-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435814/3dmoled/3d-printer-bambu-lab-h2d-combo-3.webp"
     ],
     "description": "Это профессиональный 3D-принтер промышленного класса с высокой скоростью печати и поддержкой инженерных пластиков. Прочная конструкция, авто-калибровка и умная подача филамента гарантируют точность и надежность для сложных задач в производстве и прототипировании.",
     "specs": {
@@ -385,8 +377,7 @@ const products = [
       "Производитель": "Bambu Lab",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-bambu-lab-h2d-combo/"
+    }
   },
   {
     "id": "49883",
@@ -394,15 +385,15 @@ const products = [
     "name": "Elegoo Saturn 4 Ultra 12К",
     "brand": "Elegoo",
     "technology": "LCD, MSLA",
-    "price": 11,
+    "price": 46100,
     "oldPrice": 59900,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2024/06/3d-printer-elegoo-saturn-4-ultra-14-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/06/3d-printer-elegoo-saturn-4-ultra-15.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/06/3d-printer-elegoo-saturn-4-ultra-13-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/06/3d-printer-elegoo-saturn-4-ultra-5.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435816/3dmoled/3d-printer-elegoo-saturn-4-ultra-14-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435818/3dmoled/3d-printer-elegoo-saturn-4-ultra-15.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435819/3dmoled/3d-printer-elegoo-saturn-4-ultra-13-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435821/3dmoled/3d-printer-elegoo-saturn-4-ultra-5.webp"
     ],
     "description": "Профессиональный монохромный LCD Elegoo Saturn 4 Ultra с увеличенной областью 3Д печати и разрешением 12K для безупречной детализации моделей. Оснащён улучшенным источником UV-подсветки и быстросъёмным резервуаром для удобной работы. Идеален для стоматологии, ювелирного дела и создания миниатюр с премиальным качеством!",
     "specs": {
@@ -430,8 +421,7 @@ const products = [
       "Производитель": "Elegoo",
       "Страна про-ва": "Китай",
       "Гарантия": "3 месяца"
-    },
-    "url": "https://3d-m.ru/3d-printer-elegoo-saturn-4-ultra/"
+    }
   },
   {
     "id": "46437",
@@ -439,15 +429,15 @@ const products = [
     "name": "Creality K1 Max",
     "brand": "Creality3D",
     "technology": "FDM",
-    "price": 12,
+    "price": 60700,
     "oldPrice": 78900,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2023/07/3d-printer-creality-k1-max-10.png",
-      "https://3d-m.ru/wp-content/uploads/2023/07/3d-printer-creality-k1-max-11.png",
-      "https://3d-m.ru/wp-content/uploads/2023/07/3d-printer-creality-k1-max-12.png",
-      "https://3d-m.ru/wp-content/uploads/2023/07/3d-printer-creality-k1-max-13.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435824/3dmoled/3d-printer-creality-k1-max-10.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435826/3dmoled/3d-printer-creality-k1-max-11.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435828/3dmoled/3d-printer-creality-k1-max-12.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435830/3dmoled/3d-printer-creality-k1-max-13.webp"
     ],
     "description": "Это 3Д принтер с большим рабочим полем печати, идеально подходящее для печати крупных моделей. Оснащен системой автоматической калибровки, AI-камерой для контроля процесса. Поддерживает работу с различными материалами, включая инженерные пластики, т.к. имеет закрытый корпус. Обладает отличными характеристиками по скорости печати. Отличный выбор для профессионалов, которым важна большая область построения.",
     "specs": {
@@ -480,8 +470,7 @@ const products = [
       "Производитель": "Creality3D",
       "Страна про-ва": "Китай",
       "Гарантия": "3 месяца"
-    },
-    "url": "https://3d-m.ru/3d-printer-creality-cr-k1-max/"
+    }
   },
   {
     "id": "49974",
@@ -489,13 +478,13 @@ const products = [
     "name": "Elegoo OrangeStorm Giga",
     "brand": "Elegoo",
     "technology": "FDM",
-    "price": 13,
+    "price": 273100,
     "oldPrice": 355000,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2024/06/3d-printer-elegoo-orangestorm-giga-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/06/3d-printer-elegoo-orangestorm-giga-2.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435831/3dmoled/3d-printer-elegoo-orangestorm-giga-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435833/3dmoled/3d-printer-elegoo-orangestorm-giga-2.webp"
     ],
     "description": "Elegoo Giga – это мощное устройство с огромной областью 3д печати, идеально подходящее для печати крупных моделей. Отличительные характеристики – оснащен прочной конструкцией, системой автоматической калибровки. Поддерживает работу с базовыми материалами, такими как PLA и PETG. Отличный выбор для макетных мастерских, которым важны масштаб, качество и надежность печати.",
     "specs": {
@@ -529,8 +518,7 @@ const products = [
       "Производитель": "Elegoo",
       "Страна про-ва": "Китай",
       "Гарантия": "3 месяца"
-    },
-    "url": "https://3d-m.ru/3d-printer-elegoo-orangestorm-giga/"
+    }
   },
   {
     "id": "52347",
@@ -538,14 +526,14 @@ const products = [
     "name": "Anycubic Kobra 3 Max",
     "brand": "Anycubic",
     "technology": "FDM",
-    "price": 14,
+    "price": 41900,
     "oldPrice": 54500,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2025/06/3d-printer-anycubic-kobra-3-max-1.png",
-      "https://3d-m.ru/wp-content/uploads/2025/06/3d-printer-anycubic-kobra-3-max-10.jpg",
-      "https://3d-m.ru/wp-content/uploads/2025/06/3d-printer-anycubic-kobra-3-max-2.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435835/3dmoled/3d-printer-anycubic-kobra-3-max-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435837/3dmoled/3d-printer-anycubic-kobra-3-max-10.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435838/3dmoled/3d-printer-anycubic-kobra-3-max-2.webp"
     ],
     "description": "Это 3д принтер с увеличенной областью печати, позволяющий создавать крупногабаритные модели без потери качества. Доработанная система экструзии материала и автоматическая калибровка стола обеспечивают стабильную и точную работу даже на высоких скоростях. Поддерживает работу филаментами PLA и PETG. Идеальное решение для пользователей, которым важен размер печати и удобство в эксплуатации.",
     "specs": {
@@ -568,8 +556,7 @@ const products = [
       "Производитель": "Anycubic",
       "Страна про-ва": "Китай",
       "Гарантия": "3 месяца"
-    },
-    "url": "https://3d-m.ru/3d-printer-anycubic-kobra-3-max/"
+    }
   },
   {
     "id": "49847",
@@ -577,14 +564,14 @@ const products = [
     "name": "Anycubic Photon Mono M7 Pro",
     "brand": "Anycubic",
     "technology": "LCD",
-    "price": 15,
+    "price": 39900,
     "oldPrice": 51900,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2024/06/3d-printer-anycubic-photon-mono-m7-pro-1.png",
-      "https://3d-m.ru/wp-content/uploads/2024/06/3d-printer-anycubic-photon-mono-m7-pro-2.png",
-      "https://3d-m.ru/wp-content/uploads/2024/06/3d-printer-anycubic-photon-mono-m7-pro-3.png"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435840/3dmoled/3d-printer-anycubic-photon-mono-m7-pro-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435842/3dmoled/3d-printer-anycubic-photon-mono-m7-pro-2.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435844/3dmoled/3d-printer-anycubic-photon-mono-m7-pro-3.webp"
     ],
     "description": "Photon Mono M7 Pro – это фотополимерный принтер с 14K монохромным LCD-экраном, обеспечивающим невероятную детализацию напечатанных изделий. Принтер поддерживает работу с широким ассортиментом фотополимерных смол, включая стандартные и стоматологические. Идеальный выбор для зуботехнических лабораторий, которым важны качество, скорость и стабильность печати.",
     "specs": {
@@ -605,8 +592,7 @@ const products = [
       "Производитель": "Anycubic",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-anycubic-photon-mono-m7-pro/"
+    }
   },
   {
     "id": "50053",
@@ -619,9 +605,9 @@ const products = [
     "discount": 46,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2024/06/3d-printer-creality-k2-plus-combo-c-cfs.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/06/3d-printer-creality-k2-plus-combo-c-cfs-12.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/06/3d-printer-creality-k2-plus-combo-c-cfs-13.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435846/3dmoled/3d-printer-creality-k2-plus-combo-c-cfs.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435848/3dmoled/3d-printer-creality-k2-plus-combo-c-cfs-12.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435849/3dmoled/3d-printer-creality-k2-plus-combo-c-cfs-13.webp"
     ],
     "description": "Creality K2 Plus Combo с CFS – это мощное и универсальное устройство для высокоточной 3д печати. Оснащен системой автоматической подачи филамента (CFS) и поддерживает мульти печать. Закрытая камера принтера обеспечивают стабильность процесса печати и высокое качество изделий на выходе. Принтер имеет много положительных отзывов профессионалов.",
     "specs": {
@@ -634,8 +620,7 @@ const products = [
       "Производитель": "Creality3D",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-creality-k2-combo-c-cfs/"
+    }
   },
   {
     "id": "54610",
@@ -648,8 +633,8 @@ const products = [
     "discount": 45,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2025/08/3d-printer-creality3d-k2-pro-combo-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2025/08/3d-printer-creality3d-k2-pro-combo-2.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435851/3dmoled/3d-printer-creality3d-k2-pro-combo-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435853/3dmoled/3d-printer-creality3d-k2-pro-combo-2.webp"
     ],
     "description": "Creality K2 Pro Combo — мощный 3D-принтер с большим полем печати – 300×300×350 мм., идеально подходящий для профессионального использования. Оснащен системой автоматической калибровки, высокоскоростной печатью до 600 мм/с и поддержкой множества материалов, включая PLA, PETG, TPU и нейлон.",
     "specs": {
@@ -668,8 +653,7 @@ const products = [
       "Производитель": "Creality3D",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-creality-k2-pro-combo/"
+    }
   },
   {
     "id": "52011",
@@ -677,14 +661,14 @@ const products = [
     "name": "Creality Hi Combo",
     "brand": "Creality3D",
     "technology": "FDM",
-    "price": 18,
+    "price": 34500,
     "oldPrice": 44900,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2025/06/3d-printer-creality3d-hi-combo-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2025/06/3d-printer-creality3d-hi-combo-3.jpg",
-      "https://3d-m.ru/wp-content/uploads/2025/06/3d-printer-creality3d-hi-combo-2.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435856/3dmoled/3d-printer-creality3d-hi-combo-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435857/3dmoled/3d-printer-creality3d-hi-combo-3.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435859/3dmoled/3d-printer-creality3d-hi-combo-2.webp"
     ],
     "description": "Creality3D Hi Combo – это универсальное устройство для многоцветной 3D-печати. Оснащен системой автоматической калибровки и поддержкой печати несколькими цветами, что расширяет возможности для пользователей. Интеллектуальные функции и удобный интерфейс делают его отличным выбором как для новичков в 3Д печати. Подойдет для создания прототипов, несложных моделей и проектов.",
     "specs": {
@@ -705,8 +689,7 @@ const products = [
       "Производитель": "Creality3D",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-creality3d-hi-combo/"
+    }
   },
   {
     "id": "51977",
@@ -719,9 +702,9 @@ const products = [
     "discount": 35,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2025/06/3d-printer-bambu-lab-h2d-15.jpg",
-      "https://3d-m.ru/wp-content/uploads/2025/06/3d-printer-bambu-lab-h2d-16.jpg",
-      "https://3d-m.ru/wp-content/uploads/2025/06/3d-printer-bambu-lab-h2d-17.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435861/3dmoled/3d-printer-bambu-lab-h2d-15.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435863/3dmoled/3d-printer-bambu-lab-h2d-16.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435865/3dmoled/3d-printer-bambu-lab-h2d-17.webp"
     ],
     "description": "Это мощный 3Д принтер, разработанный для профессиональной 3Д печати. Оснащен прочной конструкцией, высокой скоростью печати и поддержкой широкого спектра инженерных пластиков. Интеллектуальные функции, включая авто-калибровку и оптимизированную систему подачи филамента, обеспечивают точность и надежность печати. Идеально подходит для производства, прототипирования.",
     "specs": {
@@ -753,8 +736,7 @@ const products = [
       "Производитель": "Bambu Lab",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-bambu-lab-h2d/"
+    }
   },
   {
     "id": "47170",
@@ -762,14 +744,14 @@ const products = [
     "name": "Bambu Lab P1S (EU-версия)",
     "brand": "Bambu Lab",
     "technology": "FDM",
-    "price": 20,
+    "price": 44500,
     "oldPrice": 57900,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2023/09/3d-printer-bambu-lab-p1s-10.jpg",
-      "https://3d-m.ru/wp-content/uploads/2023/09/3d-printer-bambu-lab-p1s-12.jpg",
-      "https://3d-m.ru/wp-content/uploads/2023/09/3d-printer-bambu-lab-p1s-combo-s-ams-sistemoj-12.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435866/3dmoled/3d-printer-bambu-lab-p1s-10.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435868/3dmoled/3d-printer-bambu-lab-p1s-12.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435760/3dmoled/3d-printer-bambu-lab-p1s-combo-s-ams-sistemoj-12.webp"
     ],
     "description": "Это надежный и высокоскоростной принтер для точной 3D печати. Отличительные характеристики – оснащен закрытой камерой, системой автоматической калибровки и поддерживает печать различными материалами, включая инженерные пластики. Отличается стабильной работой, простотой использования, имеет много хороших отзывов.",
     "specs": {
@@ -794,8 +776,7 @@ const products = [
       "Производитель": "Bambu Lab",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-bambu-lab-p1s/"
+    }
   },
   {
     "id": "51574",
@@ -808,11 +789,11 @@ const products = [
     "discount": 30,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2024/11/3d-printer-bambu-lab-a1-combo-1.png",
-      "https://3d-m.ru/wp-content/uploads/2024/11/3d-printer-bambu-lab-a1-combo-5.png",
-      "https://3d-m.ru/wp-content/uploads/2024/11/3d-printer-bambu-lab-a1-combo-3.png",
-      "https://3d-m.ru/wp-content/uploads/2024/11/3d-printer-bambu-lab-a1-combo-4.png",
-      "https://3d-m.ru/wp-content/uploads/2024/11/3d-printer-bambu-lab-a1-combo-2.png"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435870/3dmoled/3d-printer-bambu-lab-a1-combo-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435872/3dmoled/3d-printer-bambu-lab-a1-combo-5.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435874/3dmoled/3d-printer-bambu-lab-a1-combo-3.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435876/3dmoled/3d-printer-bambu-lab-a1-combo-4.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435878/3dmoled/3d-printer-bambu-lab-a1-combo-2.webp"
     ],
     "description": "Уникальная новинка в области 3D-печати. Этот принтер обладает впечатляющими характеристиками: многоцветная печать, автоматическая калибровка, технология шумоподавления и обширная область построения 256x256x256 мм. Входящая в комплектацию система AMS Lite позволяет использовать сразу несколько цветов в одной модели.",
     "specs": {
@@ -841,8 +822,7 @@ const products = [
       "Производитель": "Bambu Lab",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-bambu-lab-a1-combo/"
+    }
   },
   {
     "id": "54718",
@@ -850,13 +830,13 @@ const products = [
     "name": "Bambu Lab H2S AMS Combo (EU-версия)",
     "brand": "Bambu Lab",
     "technology": "FDM, FFF",
-    "price": 22,
+    "price": 138400,
     "oldPrice": 179900,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2025/08/3d-printer-bambu-lab-h2s-ams-combo-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2025/08/3d-printer-bambu-lab-h2s-ams-combo-2.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435880/3dmoled/3d-printer-bambu-lab-h2s-ams-combo-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435882/3dmoled/3d-printer-bambu-lab-h2s-ams-combo-2.webp"
     ],
     "description": "Bambu Lab H2S AMS Combo — это высокоскоростной 3D-принтер с системой автоподачи пластика AMS, позволяющей печатать в четырёх цветах без ручной смены катушек. Он оснащён автонастройкой стола, камерой для контроля печати и закрытой камерой с подогревом, что обеспечивает стабильное качество даже при работе с инженерными пластиками. Всё это делает H2S AMS Combo одним из самых технологичных решений для многоцветной и высокоточной 3D-печати.",
     "specs": {
@@ -873,8 +853,7 @@ const products = [
       "Производитель": "Bambu Lab",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-bambu-lab-h2s-ams-combo/"
+    }
   },
   {
     "id": "54615",
@@ -882,14 +861,14 @@ const products = [
     "name": "Bambu Lab H2D Pro (EU-версия)",
     "brand": "Bambu Lab",
     "technology": "FDM",
-    "price": 23,
+    "price": 343000,
     "oldPrice": 445900,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2025/09/3d-printer-bambu-lab-h2d-pro-combo-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2025/09/3d-printer-bambu-lab-h2d-pro-combo-2.jpg",
-      "https://3d-m.ru/wp-content/uploads/2025/08/3d-printer-bambu-lab-h2d-pro-eu-versiya-1.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435884/3dmoled/3d-printer-bambu-lab-h2d-pro-combo-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435886/3dmoled/3d-printer-bambu-lab-h2d-pro-combo-2.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435888/3dmoled/3d-printer-bambu-lab-h2d-pro-eu-versiya-1.webp"
     ],
     "description": "Высокоскоростной 3D принтер с двойным экструдером для безупречной 3Д печати сложных моделей. Оснащён интеллектуальной калибровкой, подогреваемым столом и поддержкой множества материалов, включая ABS, PLA, PETG. Идеален для профессионалов, ценящих точность, скорость и удобство работы.",
     "specs": {
@@ -904,8 +883,7 @@ const products = [
       "Производитель": "Bambu Lab",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-bambu-lab-h2d-pro-eu-versiya/"
+    }
   },
   {
     "id": "51987",
@@ -918,7 +896,7 @@ const products = [
     "discount": 36,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2025/06/mnogofunkcionalnoe-3d-ustrojstvo-bambu-lab-h2d-laser-full-combo-10-vt-1.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435890/3dmoled/mnogofunkcionalnoe-3d-ustrojstvo-bambu-lab-h2d-laser-full-co.webp"
     ],
     "description": "Инновационный гибридный комплекс, сочетающий промышленную 3D-печать и профессиональную лазерную обработку. Мощный 10-ваттный волоконный лазер с воздушным охлаждением выполняет гравировку на стали, анодированном алюминии, стекле и ювелирных сплавах, в то время как кинематика CoreXY с нагревом до 300°C обеспечивает печать инженерными материалами с точностью 20-50 микрон. Полностью автоматизированный процесс работы включает интеллектуальное выравнивание стола, мультисенсорный контроль качества и систему HEPA-фильтрации с угольным фильтром для безопасной эксплуатации в офисных условиях.",
     "specs": {
@@ -951,8 +929,7 @@ const products = [
       "Производитель": "Bambu Lab",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/mnogofunkczionalnyj-3d-printer-bambu-lab-h2d-laser-full-combo-10-vt/"
+    }
   },
   {
     "id": "51989",
@@ -965,7 +942,7 @@ const products = [
     "discount": 27,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2025/06/mnogofunkcionalnoe-3d-ustrojstvo-bambu-lab-h2d-laser-full-combo-40-vt-1.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435890/3dmoled/mnogofunkcionalnoe-3d-ustrojstvo-bambu-lab-h2d-laser-full-co.webp"
     ],
     "description": "Это многофункциональный гибридный 3Д принтер, объединяющий 3D-печать и лазерную гравировку в одном устройстве. Мощный 40-ваттный лазерный модуль позволяет работать с деревом, кожей, акрилом и металлами, а система высокоскоростной 3D-печати обеспечивает точность до 50 микрон. Автоматическая калибровка, интеллектуальная система подачи филамента и закрытая камера с фильтрацией делают работу максимально удобной и безопасной.",
     "specs": {
@@ -998,8 +975,7 @@ const products = [
       "Производитель": "Bambu Lab",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/mnogofunkczionalnyj-3d-printer-bambu-lab-h2d-laser-full-combo-40-vt/"
+    }
   },
   {
     "id": "54729",
@@ -1007,13 +983,13 @@ const products = [
     "name": "Bambu Lab H2S Laser Full Combo (EU-версия)",
     "brand": "Bambu Lab",
     "technology": "FDM, FFF",
-    "price": 26,
+    "price": 184200,
     "oldPrice": 239500,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2025/08/3d-printer-bambu-lab-h2s-laser-full-combo-1.png",
-      "https://3d-m.ru/wp-content/uploads/2025/08/3d-printer-bambu-lab-h2s-laser-full-combo-2.png"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435892/3dmoled/3d-printer-bambu-lab-h2s-laser-full-combo-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435895/3dmoled/3d-printer-bambu-lab-h2s-laser-full-combo-2.webp"
     ],
     "description": "Bambu Lab H2S Laser Full Combo — это передовой 3D-принтер с интегрированным лазерным модулем для гравировки и резки, объединяющий высокую скорость печати и точность. Комплект включает систему автоподачи пластика AMS для четырёхцветной печати. Умные функции, такие как автонастройка, Wi-Fi, камера контроля и закрытая камера с подогревом, обеспечивают профессиональное качество печати.",
     "specs": {
@@ -1030,8 +1006,7 @@ const products = [
       "Производитель": "Bambu Lab",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-bambu-lab-h2s-laser-full-combo/"
+    }
   },
   {
     "id": "54509",
@@ -1039,12 +1014,12 @@ const products = [
     "name": "Bambu Lab A1 mini (EU-версия)",
     "brand": "Bambu Lab",
     "technology": "FDM, FFF",
-    "price": 27,
+    "price": 18200,
     "oldPrice": 23700,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2025/08/3d-printer-bambu-lab-a1-mini-eu-versiya-1.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435896/3dmoled/3d-printer-bambu-lab-a1-mini-eu-versiya-1.webp"
     ],
     "description": "Это надежный и удобный в использовании 3Д принтер для высокоскоростной печати. Оснащен системой автоматической калибровки, поддерживает работу с различными материалами, включая PLA, PETG и TPU, делая его универсальным решением с хорошими характеристики.",
     "specs": {
@@ -1068,8 +1043,7 @@ const products = [
       "Производитель": "Bambu Lab",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-bambu-lab-a1-mini-eu-versiya/"
+    }
   },
   {
     "id": "57522",
@@ -1077,13 +1051,13 @@ const products = [
     "name": "Bambu Lab H2C Combo AMS (EU-версия)",
     "brand": "Bambu Lab",
     "technology": "FDM, FFF",
-    "price": 28,
+    "price": 236900,
     "oldPrice": 308000,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2025/11/3d-printer-bambu-lab-h2c-ams-combo-2.png",
-      "https://3d-m.ru/wp-content/uploads/2025/11/3d-printer-bambu-lab-h2c-ams-combo-1.png"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435898/3dmoled/3d-printer-bambu-lab-h2c-ams-combo-2.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435900/3dmoled/3d-printer-bambu-lab-h2c-ams-combo-1.webp"
     ],
     "description": "Bambu Lab H2C Combo AMS – это высокоскоростной 3D-принтер, оснащённый усовершенствованной системой многоцветной печати AMS. Принтер обладает системой автоматической калибровки стола, камерой для удалённого мониторинга процесса печати и закрытой камерой с контролируемым нагревом. Благодаря этому H2C Combo AMS представляет собой одно из самых передовых и удобных решений для сложной многоцветной 3D печати.",
     "specs": {
@@ -1099,8 +1073,7 @@ const products = [
       "Производитель": "Bambu Lab",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-bambu-lab-h2c-combo-ams/"
+    }
   },
   {
     "id": "58581",
@@ -1108,13 +1081,13 @@ const products = [
     "name": "Bambu Lab H2C Laser Full Combo 10 Вт",
     "brand": "Bambu Lab",
     "technology": "FDM, FFF",
-    "price": 29,
+    "price": 298500,
     "oldPrice": 388000,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2026/02/3d-printer-bambu-lab-h2c-laser-full-combo-10-vt-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2026/02/3d-printer-bambu-lab-h2c-laser-full-combo-10-vt-2.png"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435902/3dmoled/3d-printer-bambu-lab-h2c-laser-full-combo-10-vt-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435904/3dmoled/3d-printer-bambu-lab-h2c-laser-full-combo-10-vt-2.webp"
     ],
     "description": "Профессиональный 3D-принтер Bambu Lab H2C Laser Full Combo 10 Вт объединяет инновационную систему многоцветной печати с семью хотэндами и мощный лазерный модуль для гравировки и резки. Технология мгновенной замены хотэндов и интеллектуальный алгоритм подачи материалов минимизируют отходы пластика и ускоряют процесс создания сложных моделей.",
     "specs": {
@@ -1138,8 +1111,7 @@ const products = [
       "Производитель": "Bambu Lab",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-bambu-lab-h2c-laser-full-combo-10-vt/"
+    }
   },
   {
     "id": "58597",
@@ -1147,13 +1119,13 @@ const products = [
     "name": "Bambu Lab H2C Laser Full Combo 40 Вт",
     "brand": "Bambu Lab",
     "technology": "FDM, FFF",
-    "price": 30,
+    "price": 353100,
     "oldPrice": 459000,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2026/02/3d-printer-bambu-lab-h2c-laser-full-combo-40-vt-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2026/02/3d-printer-bambu-lab-h2c-laser-full-combo-40-vt-2.png"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435906/3dmoled/3d-printer-bambu-lab-h2c-laser-full-combo-40-vt-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435907/3dmoled/3d-printer-bambu-lab-h2c-laser-full-combo-40-vt-2.webp"
     ],
     "description": "Профессиональный 3D принтер Bambu Lab H2C Laser Full Combo 40 Вт обеспечивает высочайшую точность и скорость печати благодаря технологии мгновенной смены хотэндов, позволяя создавать сложные модели из 7 материалов одновременно. Встроенный 40-ваттный лазерный модуль превращает принтер в многофункциональный станок для решения самых амбициозных инженерных и творческих задач.",
     "specs": {
@@ -1177,8 +1149,7 @@ const products = [
       "Производитель": "Bambu Lab",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-bambu-lab-h2c-laser-full-combo-40-vt/"
+    }
   },
   {
     "id": "48536",
@@ -1186,14 +1157,14 @@ const products = [
     "name": "Bambu Lab X1E Combo (EU-версия)",
     "brand": "Bambu Lab",
     "technology": "FDM",
-    "price": 31,
+    "price": 226900,
     "oldPrice": 295000,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2024/03/3d-printer-bambu-lab-x1e-combo-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/03/3d-printer-bambu-lab-x1e-combo-2.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/03/3d-printer-bambu-lab-x1e-combo-3.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435909/3dmoled/3d-printer-bambu-lab-x1e-combo-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435911/3dmoled/3d-printer-bambu-lab-x1e-combo-2.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435913/3dmoled/3d-printer-bambu-lab-x1e-combo-3.webp"
     ],
     "description": "Профессиональный 3Д принтер с расширенными возможностями для 3D печати. Отличительные характеристики – снащен закрытой подогреваемой камерой, системой LIDAR-калибровки и AMS-системой для многоцветной печати. Поддерживает широкий спектр филаментов, включая инженерные пластики. Идеально подходит для промышленного использования и инженерных задач.",
     "specs": {
@@ -1224,8 +1195,7 @@ const products = [
       "Производитель": "Bambu Lab",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-bambu-lab-x1e-combo/"
+    }
   },
   {
     "id": "48015",
@@ -1233,14 +1203,14 @@ const products = [
     "name": "Bambu Lab A1 mini Combo с AMS lite (EU-версия)",
     "brand": "Bambu Lab",
     "technology": "FDM",
-    "price": 32,
+    "price": 30700,
     "oldPrice": 39900,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2024/01/3d-printer-bambu-lab-a1-mini-combo-s-ams-lite-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/01/3d-printer-bambu-lab-a1-mini-combo-s-ams-lite-2.png",
-      "https://3d-m.ru/wp-content/uploads/2024/01/3d-printer-bambu-lab-a1-mini-combo-s-ams-lite-3.png"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435915/3dmoled/3d-printer-bambu-lab-a1-mini-combo-s-ams-lite-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435917/3dmoled/3d-printer-bambu-lab-a1-mini-combo-s-ams-lite-2.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435919/3dmoled/3d-printer-bambu-lab-a1-mini-combo-s-ams-lite-3.webp"
     ],
     "description": "Компактный и удобный 3Д принтер с многоцветной печатью. Оснащен системой автоматической калибровки и улучшенной подачей филамента. Система AMS Lite позволяет использовать несколько цветов в одном проекте, расширяя творческие возможности. Идеальный выбор для начинающих и опытных пользователей, которым важны качество и простота использования.",
     "specs": {
@@ -1269,8 +1239,7 @@ const products = [
       "Производитель": "Bambu Lab",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-bambu-lab-a1-mini-combo-s-ams-lite/"
+    }
   },
   {
     "id": "47161",
@@ -1278,15 +1247,15 @@ const products = [
     "name": "Bambu Lab X1 Carbon (EU-версия)",
     "brand": "Bambu Lab",
     "technology": "FDM",
-    "price": 33,
+    "price": 99900,
     "oldPrice": 129900,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2023/09/3d-printer-bambu-lab-x1-carbon-10.jpg",
-      "https://3d-m.ru/wp-content/uploads/2023/09/3d-printer-bambu-lab-x1-carbon-1.png",
-      "https://3d-m.ru/wp-content/uploads/2023/09/3d-printer-bambu-lab-x1-carbon-12.jpg",
-      "https://3d-m.ru/wp-content/uploads/2023/09/3d-printer-bambu-lab-x1-carbon-11.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435921/3dmoled/3d-printer-bambu-lab-x1-carbon-10.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435923/3dmoled/3d-printer-bambu-lab-x1-carbon-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435925/3dmoled/3d-printer-bambu-lab-x1-carbon-12.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435927/3dmoled/3d-printer-bambu-lab-x1-carbon-11.webp"
     ],
     "description": "Высокоскоростной профессиональный 3Д принтер с закрытой камерой печати. Оснащен кинематикой CoreXY, обеспечивающей точность печати до 0,05 мм. Печатает широким спектром материалов, включая базовые ABS, PLA и PETG. Отличительные характеристики – автоматическая калибровка стола, камера для мониторинга и поддержка Wi-Fi. Полностью автоматизированный процесс печати и облачное управление через мобильное приложение.",
     "specs": {
@@ -1318,8 +1287,7 @@ const products = [
       "Производитель": "Bambu Lab",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-bambu-lab-x1-carbon/"
+    }
   },
   {
     "id": "46462",
@@ -1327,16 +1295,16 @@ const products = [
     "name": "Bambu Lab X1 Carbon Combo с AMS системой (EU-версия)",
     "brand": "Bambu Lab",
     "technology": "FDM",
-    "price": 34,
+    "price": 123000,
     "oldPrice": 159900,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2023/07/3d-printer-bambu-lab-x1-carbon-combo-s-ams-sistemoj-10.jpeg",
-      "https://3d-m.ru/wp-content/uploads/2023/07/3d-printer-bambu-lab-x1-carbon-combo-s-ams-sistemoj-11.jpg",
-      "https://3d-m.ru/wp-content/uploads/2023/07/3d-printer-bambu-lab-x1-carbon-combo-s-ams-sistemoj-12.jpg",
-      "https://3d-m.ru/wp-content/uploads/2023/07/3d-printer-bambu-lab-x1-carbon-combo-s-ams-sistemoj-13.jpg",
-      "https://3d-m.ru/wp-content/uploads/2023/07/3d-printer-bambu-lab-x1-carbon-combo-s-ams-sistemoj-14.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435929/3dmoled/3d-printer-bambu-lab-x1-carbon-combo-s-ams-sistemoj-10.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435931/3dmoled/3d-printer-bambu-lab-x1-carbon-combo-s-ams-sistemoj-11.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435932/3dmoled/3d-printer-bambu-lab-x1-carbon-combo-s-ams-sistemoj-12.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435934/3dmoled/3d-printer-bambu-lab-x1-carbon-combo-s-ams-sistemoj-13.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435936/3dmoled/3d-printer-bambu-lab-x1-carbon-combo-s-ams-sistemoj-14.webp"
     ],
     "description": "Это флагманское устройство для высокоскоростной и многоцветной 3Д печати. Основные характеристики – оснащен углеродными направляющими, LIDAR-сканером и системой автоматической калибровки. AMS-система позволяет работать с несколькими нитями одновременно. Продукция Бамбулаб имеет много положительных отзывов у покупателей.",
     "specs": {
@@ -1375,8 +1343,7 @@ const products = [
       "Производитель": "Bambu Lab",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-bambu-lab-x1-carbon-combo/"
+    }
   },
   {
     "id": "50601",
@@ -1384,16 +1351,16 @@ const products = [
     "name": "Creality3D K1 SE",
     "brand": "Creality3D",
     "technology": "FDM",
-    "price": 35,
+    "price": 31500,
     "oldPrice": 40900,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2024/09/3d-printer-creality3d-k1-se-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/09/3d-printer-creality3d-k1-se-2.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/09/3d-printer-creality3d-k1-se-3.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/09/3d-printer-creality3d-k1-se-4.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/09/3d-printer-creality3d-k1-se-6.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435938/3dmoled/3d-printer-creality3d-k1-se-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435940/3dmoled/3d-printer-creality3d-k1-se-2.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435941/3dmoled/3d-printer-creality3d-k1-se-3.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435943/3dmoled/3d-printer-creality3d-k1-se-4.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435945/3dmoled/3d-printer-creality3d-k1-se-6.webp"
     ],
     "description": "Это высокоскоростной 3Д принтер, созданное для стабильной 3Д печати. Оснащен системой автоматической калибровки. Поддерживает работу с различными филаментами, включая PLA, PETG и TPU, делая его универсальным решением для мастерской за свою цену. Отличный выбор для тех, кто ценит скорость, качество и простоту использования.",
     "specs": {
@@ -1426,8 +1393,7 @@ const products = [
       "Производитель": "Creality3D",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-creality3d-k1-se/"
+    }
   },
   {
     "id": "51629",
@@ -1435,15 +1401,15 @@ const products = [
     "name": "Creality K2 Plus",
     "brand": "Creality3D",
     "technology": "FDM",
-    "price": 36,
+    "price": 99200,
     "oldPrice": 128900,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2024/12/3d-printer-creality-k2-plus-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/12/3d-printer-creality-k2-plus-2.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/12/3d-printer-creality-k2-plus-3.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/12/3d-printer-creality-k2-plus-4.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435947/3dmoled/3d-printer-creality-k2-plus-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435948/3dmoled/3d-printer-creality-k2-plus-2.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435950/3dmoled/3d-printer-creality-k2-plus-3.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435952/3dmoled/3d-printer-creality-k2-plus-4.webp"
     ],
     "description": "Creality K2 Plus – это производительный станок с большим рабочим полем печати. Оснащен системой автоматической калибровки и поддерживает широкий спектр материалов, включая инженерные пластики. Отличительные характеристики – высокая скорость печати и интеллектуальные функции делают его идеальным выбором для производств. Подходит для создания прототипов, функциональных деталей и сложных моделей.",
     "specs": {
@@ -1472,8 +1438,7 @@ const products = [
       "Производитель": "Creality3D",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-creality-k2-plus/"
+    }
   },
   {
     "id": "48419",
@@ -1481,14 +1446,14 @@ const products = [
     "name": "Creality Ender-3 V3 KE",
     "brand": "Creality3D",
     "technology": "FDM",
-    "price": 37,
+    "price": 21500,
     "oldPrice": 27900,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2024/02/3d-printer-creality-ender-3-v3-ke-12.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/02/3d-printer-creality-ender-3-v3-ke-11.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/02/3d-printer-creality-ender-3-v3-ke-10.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435953/3dmoled/3d-printer-creality-ender-3-v3-ke-12.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435955/3dmoled/3d-printer-creality-ender-3-v3-ke-11.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435957/3dmoled/3d-printer-creality-ender-3-v3-ke-10.webp"
     ],
     "description": "Ender-3 V3 KE – это современная модель 3Д принтера с высокой скоростью печати. Оснащен системой автоматической калибровки и поддерживает подключение по Wi-Fi для удобной загрузки заданий. Поддерживает работу с различными материалами, включая PLA, PETG, что делает его универсальным решением для дома. Идеальный выбор для пользователей, которым важны надежность, простота в эксплуатации и стабильная печать.",
     "specs": {
@@ -1525,8 +1490,7 @@ const products = [
       "Производитель": "Creality3D",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-creality-ender-3-v3-ke/"
+    }
   },
   {
     "id": "50708",
@@ -1534,15 +1498,15 @@ const products = [
     "name": "Creality3D Ender-3 V3 Plus (набор для сборки)",
     "brand": "Creality3D",
     "technology": "FDM",
-    "price": 38,
+    "price": 36800,
     "oldPrice": 47900,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2024/09/3d-printer-creality3d-ender-3-v3-plus-1.png",
-      "https://3d-m.ru/wp-content/uploads/2024/09/3d-printer-creality3d-ender-3-v3-plus-2.png",
-      "https://3d-m.ru/wp-content/uploads/2024/09/3d-printer-creality3d-ender-3-v3-plus-3.png",
-      "https://3d-m.ru/wp-content/uploads/2024/09/3d-printer-creality3d-ender-3-v3-plus-5.png"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435959/3dmoled/3d-printer-creality3d-ender-3-v3-plus-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435961/3dmoled/3d-printer-creality3d-ender-3-v3-plus-2.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435963/3dmoled/3d-printer-creality3d-ender-3-v3-plus-3.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435965/3dmoled/3d-printer-creality3d-ender-3-v3-plus-5.webp"
     ],
     "description": "Это мощное и надежное устройство с увеличенной областью 3д печати. Оснащен системой автоматической калибровки и поддерживает работу с различными материалами, включая PLA, PETG. Конструкция в виде “набора для сборки” позволяет при необходимости модернизировать его. Отличный выбор для энтузиастов 3D-печати, которым важны качество, гибкость настроек.",
     "specs": {
@@ -1577,8 +1541,7 @@ const products = [
       "Производитель": "Creality3D",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-creality3d-ender-3-v3-plus-nabor-dlya-sborki/"
+    }
   },
   {
     "id": "50736",
@@ -1586,15 +1549,15 @@ const products = [
     "name": "Creality3D Ender-3 V3 (набор для сборки)",
     "brand": "Creality3D",
     "technology": "FDM",
-    "price": 39,
+    "price": 29200,
     "oldPrice": 37900,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2024/09/3d-printer-creality-ender-3-v3-1.png",
-      "https://3d-m.ru/wp-content/uploads/2024/09/3d-printer-creality-ender-3-v3-2.png",
-      "https://3d-m.ru/wp-content/uploads/2024/09/3d-printer-creality-ender-3-v3-3.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/09/3d-printer-creality-ender-3-v3-4.png"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435967/3dmoled/3d-printer-creality-ender-3-v3-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435969/3dmoled/3d-printer-creality-ender-3-v3-2.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435971/3dmoled/3d-printer-creality-ender-3-v3-3.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435973/3dmoled/3d-printer-creality-ender-3-v3-4.webp"
     ],
     "description": "Creality3D Ender-3 V3 – это доступный по цене принтер с отличной производительностью. Оснащен системой автоматической калибровки стола и поддерживает 3д печать различными филаментами. имеет много положительных отзывов пользователей. Идеален для начинающих и опытных печатников, которым важны точность печати.",
     "specs": {
@@ -1629,8 +1592,7 @@ const products = [
       "Производитель": "Creality3D",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-creality3d-ender-3-v3-nabor-dlya-sborki/"
+    }
   },
   {
     "id": "50433",
@@ -1638,16 +1600,16 @@ const products = [
     "name": "Creality HALOT-MAGE S 14К",
     "brand": "Creality3D",
     "technology": "LCD",
-    "price": 40,
+    "price": 33800,
     "oldPrice": 43900,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2024/08/3d-printer-creality-halot-mage-s-14k-1.png",
-      "https://3d-m.ru/wp-content/uploads/2024/08/3d-printer-creality-halot-mage-s-14k-2.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/08/3d-printer-creality-halot-mage-s-14k-3.png",
-      "https://3d-m.ru/wp-content/uploads/2024/08/3d-printer-creality-halot-mage-s-14k-4.png",
-      "https://3d-m.ru/wp-content/uploads/2024/08/3d-printer-creality-halot-mage-s-14k-5.png"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435975/3dmoled/3d-printer-creality-halot-mage-s-14k-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435977/3dmoled/3d-printer-creality-halot-mage-s-14k-2.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435979/3dmoled/3d-printer-creality-halot-mage-s-14k-3.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435980/3dmoled/3d-printer-creality-halot-mage-s-14k-4.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435982/3dmoled/3d-printer-creality-halot-mage-s-14k-5.webp"
     ],
     "description": "Это высококачественный 3д принтер для печати с точностью 14K, которое обеспечивает невероятную детализацию моделей. Оснащен мощной UV-системой и экраном с высоким разрешением. Поддерживает широкий ассортимент смол, включая стандартные и инженерные. Идеален для создания сложных деталей и прототипов с высокой точностью.",
     "specs": {
@@ -1677,8 +1639,7 @@ const products = [
       "Производитель": "Creality3D",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-creality-halot-mage-s-14k/"
+    }
   },
   {
     "id": "52004",
@@ -1686,14 +1647,14 @@ const products = [
     "name": "Creality Ender 5 Max",
     "brand": "Creality3D",
     "technology": "FDM",
-    "price": 41,
+    "price": 58400,
     "oldPrice": 75900,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2025/06/3d-printer-creality-ender-5-max-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2025/06/3d-printer-creality-ender-5-max-3.jpg",
-      "https://3d-m.ru/wp-content/uploads/2025/06/3d-printer-creality-ender-5-max-2.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435985/3dmoled/3d-printer-creality-ender-5-max-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435986/3dmoled/3d-printer-creality-ender-5-max-3.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435988/3dmoled/3d-printer-creality-ender-5-max-2.webp"
     ],
     "description": "Ender 5 Max – это мощное устройство с большим рабочим объемом печати, предназначенное для создания крупных моделей. Оснащен улучшенной системой подачи филамента и автоматической калибровкой стола. Принтер поддерживает широкий спектр материалов для печати. Отлично подходит для пользователей, которым необходимы высокое качество печати и большие размеры моделей.",
     "specs": {
@@ -1721,8 +1682,7 @@ const products = [
       "Вес (без упаковки), кг": "25,9",
       "Производитель": "Creality3D",
       "Страна про-ва": "Китай"
-    },
-    "url": "https://3d-m.ru/3d-printer-creality-ender-5-max/"
+    }
   },
   {
     "id": "52010",
@@ -1730,14 +1690,14 @@ const products = [
     "name": "Creality3D Hi",
     "brand": "Creality3D",
     "technology": "FDM",
-    "price": 42,
+    "price": 24500,
     "oldPrice": 31900,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2025/06/3d-printer-creality3d-hi-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2025/06/3d-printer-creality3d-hi-3.jpg",
-      "https://3d-m.ru/wp-content/uploads/2025/06/3d-printer-creality3d-hi-2.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435989/3dmoled/3d-printer-creality3d-hi-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435991/3dmoled/3d-printer-creality3d-hi-3.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435993/3dmoled/3d-printer-creality3d-hi-2.webp"
     ],
     "description": "Это новая модель 3Д принтера, сочетающая высокую скорость и точность 3д печати. Принтер оснащен интеллектуальной системой авто-калибровки и поддерживает широкий спектр материалов, включая PLA, PETG и TPU. Интуитивно понятный интерфейс и стабильная работа делают его отличным выбором для новичков. Идеален для быстрого прототипирования и образовательных проектов.",
     "specs": {
@@ -1760,8 +1720,7 @@ const products = [
       "Производитель": "Creality3D",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-creality3d-hi/"
+    }
   },
   {
     "id": "58518",
@@ -1769,13 +1728,13 @@ const products = [
     "name": "Creality HALOT-X1",
     "brand": "Creality3D",
     "technology": "LCD",
-    "price": 43,
+    "price": 53000,
     "oldPrice": 68900,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2026/02/3d-printer-creality-halot-x1-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2026/02/3d-printer-creality-halot-x1-2.png"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435994/3dmoled/3d-printer-creality-halot-x1-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435996/3dmoled/3d-printer-creality-halot-x1-2.webp"
     ],
     "description": "Creality HALOT-X1 — это высокоскоростной фотополимерный 3D-принтер с разрешением 16K Ultra HD, который не требует выравнивания благодаря фиксированной платформе. Уникальная подвижная оптическая система и двойные направляющие обеспечивают исключительную детализацию и стабильность печати.",
     "specs": {
@@ -1793,8 +1752,7 @@ const products = [
       "Производитель": "Creality3D",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-creality-halot-x1/"
+    }
   },
   {
     "id": "58507",
@@ -1807,8 +1765,8 @@ const products = [
     "discount": 51,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2026/02/3d-printer-creality-halot-x1-combo-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2026/02/3d-printer-creality-halot-x1-combo-2.png"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776435999/3dmoled/3d-printer-creality-halot-x1-combo-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436001/3dmoled/3d-printer-creality-halot-x1-combo-2.webp"
     ],
     "description": "Creality HALOT-X1 Combo — это высокоскоростной фотополимерный 3D-принтер с 16K Ultra HD разрешением, не требующий ручной калибровки платформы. Инновационная подвижная оптическая система повышает стабильность печати, а автоматическая система AFU с RFID-считывателем самостоятельно определяет тип смолы и управляет подачей материала.",
     "specs": {
@@ -1827,8 +1785,7 @@ const products = [
       "Производитель": "Creality3D",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-creality-halot-x1-combo/"
+    }
   },
   {
     "id": "52005",
@@ -1836,13 +1793,13 @@ const products = [
     "name": "Creality3D HALOT R6",
     "brand": "Creality3D",
     "technology": "LCD",
-    "price": 45,
+    "price": 12200,
     "oldPrice": 15900,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2025/06/3d-printer-creality3d-halot-r6-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2025/06/3d-printer-creality3d-halot-r6-2.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436003/3dmoled/3d-printer-creality3d-halot-r6-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436005/3dmoled/3d-printer-creality3d-halot-r6-2.webp"
     ],
     "description": "Это высокоскоростной 3д принтер с передовыми функциями для печати на основе ЖК-дисплея. Оснащен экраном с высоким разрешением, что обеспечивает отличную детализацию получаемых моделей. Принтер поддерживает широкий спектр смол, включая стандартные и инженерные. Идеален для создания высококачественных прототипов и деталей с точными геометрическими формами.",
     "specs": {
@@ -1861,8 +1818,7 @@ const products = [
       "Производитель": "Creality3D",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-creality3d-halot-r6/"
+    }
   },
   {
     "id": "50468",
@@ -1870,13 +1826,13 @@ const products = [
     "name": "Elegoo Neptune 4 Plus",
     "brand": "Elegoo",
     "technology": "FDM",
-    "price": 46,
+    "price": 29900,
     "oldPrice": 38900,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2024/08/3d-printer-elegoo-neptune-4-plus-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/08/3d-printer-elegoo-neptune-4-plus-2.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436007/3dmoled/3d-printer-elegoo-neptune-4-plus-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436009/3dmoled/3d-printer-elegoo-neptune-4-plus-2.webp"
     ],
     "description": "Это средняя модель в линейке Elegoo c увеличенной областью печати. Оснащен системой автоматической калибровки и двойными осевыми направляющими для качественной печати. Поддерживает широкий спектр пластиков, включая PLA, PETG, что делает его универсальным решением для различных задач по 3д печати.",
     "specs": {
@@ -1909,8 +1865,7 @@ const products = [
       "Производитель": "Elegoo",
       "Страна про-ва": "Китай",
       "Гарантия": "3 месяца"
-    },
-    "url": "https://3d-m.ru/3d-printer-elegoo-neptune-4-plus/"
+    }
   },
   {
     "id": "49890",
@@ -1918,14 +1873,14 @@ const products = [
     "name": "Elegoo Saturn 4",
     "brand": "Elegoo",
     "technology": "LCD",
-    "price": 47,
+    "price": 34500,
     "oldPrice": 44900,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2024/06/3d-printer-elegoo-saturn-4-11-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/06/3d-printer-elegoo-saturn-4-12-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/06/3d-printer-elegoo-saturn-4-5.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436010/3dmoled/3d-printer-elegoo-saturn-4-11-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436012/3dmoled/3d-printer-elegoo-saturn-4-12-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436014/3dmoled/3d-printer-elegoo-saturn-4-5.webp"
     ],
     "description": "Это надежное устройство для фотополимерной 3Д печати, оснащенное 12K монохромным LCD-экраном. Улучшенная система охлаждения и мощный источник UV-света обеспечивают стабильную печать с высокой детализацией. Принтер поддерживает широкий ассортимент смол, включая стоматологические. Отличный выбор для зуботехнических лабораторий, которым важны качество, скорость и надежность.",
     "specs": {
@@ -1951,8 +1906,7 @@ const products = [
       "Производитель": "Elegoo",
       "Страна про-ва": "Китай",
       "Гарантия": "3 месяца"
-    },
-    "url": "https://3d-m.ru/3d-printer-elegoo-saturn-4/"
+    }
   },
   {
     "id": "50682",
@@ -1960,14 +1914,14 @@ const products = [
     "name": "Elegoo Mars 5",
     "brand": "Elegoo",
     "technology": "LCD, MSLA",
-    "price": 48,
+    "price": 24900,
     "oldPrice": 24900,
-    "discount": 100,
+    "discount": 0,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2024/09/3d-printer-elegoo-mars-5-11-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/09/3d-printer-elegoo-mars-5-10-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/09/3d-printer-elegoo-mars-5-12-1.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436016/3dmoled/3d-printer-elegoo-mars-5-11-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436018/3dmoled/3d-printer-elegoo-mars-5-10-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436019/3dmoled/3d-printer-elegoo-mars-5-12-1.webp"
     ],
     "description": "Elegoo Mars 5 – это высокоточный 3д принтер с 4K монохромным дисплеем, обеспечивающий отличную детализацию напечатанных моделей и быструю печать. Принтер поддерживает различные фотополимерные смолы, включая стандартные и стоматологические полимеры.",
     "specs": {
@@ -1993,8 +1947,7 @@ const products = [
       "Производитель": "Elegoo",
       "Страна про-ва": "Китай",
       "Гарантия": "3 месяца"
-    },
-    "url": "https://3d-m.ru/3d-printer-elegoo-mars-5/"
+    }
   },
   {
     "id": "50675",
@@ -2002,14 +1955,14 @@ const products = [
     "name": "Elegoo Mars 5 Ultra",
     "brand": "Elegoo",
     "technology": "LCD, MSLA",
-    "price": 49,
+    "price": 34900,
     "oldPrice": 34900,
-    "discount": 100,
+    "discount": 0,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2024/09/3d-printer-elegoo-mars-5-ultra-10-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/09/3d-printer-elegoo-mars-5-ultra-11-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/09/3d-printer-elegoo-mars-5-ultra-12-1.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436021/3dmoled/3d-printer-elegoo-mars-5-ultra-10-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436023/3dmoled/3d-printer-elegoo-mars-5-ultra-11-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436024/3dmoled/3d-printer-elegoo-mars-5-ultra-12-1.webp"
     ],
     "description": "Это доступный 3д принтер с высоким разрешением печати. Оснащен усовершенствованной монохромным экраном, что повышает скорость и качество печати. Поддерживает широкий ассортимент фотополимерных смол, позволяя создавать сложные модели с высокой детализацией. Отличный выбор для зуботехнических лабораторий и стоматологий.",
     "specs": {
@@ -2035,8 +1988,7 @@ const products = [
       "Производитель": "Elegoo",
       "Страна про-ва": "Китай",
       "Гарантия": "3 месяца"
-    },
-    "url": "https://3d-m.ru/3d-printer-elegoo-mars-5-ultra/"
+    }
   },
   {
     "id": "48786",
@@ -2044,14 +1996,14 @@ const products = [
     "name": "Elegoo Neptune 4 Pro",
     "brand": "Elegoo",
     "technology": "FDM",
-    "price": 50,
+    "price": 31900,
     "oldPrice": 31900,
-    "discount": 100,
+    "discount": 0,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2024/03/3d-printer-elegoo-neptune-4-pro-11-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/03/3d-printer-elegoo-neptune-4-pro-10-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/03/3d-printer-elegoo-neptune-4-pro-12.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436026/3dmoled/3d-printer-elegoo-neptune-4-pro-11-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436028/3dmoled/3d-printer-elegoo-neptune-4-pro-10-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436030/3dmoled/3d-printer-elegoo-neptune-4-pro-12.webp"
     ],
     "description": "Это базовая модель 3д принтера, оснащенная усовершенствованной системой автоматической калибровки. Благодаря прочной конструкции и улучшенной системе охлаждения принтер обеспечивает стабильную печать даже на высоких скоростях. Поддерживает широкий спектр филаментов, включая PLA, PETG и TPU, что делает его универсальным решением для различных задач.",
     "specs": {
@@ -2087,8 +2039,7 @@ const products = [
       "Производитель": "Elegoo",
       "Страна про-ва": "Китай",
       "Гарантия": "3 месяца"
-    },
-    "url": "https://3d-m.ru/3d-printer-elegoo-neptune-4-pro/"
+    }
   },
   {
     "id": "49433",
@@ -2101,9 +2052,9 @@ const products = [
     "discount": 40,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2024/04/3d-printer-elegoo-neptune-4-max-10-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/04/3d-printer-elegoo-neptune-4-max-11-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/04/3d-printer-elegoo-neptune-4-max-2.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436031/3dmoled/3d-printer-elegoo-neptune-4-max-10-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436033/3dmoled/3d-printer-elegoo-neptune-4-max-11-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436035/3dmoled/3d-printer-elegoo-neptune-4-max-2.webp"
     ],
     "description": "Это высокопроизводительный 3Д принтер с увеличенной областью печати, идеально подходящее для создания крупных моделей. Оснащен системой автоматической калибровки стола, усовершенствованной системой охлаждения печатной головы и двойными направляющими для стабильной печати на высоких скоростях. Поддерживает печать материалами PLA, PETG, что делает его универсальным решением для различных задач. Отличный выбор для профессионалов и энтузиастов, которым важны размеры изделий.",
     "specs": {
@@ -2136,8 +2087,7 @@ const products = [
       "Производитель": "Elegoo",
       "Страна про-ва": "Китай",
       "Гарантия": "3 месяца"
-    },
-    "url": "https://3d-m.ru/3d-printer-elegoo-neptune-4-max/"
+    }
   },
   {
     "id": "58182",
@@ -2145,12 +2095,12 @@ const products = [
     "name": "Anycubic Photon P1",
     "brand": "Anycubic",
     "technology": "LCD",
-    "price": 52,
+    "price": 69900,
     "oldPrice": 69900,
-    "discount": 100,
+    "discount": 0,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2025/12/3d-printer-anycubic-photon-p1-1.png"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436037/3dmoled/3d-printer-anycubic-photon-p1-1.webp"
     ],
     "description": "3D-принтер Anycubic Photon P1 предназначен для профессионального создания высокодетализированных моделей, таких как стоматологические модели или прототипы, и поддерживает одновременную печать двумя разными материалами.",
     "specs": {
@@ -2168,8 +2118,7 @@ const products = [
       "Производитель": "Anycubic",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-anycubic-photon-p1/"
+    }
   },
   {
     "id": "51843",
@@ -2177,13 +2126,13 @@ const products = [
     "name": "Anycubic Kobra S1",
     "brand": "Anycubic",
     "technology": "FDM",
-    "price": 53,
+    "price": 41900,
     "oldPrice": 41900,
-    "discount": 100,
+    "discount": 0,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2024/12/3d-printer-anycubic-kobra-s1-10-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/12/3d-printer-anycubic-kobra-s1-1.png"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436039/3dmoled/3d-printer-anycubic-kobra-s1-10-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436041/3dmoled/3d-printer-anycubic-kobra-s1-1.webp"
     ],
     "description": "Это высокоскоростной 3D-принтер с продвинутой системой подачи материала, обеспечивающий высокую точность и надежность печати. Улучшенный экструдер и мощная система охлаждения позволяют добиваться идеального качества даже при печати сложных деталях. Поддержка различных филаментов открывает широкие возможности для творчества и инженерных задач.",
     "specs": {
@@ -2208,8 +2157,7 @@ const products = [
       "Производитель": "Anycubic",
       "Страна про-ва": "Китай",
       "Гарантия": "3 месяца"
-    },
-    "url": "https://3d-m.ru/3d-printer-anycubic-kobra-s1/"
+    }
   },
   {
     "id": "51298",
@@ -2217,15 +2165,15 @@ const products = [
     "name": "Anycubic Photon Mono M7 Max",
     "brand": "Anycubic",
     "technology": "LCD",
-    "price": 54,
+    "price": 83500,
     "oldPrice": 83500,
-    "discount": 100,
+    "discount": 0,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2024/11/3d-printer-anycubic-photon-mono-m7-max-1.png",
-      "https://3d-m.ru/wp-content/uploads/2024/11/3d-printer-anycubic-photon-mono-m7-max-2.png",
-      "https://3d-m.ru/wp-content/uploads/2024/11/3d-printer-anycubic-photon-mono-m7-max-3.png",
-      "https://3d-m.ru/wp-content/uploads/2024/11/3d-printer-anycubic-photon-mono-m7-max-4.png"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436042/3dmoled/3d-printer-anycubic-photon-mono-m7-max-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436045/3dmoled/3d-printer-anycubic-photon-mono-m7-max-2.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436046/3dmoled/3d-printer-anycubic-photon-mono-m7-max-3.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436048/3dmoled/3d-printer-anycubic-photon-mono-m7-max-4.webp"
     ],
     "description": "Это производительный 3D принтер с 7K монохромным экраном, который обеспечивает исключительную точность печати. Увеличенная рабочая область печати позволяет создавать крупные модели без потери качества. Подходит для создания сложных прототипов, фигурок и деталей с высокой детализацией.",
     "specs": {
@@ -2249,8 +2197,7 @@ const products = [
       "Производитель": "Anycubic",
       "Страна про-ва": "Китай",
       "Гарантия": "3 месяца"
-    },
-    "url": "https://3d-m.ru/3d-printer-anycubic-photon-mono-m7-max/"
+    }
   },
   {
     "id": "47529",
@@ -2258,16 +2205,16 @@ const products = [
     "name": "Anycubic Kobra 2 Max",
     "brand": "Anycubic",
     "technology": "FDM",
-    "price": 55,
+    "price": 44500,
     "oldPrice": 44500,
-    "discount": 100,
+    "discount": 0,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2023/10/3d-printer-anycubic-kobra-2-max-1.png",
-      "https://3d-m.ru/wp-content/uploads/2023/10/3d-printer-anycubic-kobra-2-max-2.png",
-      "https://3d-m.ru/wp-content/uploads/2023/10/3d-printer-anycubic-kobra-2-max-3.jpg",
-      "https://3d-m.ru/wp-content/uploads/2023/10/3d-printer-anycubic-kobra-2-max-4.png",
-      "https://3d-m.ru/wp-content/uploads/2023/10/3d-printer-anycubic-kobra-2-max-5.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436050/3dmoled/3d-printer-anycubic-kobra-2-max-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436052/3dmoled/3d-printer-anycubic-kobra-2-max-2.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436054/3dmoled/3d-printer-anycubic-kobra-2-max-3.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436056/3dmoled/3d-printer-anycubic-kobra-2-max-4.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436057/3dmoled/3d-printer-anycubic-kobra-2-max-5.webp"
     ],
     "description": "Anycubic Kobra 2 Max – это высокопроизводительный 3D принтер с огромной областью печати, позволяющий создавать габаритные модели с высокой скоростью. Продвинутая система калибровки и производительный экструдер обеспечивают точность и надежность даже при печати сложных конструкций. Поддержка множества материалов открывает широкие возможности для творчества, инженерии и производства.",
     "specs": {
@@ -2294,8 +2241,7 @@ const products = [
       "Производитель": "Anycubic",
       "Страна про-ва": "Китай",
       "Гарантия": "3 месяца"
-    },
-    "url": "https://3d-m.ru/3d-printer-anycubic-kobra-2-max/"
+    }
   },
   {
     "id": "51801",
@@ -2303,14 +2249,14 @@ const products = [
     "name": "Anycubic Kobra S1 Combo",
     "brand": "Anycubic",
     "technology": "FDM",
-    "price": 56,
+    "price": 55900,
     "oldPrice": 55900,
-    "discount": 100,
+    "discount": 0,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2024/12/3d-printer-anycubic-kobra-s1-12.webp",
-      "https://3d-m.ru/wp-content/uploads/2024/12/3d-printer-anycubic-kobra-s1-11-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/12/3d-printer-anycubic-kobra-s1-10-1.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436059/3dmoled/3d-printer-anycubic-kobra-s1-12.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436061/3dmoled/3d-printer-anycubic-kobra-s1-11-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436039/3dmoled/3d-printer-anycubic-kobra-s1-10-1.webp"
     ],
     "description": "Это обновленная модель 3D-принтера с системой автоматической калибровки и высокой скоростью печати. Оснащен улучшенной подачей филамента, что позволяет добиваться точных и качественных результатов печати. Поддержка множества материалов, включая гибкие и инженерные пластики, делает его отличным выбором для различных задач.",
     "specs": {
@@ -2336,8 +2282,7 @@ const products = [
       "Производитель": "Anycubic",
       "Страна про-ва": "Китай",
       "Гарантия": "3 месяца"
-    },
-    "url": "https://3d-m.ru/3d-printer-anycubic-kobra-s1-combo/"
+    }
   },
   {
     "id": "54001",
@@ -2345,12 +2290,12 @@ const products = [
     "name": "Anycubic Kobra 3 V2",
     "brand": "Anycubic",
     "technology": "FDM",
-    "price": 57,
+    "price": 32500,
     "oldPrice": 32500,
-    "discount": 100,
+    "discount": 0,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2025/07/3d-printer-anycubic-kobra-3-v2-1.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436063/3dmoled/3d-printer-anycubic-kobra-3-v2-1.webp"
     ],
     "description": "Этот 3Д принтер сочетает высокую скорость печати до 300 мм/с с отличным качеством детализации благодаря системе прямого привода и автоматической калибровке. Усовершенствованная система охлаждения и поддержка широкого спектра материалов (PLA, ABS, PETG, TPU) позволяют создавать прочные и точные модели. Прочная конструкция на алюминиевой раме и удобный сенсорный интерфейс делают работу с Kobra 3 V2 комфортной даже для новичков.",
     "specs": {
@@ -2367,8 +2312,7 @@ const products = [
       "Производитель": "Anycubic",
       "Страна про-ва": "Китай",
       "Гарантия": "3 месяца"
-    },
-    "url": "https://3d-m.ru/3d-printer-anycubic-kobra-3-v2/"
+    }
   },
   {
     "id": "51995",
@@ -2381,11 +2325,11 @@ const products = [
     "discount": 55,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2025/06/3d-printer-anycubic-kobra-3-max-combo-1.png",
-      "https://3d-m.ru/wp-content/uploads/2025/06/3d-printer-anycubic-kobra-3-max-combo-4.png",
-      "https://3d-m.ru/wp-content/uploads/2025/06/3d-printer-anycubic-kobra-3-max-combo-7.png",
-      "https://3d-m.ru/wp-content/uploads/2025/06/3d-printer-anycubic-kobra-3-max-combo-6.png",
-      "https://3d-m.ru/wp-content/uploads/2025/06/3d-printer-anycubic-kobra-3-max-combo-3.png"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436065/3dmoled/3d-printer-anycubic-kobra-3-max-combo-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436067/3dmoled/3d-printer-anycubic-kobra-3-max-combo-4.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436069/3dmoled/3d-printer-anycubic-kobra-3-max-combo-7.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436070/3dmoled/3d-printer-anycubic-kobra-3-max-combo-6.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436072/3dmoled/3d-printer-anycubic-kobra-3-max-combo-3.webp"
     ],
     "description": "Это 3D принтер с огромной областью печати, предназначенный для создания крупных моделей с высокой точностью. Благодаря системе автоматической калибровки стола и улучшенному экструдеру, процесс печати остается стабильным. Принтер поддерживает множество материалов, включая гибкие филаменты, что расширяет его функциональные возможности. Идеальный выбор для пользователей, которым важны как размер напечатанных изделий.",
     "specs": {
@@ -2410,8 +2354,7 @@ const products = [
       "Производитель": "Anycubic",
       "Страна про-ва": "Китай",
       "Гарантия": "3 месяца"
-    },
-    "url": "https://3d-m.ru/3d-printer-anycubic-kobra-3-max-combo/"
+    }
   },
   {
     "id": "49832",
@@ -2424,10 +2367,10 @@ const products = [
     "discount": 46,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2024/06/3d-printer-anycubic-kobra-3-combo-12-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/06/3d-printer-anycubic-kobra-3-combo-10-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/06/3d-printer-anycubic-kobra-3-combo-11-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/06/3d-printer-anycubic-kobra-3-combo-1.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436074/3dmoled/3d-printer-anycubic-kobra-3-combo-12-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436076/3dmoled/3d-printer-anycubic-kobra-3-combo-10-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436077/3dmoled/3d-printer-anycubic-kobra-3-combo-11-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436079/3dmoled/3d-printer-anycubic-kobra-3-combo-1.webp"
     ],
     "description": "Kobra 3 Combo – это обновленная модель 3D принтера с системой многоцветной печати, позволяющий создавать яркие и сложные модели. Надежный экструдер обеспечивают стабильную работу и высокую детализацию моделей на выходе. Поддержка различных филаментов делает его отличным выбором для творчества, прототипирования и производства. Отличается удобством использования, высокой скоростью печати.",
     "specs": {
@@ -2454,8 +2397,7 @@ const products = [
       "Производитель": "Anycubic",
       "Страна про-ва": "Китай",
       "Гарантия": "3 месяца"
-    },
-    "url": "https://3d-m.ru/3d-printer-anycubic-kobra-3-combo/"
+    }
   },
   {
     "id": "47558",
@@ -2463,16 +2405,16 @@ const products = [
     "name": "Anycubic Kobra 2 Pro",
     "brand": "Anycubic",
     "technology": "FDM",
-    "price": 60,
+    "price": 24900,
     "oldPrice": 24900,
-    "discount": 100,
+    "discount": 0,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2023/10/3d-printer-anycubic-kobra-2-pro-1.png",
-      "https://3d-m.ru/wp-content/uploads/2023/10/3d-printer-anycubic-kobra-2-pro-2.jpg",
-      "https://3d-m.ru/wp-content/uploads/2023/10/3d-printer-anycubic-kobra-2-pro-3.jpg",
-      "https://3d-m.ru/wp-content/uploads/2023/10/3d-printer-anycubic-kobra-2-pro-4.jpg",
-      "https://3d-m.ru/wp-content/uploads/2023/10/3d-printer-anycubic-kobra-2-pro-5.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436081/3dmoled/3d-printer-anycubic-kobra-2-pro-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436083/3dmoled/3d-printer-anycubic-kobra-2-pro-2.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436085/3dmoled/3d-printer-anycubic-kobra-2-pro-3.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436087/3dmoled/3d-printer-anycubic-kobra-2-pro-4.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436089/3dmoled/3d-printer-anycubic-kobra-2-pro-5.webp"
     ],
     "description": "Это высокоскоростной 3D-принтер, созданный для точной и стабильной печати. Благодаря системе автоматической калибровки и усовершенствованной кинематике он обеспечивает плавную подачу филамента и качественное построение моделей. Поддерживает работу с различными материалами, включая PLA, PETG, что делает его универсальным решением для творчества и производства. Отличный выбор для тех, кто ценит надежность и простоту использования.",
     "specs": {
@@ -2500,8 +2442,7 @@ const products = [
       "Производитель": "Anycubic",
       "Страна про-ва": "Китай",
       "Гарантия": "3 месяца"
-    },
-    "url": "https://3d-m.ru/3d-printer-anycubic-kobra-2-pro/"
+    }
   },
   {
     "id": "47543",
@@ -2509,15 +2450,15 @@ const products = [
     "name": "Anycubic Kobra 2 Neo",
     "brand": "Anycubic",
     "technology": "FDM",
-    "price": 61,
+    "price": 19900,
     "oldPrice": 19900,
-    "discount": 100,
+    "discount": 0,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2023/10/3d-printer-anycubic-kobra-2-neo-1.png",
-      "https://3d-m.ru/wp-content/uploads/2023/10/3d-printer-anycubic-kobra-2-neo-5.jpg",
-      "https://3d-m.ru/wp-content/uploads/2023/10/3d-printer-anycubic-kobra-2-neo-4.jpg",
-      "https://3d-m.ru/wp-content/uploads/2023/10/3d-printer-anycubic-kobra-2-neo-3.png"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436091/3dmoled/3d-printer-anycubic-kobra-2-neo-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436093/3dmoled/3d-printer-anycubic-kobra-2-neo-5.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436095/3dmoled/3d-printer-anycubic-kobra-2-neo-4.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436097/3dmoled/3d-printer-anycubic-kobra-2-neo-3.webp"
     ],
     "description": "Это удобный 3D-принтер, который подойдет как для новичков, так и для опытных пользователей. Компактный дизайн сочетается с высокой производительностью, обеспечивая стабильную работу при длительной печати. Отличное решение для тех, кто ценит простоту, надежность и качество.",
     "specs": {
@@ -2544,8 +2485,7 @@ const products = [
       "Производитель": "Anycubic",
       "Страна про-ва": "Китай",
       "Гарантия": "3 месяца"
-    },
-    "url": "https://3d-m.ru/3d-printer-anycubic-kobra-2-neo/"
+    }
   },
   {
     "id": "50926",
@@ -2553,14 +2493,14 @@ const products = [
     "name": "Anycubic Photon Mono 4 10K",
     "brand": "Anycubic",
     "technology": "LCD",
-    "price": 62,
+    "price": 19900,
     "oldPrice": 19900,
-    "discount": 100,
+    "discount": 0,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2024/10/3d-printer-anycubic-photon-mono-4-10k-1.png",
-      "https://3d-m.ru/wp-content/uploads/2024/10/3d-printer-anycubic-photon-mono-4-10k-2.png",
-      "https://3d-m.ru/wp-content/uploads/2024/10/3d-printer-anycubic-photon-mono-4-10k-3.png"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436099/3dmoled/3d-printer-anycubic-photon-mono-4-10k-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436101/3dmoled/3d-printer-anycubic-photon-mono-4-10k-2.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436103/3dmoled/3d-printer-anycubic-photon-mono-4-10k-3.webp"
     ],
     "description": "Это 3D принтер с 10K монохромным экраном, который обеспечивает высокую детализацию печати. Он идеально подходит для создания сложных моделей. Поддержка различных фотополимерных смол позволяет расширить возможности использования устройства для различных задач. Компактный и эффективный, этот принтер станет отличным выбором для профессионалов.",
     "specs": {
@@ -2586,8 +2526,7 @@ const products = [
       "Производитель": "Anycubic",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-anycubic-photon-mono-4-10k/"
+    }
   },
   {
     "id": "48981",
@@ -2595,13 +2534,13 @@ const products = [
     "name": "Anycubic Photon Mono 2",
     "brand": "Anycubic",
     "technology": "LCD",
-    "price": 63,
+    "price": 25500,
     "oldPrice": 25500,
-    "discount": 100,
+    "discount": 0,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2024/04/3d-printer-anycubic-photon-mono-2-10-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/04/3d-printer-anycubic-photon-mono-2-11-1.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436104/3dmoled/3d-printer-anycubic-photon-mono-2-10-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436106/3dmoled/3d-printer-anycubic-photon-mono-2-11-1.webp"
     ],
     "description": "3D принтер с 6K монохромным экраном, который обеспечивает отличную детализацию и быструю печать. С улучшенной UV-модулем засветки, что гарантирует стабильные результаты и высокое качество при работе с различными фотополимерными смолами. Компактные размеры принтера и простота в использовании делают его отличным выбором начинающих специалистов.",
     "specs": {
@@ -2625,8 +2564,7 @@ const products = [
       "Производитель": "Anycubic",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-anycubic-photon-mono-2/"
+    }
   },
   {
     "id": "46311",
@@ -2634,13 +2572,13 @@ const products = [
     "name": "Anycubic Photon Mono M5s",
     "brand": "Anycubic",
     "technology": "LCD",
-    "price": 64,
+    "price": 67000,
     "oldPrice": 67000,
-    "discount": 100,
+    "discount": 0,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2023/07/3d-printer-anycubic-photon-mono-m5s-10.jpeg",
-      "https://3d-m.ru/wp-content/uploads/2023/07/3d-printer-anycubic-photon-mono-m5s-11-1.jpeg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436107/3dmoled/3d-printer-anycubic-photon-mono-m5s-10.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436109/3dmoled/3d-printer-anycubic-photon-mono-m5s-11-1.webp"
     ],
     "description": "Это принтер с 5K монохромным экраном, который гарантирует отличную детализацию печати. Принтер поддерживает широкий выбор фотополимерных смол, что открывает возможности для создания как прототипов, так и сложных моделей.",
     "specs": {
@@ -2666,8 +2604,7 @@ const products = [
       "Производитель": "Anycubic",
       "Страна про-ва": "Китай",
       "Гарантия": "3 месяца"
-    },
-    "url": "https://3d-m.ru/3d-printer-anycubic-photon-mono-m5s/"
+    }
   },
   {
     "id": "48709",
@@ -2680,9 +2617,9 @@ const products = [
     "discount": 67,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2024/03/3d-printer-anycubic-photon-mono-m5s-pro-10-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/03/3d-printer-anycubic-photon-mono-m5s-pro-11-2.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/03/3d-printer-anycubic-photon-mono-m5s-pro-12-1.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436111/3dmoled/3d-printer-anycubic-photon-mono-m5s-pro-10-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436112/3dmoled/3d-printer-anycubic-photon-mono-m5s-pro-11-2.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436114/3dmoled/3d-printer-anycubic-photon-mono-m5s-pro-12-1.webp"
     ],
     "description": "3Д принтер с улучшенной системой засветки и более стабильной платформой, что гарантирует надежные результаты даже при печати сложных моделях. Возможность печати различными фотополимерными смолами позволяет работать в различных сферах. Принтер идеально подходит для стоматологической сферы.",
     "specs": {
@@ -2706,8 +2643,7 @@ const products = [
       "Производитель": "Anycubic",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-anycubic-photon-mono-m5s-pro/"
+    }
   },
   {
     "id": "46445",
@@ -2715,14 +2651,14 @@ const products = [
     "name": "Anycubic Photon Mono X 6Ks",
     "brand": "Anycubic",
     "technology": "LCD",
-    "price": 66,
+    "price": 44900,
     "oldPrice": 44900,
-    "discount": 100,
+    "discount": 0,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2023/07/3d-printer-anycubic-photon-mono-x-6ks-10.jpg",
-      "https://3d-m.ru/wp-content/uploads/2023/07/3d-printer-anycubic-photon-mono-x-6ks-11-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2023/07/3d-printer-anycubic-photon-mono-x-6ks-12-1.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436116/3dmoled/3d-printer-anycubic-photon-mono-x-6ks-10.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436119/3dmoled/3d-printer-anycubic-photon-mono-x-6ks-11-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436121/3dmoled/3d-printer-anycubic-photon-mono-x-6ks-12-1.webp"
     ],
     "description": "Это 3D принтер с 6K монохромным экраном, обеспечивающим высокую четкость и скорость печати. Он оснащен улучшенной UV-модулем засветки, которая гарантирует равномерное отверждение смолы. С поддержкой различных фотополимерных смол принтер идеально подходит для создания детализированных прототипов.",
     "specs": {
@@ -2749,8 +2685,7 @@ const products = [
       "Производитель": "Anycubic",
       "Страна про-ва": "Китай",
       "Гарантия": "3 месяца"
-    },
-    "url": "https://3d-m.ru/3d-printer-anycubic-photon-mono-x-6ks/"
+    }
   },
   {
     "id": "47794",
@@ -2758,13 +2693,13 @@ const products = [
     "name": "FlashForge Adventurer 5M Pro",
     "brand": "Flashforge",
     "technology": "FDM",
-    "price": 67,
+    "price": 50500,
     "oldPrice": 50500,
-    "discount": 100,
+    "discount": 0,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2023/12/3d-printer-flashforge-adventurer-5m-pro-1.png",
-      "https://3d-m.ru/wp-content/uploads/2023/12/3d-printer-flashforge-adventurer-5m-pro-2.png"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436123/3dmoled/3d-printer-flashforge-adventurer-5m-pro-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436125/3dmoled/3d-printer-flashforge-adventurer-5m-pro-2.webp"
     ],
     "description": "Компактный и производительный принтер для домашнего и профессионального использования. Оснащен системой автоматической калибровки и подогреваемой платформой для печати различными материалами, включая PLA, ABS и PETG. Высокая скорость печати и точность делают его идеальным для создания прототипов, функциональных деталей и творческих проектов.",
     "specs": {
@@ -2804,8 +2739,7 @@ const products = [
       "Страна про-ва": "Китай",
       "Гарантия": "6 месяцев",
       "Применение": "Архитектура, Дизайн, Макетирование, Медицина, Образование, Реклама, Хобби"
-    },
-    "url": "https://3d-m.ru/3d-printer-flashforge-adventurer-5m-pro/"
+    }
   },
   {
     "id": "47814",
@@ -2813,14 +2747,14 @@ const products = [
     "name": "FlashForge Adventurer 5M",
     "brand": "Flashforge",
     "technology": "FDM",
-    "price": 68,
+    "price": 37500,
     "oldPrice": 37500,
-    "discount": 100,
+    "discount": 0,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2023/12/3d-printer-flashforge-adventurer-5m-10.jpg",
-      "https://3d-m.ru/wp-content/uploads/2023/12/3d-printer-flashforge-adventurer-5m-11.jpg",
-      "https://3d-m.ru/wp-content/uploads/2023/12/3d-printer-flashforge-adventurer-5m-12.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436127/3dmoled/3d-printer-flashforge-adventurer-5m-10.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436129/3dmoled/3d-printer-flashforge-adventurer-5m-11.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436131/3dmoled/3d-printer-flashforge-adventurer-5m-12.webp"
     ],
     "description": "Компактный и удобный принтер для начинающих и домашнего использования. Оснащен автоматической калибровкой и поддержкой Wi-Fi для удаленного управления. Подходит для печати PLA и PETG с высокой детализацией. Идеальный выбор для хобби, образования и небольших проектов.",
     "specs": {
@@ -2858,8 +2792,7 @@ const products = [
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев",
       "Применение": "Архитектура, Дизайн, Макетирование, Медицина, Образование, Реклама, Хобби"
-    },
-    "url": "https://3d-m.ru/3d-printer-flashforge-adventurer-5m/"
+    }
   },
   {
     "id": "52021",
@@ -2867,13 +2800,13 @@ const products = [
     "name": "Flashforge Adventurer 5X",
     "brand": "Flashforge",
     "technology": "LCD, LED",
-    "price": 69,
+    "price": 34900,
     "oldPrice": 34900,
-    "discount": 100,
+    "discount": 0,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2025/06/3d-printer-flashforge-adventurer-5x-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2025/06/3d-printer-flashforge-adventurer-5x-2.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436134/3dmoled/3d-printer-flashforge-adventurer-5x-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436136/3dmoled/3d-printer-flashforge-adventurer-5x-2.webp"
     ],
     "description": "Flashforge Adventurer 5X – новая модель 3Д принтера для быстрой и точной 3Д печати с системой автоматической калибровки и подогреваемой платформой. Оснащен двойными осями Z и съемным магнитным основанием для удобства работы. Поддерживает различные материалы, включая PLA, ABS и PETG, обеспечивая высокое качество изделий.",
     "specs": {
@@ -2893,8 +2826,7 @@ const products = [
       "Производитель": "Flashforge",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-flashforge-adventurer-5x/"
+    }
   },
   {
     "id": "40559",
@@ -2902,14 +2834,14 @@ const products = [
     "name": "FlashForge Creator 3 Pro",
     "brand": "Flashforge",
     "technology": "FDM",
-    "price": 70,
+    "price": 235000,
     "oldPrice": 235000,
-    "discount": 100,
+    "discount": 0,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2021/12/3d-printer-flashforge-creator-3-pro-11.jpg",
-      "https://3d-m.ru/wp-content/uploads/2021/12/3d-printer-flashforge-creator-3-pro-10.jpg",
-      "https://3d-m.ru/wp-content/uploads/2021/12/3d-printer-flashforge-creator-3-pro-12.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436137/3dmoled/3d-printer-flashforge-creator-3-pro-11.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436139/3dmoled/3d-printer-flashforge-creator-3-pro-10.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436141/3dmoled/3d-printer-flashforge-creator-3-pro-12.webp"
     ],
     "description": "Профессиональное решение для двухцветной печати с двумя независимыми экструдерами. Оснащен системой автоматической калибровки и подогреваемой платформой для работы с различными материалами, включая ABS, PLA и нейлон. Закрытая камера обеспечивает стабильные условия печати и снижает уровень шума.",
     "specs": {
@@ -2946,8 +2878,7 @@ const products = [
       "Производитель": "Flashforge",
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев"
-    },
-    "url": "https://3d-m.ru/3d-printer-flashforge-creator-3-pro/"
+    }
   },
   {
     "id": "46925",
@@ -2955,15 +2886,15 @@ const products = [
     "name": "FlashForge Guider 3 Ultra",
     "brand": "Flashforge",
     "technology": "FDM",
-    "price": 71,
+    "price": 340000,
     "oldPrice": 340000,
-    "discount": 100,
+    "discount": 0,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2023/09/3d-printer-flashforge-guider-3-ultra-11-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2023/09/3d-printer-flashforge-guider-3-ultra-10-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2023/09/3d-printer-flashforge-guider-3-ultra-13.jpg",
-      "https://3d-m.ru/wp-content/uploads/2023/09/3d-printer-flashforge-guider-3-ultra-12-1.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436143/3dmoled/3d-printer-flashforge-guider-3-ultra-11-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436144/3dmoled/3d-printer-flashforge-guider-3-ultra-10-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436146/3dmoled/3d-printer-flashforge-guider-3-ultra-13.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436148/3dmoled/3d-printer-flashforge-guider-3-ultra-12-1.webp"
     ],
     "description": "Профессиональный 3D-принтер с увеличенной областью печати и двойной экструзией. Оснащён системой автоматической калибровки и закрытой камерой для печати ABS и другими материалами. Бесшумные шаговые двигатели и сенсорный экран делают работу удобной, а скорость печати до 200 мм/с обеспечивает высокую производительность.",
     "specs": {
@@ -3001,8 +2932,7 @@ const products = [
       "Страна про-ва": "Китай",
       "Гарантия": "12 месяцев",
       "Применение": "Архитектура, Дизайн, Макетирование, Медицина, Образование, Производство, Хобби"
-    },
-    "url": "https://3d-m.ru/3d-printer-flashforge-guider-3-ultra/"
+    }
   },
   {
     "id": "54038",
@@ -3015,8 +2945,8 @@ const products = [
     "discount": 30,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2025/07/cistema-podachi-filamenta-bambu-lab-ams-ht-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2025/07/cistema-podachi-filamenta-bambu-lab-ams-ht-2.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436150/3dmoled/cistema-podachi-filamenta-bambu-lab-ams-ht-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436151/3dmoled/cistema-podachi-filamenta-bambu-lab-ams-ht-2.webp"
     ],
     "description": "Автоматическая смена подачи катушек с пластиком. Совместимость с нейлоном, поликарбонатом и другими термостойкими пластиками. Герметичный отсек с защитой от влаги и нагревом до 85°C для стабильной печати. Интеграция с принтерами Bambu Lab через облако. Идеально для профессионального использования!",
     "specs": {
@@ -3029,8 +2959,7 @@ const products = [
       "Вес, кг": "1.21",
       "Производитель": "Bambu Lab",
       "Страна про-ва": "Китай"
-    },
-    "url": "https://3d-m.ru/cistema-podachi-filamenta-bambu-lab-ams-ht/"
+    }
   },
   {
     "id": "52052",
@@ -3043,8 +2972,8 @@ const products = [
     "discount": 35,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2025/06/sistema-mnogocvetnoj-pechati-bambu-lab-ams-2-pro-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2025/06/sistema-mnogocvetnoj-pechati-bambu-lab-ams-2-pro-2.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436153/3dmoled/sistema-mnogocvetnoj-pechati-bambu-lab-ams-2-pro-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436155/3dmoled/sistema-mnogocvetnoj-pechati-bambu-lab-ams-2-pro-2.webp"
     ],
     "description": "Инновационное решение для многоцветной3D-печати. Позволяет использовать до 4 катушек одновременно с автоматическим переключением между материалами. Совместима с принтерами Bambu Lab X1 и P1 серии, обеспечивая бесперебойную подачу филамента. Идеальный выбор для сложных многоцветных проектов.",
     "specs": {
@@ -3056,8 +2985,7 @@ const products = [
       "Вес, кг": "2,5",
       "Производитель": "Bambu Lab",
       "Страна про-ва": "Китай"
-    },
-    "url": "https://3d-m.ru/sistema-mnogoczvetnoj-pechati-bambu-lab-ams-2-pro/"
+    }
   },
   {
     "id": "54604",
@@ -3065,13 +2993,13 @@ const products = [
     "name": "Система подачи филамента Bambu Lab AMS Lite (EU-версия)",
     "brand": "Bambu Lab",
     "technology": "",
-    "price": 74,
+    "price": 23000,
     "oldPrice": 29900,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2025/08/cistema-podachi-filamenta-bambu-lab-ams-lite-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2025/08/cistema-podachi-filamenta-bambu-lab-ams-lite-2.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436157/3dmoled/cistema-podachi-filamenta-bambu-lab-ams-lite-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436159/3dmoled/cistema-podachi-filamenta-bambu-lab-ams-lite-2.webp"
     ],
     "description": "Bambu Lab AMS Lite – компактная и надежная система подачи филамента для 3D-принтеров. Она обеспечивает автоматическую смену до 4 катушек, что позволяет печатать многоцветные модели без ручного вмешательства. Лёгкая и совместимая с принтерами Bambu Lab, AMS Lite упрощает процесс 3D-печати.",
     "specs": {
@@ -3081,8 +3009,7 @@ const products = [
       "Поддерживаемые материалы": "ABS, ASA, HIPS, PC, PET, PETG, PLA, PP, и др.",
       "Производитель": "Bambu Lab",
       "Страна про-ва": "Китай"
-    },
-    "url": "https://3d-m.ru/cistema-podachi-filamenta-bambu-lab-ams-lite/"
+    }
   },
   {
     "id": "49844",
@@ -3090,13 +3017,13 @@ const products = [
     "name": "Anycubic ACE Pro Multi-Color Filament Box (модуль полноцветной печати для Kobra 3)",
     "brand": "Anycubic",
     "technology": "",
-    "price": 75,
+    "price": 27600,
     "oldPrice": 35900,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2024/06/anycubic-ace-pro-multi-color-filament-box-modul-polnocvetnoj-pechati-dlya-kobra-3-10-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2024/06/anycubic-ace-pro-multi-color-filament-box-modul-polnocvetnoj-pechati-dlya-kobra-3-11-1.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436160/3dmoled/anycubic-ace-pro-multi-color-filament-box-modul-polnocvetnoj.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436160/3dmoled/anycubic-ace-pro-multi-color-filament-box-modul-polnocvetnoj.webp"
     ],
     "description": "Модуль для полноцветной 3D-печати, совместимый с принтером Anycubic Kobra 3. Позволяет создавать яркие многоцветные модели без необходимости постобработки или покраски. Автоматически смешивает до 4 цветов в реальном времени, обеспечивая плавные цветовые переходы. Идеальное решение для творческих проектов, дизайнерских прототипов и образовательных целей.",
     "specs": {
@@ -3109,8 +3036,7 @@ const products = [
       "Размеры": "366х283х234.5",
       "Производитель": "Anycubic",
       "Страна про-ва": "Китай"
-    },
-    "url": "https://3d-m.ru/anycubic-ace-pro-multi-color-filament-box-modul-polnoczvetnoj-pechati-dlya-kobra-3/"
+    }
   },
   {
     "id": "47227",
@@ -3118,15 +3044,15 @@ const products = [
     "name": "Автоматическая система подачи филамента Bambu Lab AMS (EU-версия)",
     "brand": "Bambu Lab",
     "technology": "",
-    "price": 76,
+    "price": 26800,
     "oldPrice": 34900,
-    "discount": 100,
+    "discount": 23,
     "inStock": true,
     "photos": [
-      "https://3d-m.ru/wp-content/uploads/2023/10/avtomaticheskaya-sistema-podachi-filamenta-bambu-lab-ams-1.jpg",
-      "https://3d-m.ru/wp-content/uploads/2023/10/avtomaticheskaya-sistema-podachi-filamenta-bambu-lab-ams-3.jpg",
-      "https://3d-m.ru/wp-content/uploads/2023/10/avtomaticheskaya-sistema-podachi-filamenta-bambu-lab-ams-4.jpg",
-      "https://3d-m.ru/wp-content/uploads/2023/10/avtomaticheskaya-sistema-podachi-filamenta-bambu-lab-ams-2.jpg"
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436163/3dmoled/avtomaticheskaya-sistema-podachi-filamenta-bambu-lab-ams-1.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436164/3dmoled/avtomaticheskaya-sistema-podachi-filamenta-bambu-lab-ams-3.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436166/3dmoled/avtomaticheskaya-sistema-podachi-filamenta-bambu-lab-ams-4.webp",
+      "https://res.cloudinary.com/drnyjt1c5/image/upload/v1776436168/3dmoled/avtomaticheskaya-sistema-podachi-filamenta-bambu-lab-ams-2.webp"
     ],
     "description": "Инновационное решение для многоцветной3D-печати. Позволяет использовать до 4 катушек одновременно с автоматическим переключением между материалами. Совместима с принтерами Bambu Lab X1 и P1 серии, обеспечивая бесперебойную подачу филамента. Идеальный выбор для сложных многоцветных проектов.",
     "specs": {
@@ -3138,7 +3064,6 @@ const products = [
       "Вес, кг": "2,5",
       "Производитель": "Bambu Lab",
       "Страна про-ва": "Китай"
-    },
-    "url": "https://3d-m.ru/avtomaticheskaya-sistema-podachi-filamenta-bambu-lab-ams/"
+    }
   }
 ];
