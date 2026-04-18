@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Товар — 3DModled</title>
-<meta name="description" content="Купить 3D принтер в интернет-магазине 3DModled">
+<title>Товар — 3DMoled</title>
+<meta name="description" content="Купить 3D принтер в интернет-магазине 3DMoled">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -59,7 +59,7 @@ const product = products.find(p => p.id === id);
 if (!product) {
   document.getElementById('product-root').innerHTML = `<div class="empty-state"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><h3>Товар не найден</h3><p>Возможно, он был удалён или ссылка устарела</p><a href="../index.html" class="btn btn-primary">Вернуться в каталог</a></div>`;
 } else {
-  document.title = `${product.name} — 3DModled`;
+  document.title = `${product.name} — 3DMoled`;
   document.querySelector('meta[name="description"]').content = `Купить ${product.name} за ${product.price.toLocaleString('ru-RU')} ₽. ${product.description.slice(0,120)}`;
   
   // Breadcrumb
