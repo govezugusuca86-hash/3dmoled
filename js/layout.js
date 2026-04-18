@@ -115,7 +115,7 @@ function renderFooter(opts = {}) {
   </div>
   <div class="footer-bottom">
     <div class="footer-bottom-inner">
-      <span>© 2025 3DModled · ИП Гагаркина И.Ю. · ОГРНИП: 306560312300060 · ИНН: 560305731536</span>
+      <span>© 2025 3DMoled · ИП Гагаркина И.Ю. · ОГРНИП: 306560312300060 · ИНН: 560305731536</span>
       <span><a href="${root}pages/privacy.html">Политика конфиденциальности</a></span>
     </div>
   </div>

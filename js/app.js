@@ -75,7 +75,8 @@ function productCard(p, opts = {}) {
   const discount = p.discount > 0 ? `<span class="badge-discount">-${p.discount}%</span>` : '';
   const tech = p.technology ? `<span class="card-tech">${p.technology}</span>` : '';
   const oldPrice = p.oldPrice > p.price ? `<span class="price-old">${formatPrice(p.oldPrice)}</span>` : '';
-  const href = opts.root ? `${opts.root}pages/product.html?id=${p.id}` : `product.html?id=${p.id}`;
+  const root = opts.root !== undefined ? opts.root : '';
+  const href = `${root}pages/product.html?id=${p.id}`;
   return `
 <div class="product-card" data-id="${p.id}">
   <div class="card-img">
