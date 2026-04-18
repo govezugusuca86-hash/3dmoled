@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>3DModled — Интернет-магазин 3D принтеров</title>
-<meta name="description" content="Купить 3D принтер в интернет-магазине 3DModled. Широкий выбор: Bambu Lab, Creality, Elegoo, Anycubic. Доставка по всей России. Гарантия.">
+<title>3DMoled — Интернет-магазин 3D принтеров</title>
+<meta name="description" content="Купить 3D принтер в интернет-магазине 3DMoled. Широкий выбор: Bambu Lab, Creality, Elegoo, Anycubic. Доставка по всей России. Гарантия.">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -205,7 +205,7 @@ function resetFilters() {
 function renderHits() {
   const topIds = ['47170', '56507', '51972'];
   const hits = topIds.map(id => products.find(p => p.id === id)).filter(Boolean);
-  document.getElementById('hits-grid').innerHTML = hits.map(p => productCard(p)).join('');
+  document.getElementById('hits-grid').innerHTML = hits.map(p => productCard(p, { root: '' })).join('');
 }
 
 // Brands block
