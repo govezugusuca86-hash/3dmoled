@@ -73,8 +73,8 @@
         <div class="filter-group">
           <div class="filter-group-title">Цена, ₽</div>
           <div class="price-range">
-            <input type="number" id="price-min" placeholder="От">
-            <input type="number" id="price-max" placeholder="До">
+            <input type="text" inputmode="numeric" id="price-min" placeholder="От">
+            <input type="text" inputmode="numeric" id="price-max" placeholder="До">
           </div>
           <button onclick="applyFilters()" style="margin-top:10px;width:100%;background:var(--green);color:#fff;border:none;border-radius:6px;padding:9px;font-size:14px;cursor:pointer">Применить</button>
         </div>
@@ -201,9 +201,9 @@ function resetFilters() {
   applyFilters();
 }
 
-// Top sales — фиксированные модели: P1S, P2S, A1
+// Top sales — P1S, P2S, A1, A1 Combo
 function renderHits() {
-  const topIds = ['47170', '56507', '51972'];
+  const topIds = ['47170', '56507', '51972', '51574'];
   const hits = topIds.map(id => products.find(p => p.id === id)).filter(Boolean);
   document.getElementById('hits-grid').innerHTML = hits.map(p => productCard(p, { root: '' })).join('');
 }
