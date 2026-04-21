@@ -95,7 +95,7 @@ function productCard(p, opts = {}) {
       ${oldPrice}
     </div>
     <div class="card-actions">
-      <button class="btn-cart" onclick="addToCart('${p.id}',this)">
+      <button class="btn-cart" onclick="addToCart('${p.id}',this,'${root}')">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
         В корзину
       </button>
@@ -104,9 +104,24 @@ function productCard(p, opts = {}) {
 </div>`;
 }
 
-function addToCart(id, btn) {
+function addToCart(id, btn, root) {
   Cart.add(id);
-  if (btn) { btn.classList.add('added'); btn.textContent = '✓ Добавлено'; setTimeout(() => { btn.classList.remove('added'); btn.innerHTML = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg> В корзину'; }, 1500); }
+  if (btn) {
+    const cartUrl = (root !== undefined ? root : '') + 'pages/cart.html';
+    btn.classList.add('added');
+    btn.innerHTML = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Добавлено';
+    const wrap = btn.parentElement;
+    const goBtn = document.createElement('a');
+    goBtn.href = cartUrl;
+    goBtn.className = 'btn-go-cart';
+    goBtn.innerHTML = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg> В корзину';
+    wrap.appendChild(goBtn);
+    setTimeout(() => {
+      btn.classList.remove('added');
+      btn.innerHTML = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg> В корзину';
+      goBtn.remove();
+    }, 4000);
+  }
 }
 
 function toggleFav(id, btn) {
