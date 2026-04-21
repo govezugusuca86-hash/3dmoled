@@ -337,3 +337,7 @@ button { cursor: pointer; font-family: inherit; }
 /* BANNER */
 .banner-section { display:block; line-height:0; }
 .banner-img { width:100%; height:auto; display:block; max-height:520px; object-fit:cover; object-position:center; }
+
+/* GO TO CART BUTTON */
+.btn-go-cart { display:flex;align-items:center;justify-content:center;gap:6px;padding:9px 12px;background:#fff;color:var(--green);border:1.5px solid var(--green);border-radius:var(--radius-sm);font-size:13px;font-weight:500;text-decoration:none;transition:all .15s;white-space:nowrap; }
+.btn-go-cart:hover { background:var(--green);color:#fff; }
