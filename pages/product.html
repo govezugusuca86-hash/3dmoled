@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Товар — 3DMoled</title>
-<meta name="description" content="Купить 3D принтер в интернет-магазине 3DMoled">
+<meta name="description" content="Купить 3D принтер в магазине 3DMoled">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <link rel="stylesheet" href="../css/style.css">
 <!-- Yandex.Metrika counter -->
@@ -111,7 +111,7 @@ if (!product) {
       </div>
     </div>
     <div class="product-btns">
-      <button class="btn-buy" onclick="addToCart('${product.id}',this)" id="buy-btn">
+      <button class="btn-buy" onclick="addToCart('${product.id}',this,'../')" id="buy-btn">
         🛒 Добавить в корзину
       </button>
       <button class="btn-fav-product${Favs.has(product.id)?' active':''}" id="fav-btn" onclick="toggleFavProduct()">
