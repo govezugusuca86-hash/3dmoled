@@ -333,3 +333,7 @@ button { cursor: pointer; font-family: inherit; }
 .brand-card-icon { width:36px;height:36px;display:flex;align-items:center;justify-content:center;background:var(--green-light);border-radius:8px;color:var(--green);flex-shrink:0; }
 .brand-card-name { font-size:15px;font-weight:600; }
 .brand-card-count { font-size:12px;color:var(--text-muted); }
+
+/* BANNER */
+.banner-section { display:block; line-height:0; }
+.banner-img { width:100%; height:auto; display:block; max-height:520px; object-fit:cover; object-position:center; }
