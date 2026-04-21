@@ -91,6 +91,7 @@ function renderFooter(opts = {}) {
       <ul>
         <li><a href="${root}pages/about.html">О магазине</a></li>
         <li><a href="${root}pages/delivery.html">Доставка и оплата</a></li>
+        <li><a href="${root}pages/offer.html">Публичная оферта</a></li>
         <li><a href="${root}pages/privacy.html">Конфиденциальность</a></li>
         <li><a href="${root}pages/contacts.html">Контакты</a></li>
       </ul>
@@ -115,8 +116,11 @@ function renderFooter(opts = {}) {
   </div>
   <div class="footer-bottom">
     <div class="footer-bottom-inner">
-      <span>© 2025 3DMoled · ИП Гагаркина И.Ю. · ОГРНИП: 306560312300060 · ИНН: 560305731536</span>
-      <span><a href="${root}pages/privacy.html">Политика конфиденциальности</a></span>
+      <span>© 2026 3DMoled · ИП Гагаркина И.Ю. · ОГРНИП: 306560312300060 · ИНН: 560305731536</span>
+      <span style="display:flex;gap:16px;flex-wrap:wrap">
+        <a href="${root}pages/offer.html">Публичная оферта</a>
+        <a href="${root}pages/privacy.html">Политика конфиденциальности</a>
+      </span>
     </div>
   </div>
 </footer>
