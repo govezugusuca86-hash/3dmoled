@@ -134,14 +134,13 @@ function toggleFav(id, btn) {
 }
 
 // ===== SEARCH =====
+// initSearch оставлена для обратной совместимости со страницами,
+// которые её вызывают. Реальная логика поиска теперь живёт в initLayout()
+// (в layout.js) и навешивается автоматически после рендера шапки.
+// Это исправляет ситуацию, когда поиск переставал работать из-за того,
+// что <script> внутри innerHTML не выполнялся.
 function initSearch(inputSel, rootPrefix) {
-  const input = document.querySelector(inputSel);
-  if (!input) return;
-  input.addEventListener('keydown', e => {
-    if (e.key === 'Enter' && input.value.trim()) {
-      window.location.href = `${rootPrefix || ''}index.html?q=${encodeURIComponent(input.value.trim())}`;
-    }
-  });
+  // no-op: см. initLayout() в layout.js
 }
 
 // ===== INIT BADGES =====

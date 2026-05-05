@@ -134,34 +134,116 @@ function renderFooter(opts = {}) {
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
 </button>
 
-<div id="toast" class="toast"></div>
+<div id="toast" class="toast"></div>`;
+}
 
-<script>
-(function(){
+// Инициализация интерактивности шапки/футера.
+// Должна вызываться ПОСЛЕ вставки renderHeader/renderFooter в DOM.
+// Скрипты, вставленные через innerHTML, не выполняются, поэтому
+// логику нельзя класть внутрь шаблонной строки.
+function initLayout(rootPath) {
+  if (window.__layoutInited) return; // защита от двойной инициализации
+  window.__layoutInited = true;
+  rootPath = rootPath || '';
+
+  // --- Бургер-меню ---
   var burger = document.getElementById('burger-btn');
   var nav = document.getElementById('main-nav');
-  if(burger && nav){
-    burger.addEventListener('click', function(){
+  if (burger && nav) {
+    burger.addEventListener('click', function () {
       burger.classList.toggle('open');
       nav.classList.toggle('open');
     });
   }
+
+  // --- Мобильный поиск ---
   var msBtn = document.getElementById('mobile-search-btn');
   var msBar = document.getElementById('mobile-search-bar');
   var msInput = document.getElementById('mobile-search-input');
   var msGo = document.getElementById('mobile-search-go');
-  var rootPath = '${root}';
-  if(msBtn && msBar){
-    msBtn.addEventListener('click', function(){ msBar.classList.toggle('open'); if(msBar.classList.contains('open')) msInput.focus(); });
+
+  if (msBtn && msBar) {
+    msBtn.addEventListener('click', function () {
+      msBar.classList.toggle('open');
+      if (msBar.classList.contains('open') && msInput) msInput.focus();
+    });
   }
-  function doMobileSearch(){ if(msInput && msInput.value.trim()) window.location.href = rootPath+'index.html?q='+encodeURIComponent(msInput.value.trim()); }
-  if(msGo) msGo.addEventListener('click', doMobileSearch);
-  if(msInput) msInput.addEventListener('keydown', function(e){ if(e.key==='Enter') doMobileSearch(); });
+
+  function doMobileSearch() {
+    if (msInput && msInput.value.trim()) {
+      window.location.href = rootPath + 'index.html?q=' + encodeURIComponent(msInput.value.trim());
+    }
+  }
+  if (msGo) msGo.addEventListener('click', doMobileSearch);
+  if (msInput) msInput.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') doMobileSearch();
+  });
+
+  // Если пользователь уже на странице с поиском — подставим текст в инпут
+  var urlQ = new URLSearchParams(location.search).get('q');
+  if (urlQ && msInput) msInput.value = urlQ;
+
+  // --- Поиск в десктопной шапке (#header-search) ---
+  // Раньше initSearch вызывался отдельно из каждой страницы — теперь делаем
+  // здесь централизованно, чтобы поиск работал гарантированно.
+  var hSearch = document.getElementById('header-search');
+  if (hSearch) {
+    if (urlQ) hSearch.value = urlQ;
+    hSearch.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' && hSearch.value.trim()) {
+        window.location.href = rootPath + 'index.html?q=' + encodeURIComponent(hSearch.value.trim());
+      }
+    });
+  }
+
+  // --- Кнопка "Наверх" ---
   var backTop = document.getElementById('back-to-top');
-  if(backTop){
-    window.addEventListener('scroll', function(){ backTop.classList.toggle('visible', window.scrollY > 400); });
-    backTop.addEventListener('click', function(){ window.scrollTo({top:0,behavior:'smooth'}); });
+  if (backTop) {
+    window.addEventListener('scroll', function () {
+      backTop.classList.toggle('visible', window.scrollY > 400);
+    });
+    backTop.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+}
+
+// Авто-инициализация: если страница забыла вызвать initLayout вручную —
+// мы сами поймаем момент, когда шапка появится в DOM, и навесим обработчики.
+// Это нужно для обратной совместимости со страницами, где раньше работал
+// inline <script> внутри HTML-шаблона.
+(function autoInitLayout() {
+  var initialized = false;
+  function tryInit() {
+    if (initialized) return;
+    if (document.getElementById('header-search') ||
+        document.getElementById('burger-btn') ||
+        document.getElementById('mobile-search-btn')) {
+      initialized = true;
+      // Определяем rootPath по расположению страницы:
+      // если мы в /pages/* — то корень это '../', иначе ''
+      var rootPath = location.pathname.indexOf('/pages/') !== -1 ? '../' : '';
+      initLayout(rootPath);
+    }
+  }
+  // 1) Если шапка уже в DOM (вставлена синхронно скриптом до layout.js загрузился) — стартуем сразу
+  if (document.readyState !== 'loading') {
+    setTimeout(tryInit, 0);
+  } else {
+    document.addEventListener('DOMContentLoaded', function () { setTimeout(tryInit, 0); });
+  }
+  // 2) Подстрахуемся MutationObserver-ом — на случай, если шапка вставится позже
+  if (typeof MutationObserver !== 'undefined') {
+    var obs = new MutationObserver(function () {
+      tryInit();
+      if (initialized) obs.disconnect();
+    });
+    if (document.body) {
+      obs.observe(document.body, { childList: true, subtree: true });
+    } else {
+      document.addEventListener('DOMContentLoaded', function () {
+        obs.observe(document.body, { childList: true, subtree: true });
+      });
+    }
   }
 })();
-</script>`;
-}
