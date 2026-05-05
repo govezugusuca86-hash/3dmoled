@@ -277,7 +277,8 @@ button { cursor: pointer; font-family: inherit; }
   .hero-stat strong { font-size: 22px; }
   .catalog-layout { grid-template-columns: 1fr; }
   .filters { position: static; display: none; }
-  .filters.open { display: block; }
+  .filters.open { display: block; margin-bottom: 16px; }
+  #filter-toggle { display: inline-flex !important; align-items: center; gap: 6px; }
   .footer-main { grid-template-columns: 1fr; gap: 28px; }
   .search-wrap { display: none; }
   .vk-float span { display: none; }
