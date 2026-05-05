@@ -50,7 +50,20 @@ ym(108699019,"init",{ssr:true,webvisor:true,clickmap:true,ecommerce:"dataLayer",
     <div class="section-head">
       <h2 class="section-title" id="catalog-heading">Весь <span>каталог</span></h2>
       <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
-        <button id="filter-toggle" style="display:none;border:1.5px solid var(--border-dark);background:#fff;border-radius:6px;padding:8px 14px;font-size:14px;cursor:pointer">⚙️ Фильтры</button>
+        <button id="filter-toggle" class="filter-toggle-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" y1="6" x2="13" y2="6"/>
+            <line x1="17" y1="6" x2="20" y2="6"/>
+            <line x1="4" y1="12" x2="7" y2="12"/>
+            <line x1="11" y1="12" x2="20" y2="12"/>
+            <line x1="4" y1="18" x2="15" y2="18"/>
+            <line x1="19" y1="18" x2="20" y2="18"/>
+            <circle cx="15" cy="6" r="2"/>
+            <circle cx="9" cy="12" r="2"/>
+            <circle cx="17" cy="18" r="2"/>
+          </svg>
+          <span>Фильтры</span>
+        </button>
         <select class="sort-select" id="sort-select">
           <option value="popular">По популярности</option>
           <option value="price-asc">Цена: дешевле</option>
