@@ -19,14 +19,12 @@ ym(108699019,"init",{ssr:true,webvisor:true,clickmap:true,ecommerce:"dataLayer",
 </head>
 <body>
 <div id="header-root"></div>
-
 <!-- BANNER -->
 <section class="banner-section">
   <a href="#catalog">
     <img src="img/banner.jpg" alt="3DMoled — Магазин 3D принтеров. В наличии. Доставка. Гарантия." class="banner-img">
   </a>
 </section>
-
 <!-- BRANDS -->
 <section class="section section-gray">
   <div class="container">
@@ -36,7 +34,6 @@ ym(108699019,"init",{ssr:true,webvisor:true,clickmap:true,ecommerce:"dataLayer",
     <div class="brands-grid" id="brands-grid"></div>
   </div>
 </section>
-
 <!-- TOP SALES -->
 <section class="section">
   <div class="container">
@@ -47,7 +44,6 @@ ym(108699019,"init",{ssr:true,webvisor:true,clickmap:true,ecommerce:"dataLayer",
     <div class="product-grid" id="hits-grid"></div>
   </div>
 </section>
-
 <!-- CATALOG -->
 <section class="section" id="catalog">
   <div class="container">
@@ -76,7 +72,7 @@ ym(108699019,"init",{ssr:true,webvisor:true,clickmap:true,ecommerce:"dataLayer",
             <input type="text" inputmode="numeric" id="price-min" placeholder="От">
             <input type="text" inputmode="numeric" id="price-max" placeholder="До">
           </div>
-          <button onclick="applyFilters()" style="margin-top:10px;width:100%;background:var(--green);color:#fff;border:none;border-radius:6px;padding:9px;font-size:14px;cursor:pointer">Применить</button>
+          <button onclick="applyFilters(true)" style="margin-top:10px;width:100%;background:var(--green);color:#fff;border:none;border-radius:6px;padding:9px;font-size:14px;cursor:pointer">Применить</button>
         </div>
         <div class="filter-group">
           <label class="filter-check"><input type="checkbox" id="filter-sale"> Только со скидкой</label>
@@ -93,16 +89,17 @@ ym(108699019,"init",{ssr:true,webvisor:true,clickmap:true,ecommerce:"dataLayer",
     </div>
   </div>
 </section>
-
 <div id="footer-root"></div>
 
 <script src="js/products.js"></script>
 <script src="js/app.js"></script>
 <script src="js/layout.js"></script>
 <script>
+// Рендерим шапку и футер
 document.getElementById('header-root').innerHTML = renderHeader({ page: 'home' });
 document.getElementById('footer-root').innerHTML = renderFooter({});
-initSearch('#header-search', '');
+// Инициализируем интерактивность шапки/футера (бургер, мобильный поиск, поиск в шапке, "наверх")
+initLayout('');
 
 const PAGE_SIZE = 24;
 let currentPage = 1;
@@ -111,10 +108,10 @@ let filtered = [];
 // Parse URL params
 const urlParams = new URLSearchParams(location.search);
 const urlCat = urlParams.get('cat') || '';
-const urlQ = urlParams.get('q') || '';
+let currentQuery = urlParams.get('q') || ''; // теперь это переменная, а не константа
 const urlSort = urlParams.get('sort') || '';
+const urlBrand = urlParams.get('brand') || '';
 
-if (urlQ) document.querySelector('#header-search').value = urlQ;
 if (urlSort === 'discount') document.getElementById('sort-select').value = 'discount';
 
 // Build brand filter checkboxes
@@ -123,6 +120,16 @@ function buildSideFilters() {
   document.getElementById('brand-filters').innerHTML = brands.map(b =>
     `<label class="filter-check"><input type="checkbox" class="brand-cb" value="${b}"> ${b}</label>`
   ).join('');
+  // Если бренд пришёл из URL — отметим его сразу
+  if (urlBrand) {
+    document.querySelectorAll('.brand-cb').forEach(cb => {
+      if (cb.value === urlBrand) cb.checked = true;
+    });
+  }
+  // При смене любого чекбокса сразу пересчитываем
+  document.querySelectorAll('.brand-cb').forEach(cb => cb.addEventListener('change', () => applyFilters()));
+  document.getElementById('filter-sale').addEventListener('change', () => applyFilters());
+  document.getElementById('filter-stock').addEventListener('change', () => applyFilters());
 }
 
 function getFilters() {
@@ -132,12 +139,17 @@ function getFilters() {
   const onlySale = document.getElementById('filter-sale').checked;
   const onlyStock = document.getElementById('filter-stock').checked;
   const sort = document.getElementById('sort-select').value;
-  const cat = urlCat;
-  const q = urlQ;
-  return { cat, brands, priceMin, priceMax, onlySale, onlyStock, sort, q };
+  return { cat: urlCat, brands, priceMin, priceMax, onlySale, onlyStock, sort, q: currentQuery };
 }
 
-function applyFilters() {
+// closeFiltersOnMobile — закрыть панель фильтров на мобильных после действия
+function closeFiltersOnMobile() {
+  if (window.innerWidth <= 768) {
+    document.getElementById('filters').classList.remove('open');
+  }
+}
+
+function applyFilters(closeMobile) {
   const f = getFilters();
   filtered = products.filter(p => {
     if (f.onlyStock && !p.inStock) return false;
@@ -156,6 +168,7 @@ function applyFilters() {
   else if (f.sort === 'discount') filtered.sort((a,b) => b.discount - a.discount);
   currentPage = 1;
   render();
+  if (closeMobile) closeFiltersOnMobile();
 }
 
 function render() {
@@ -198,7 +211,20 @@ function resetFilters() {
   document.getElementById('price-max').value = '';
   document.getElementById('filter-sale').checked = false;
   document.getElementById('filter-stock').checked = true;
-  applyFilters();
+  // Сбрасываем также поисковый запрос, если он был
+  currentQuery = '';
+  const hSearch = document.getElementById('header-search');
+  if (hSearch) hSearch.value = '';
+  const mSearch = document.getElementById('mobile-search-input');
+  if (mSearch) mSearch.value = '';
+  // Если в URL был ?q=... — уберём, чтобы при перезагрузке он не вернулся
+  if (location.search) {
+    const url = new URL(location.href);
+    url.searchParams.delete('q');
+    history.replaceState(null, '', url.toString());
+  }
+  document.getElementById('catalog-heading').innerHTML = 'Весь <span style="color:var(--green)">каталог</span>';
+  applyFilters(true);
 }
 
 // Top sales — P1S, P2S, A1, A1 Combo
@@ -243,25 +269,52 @@ document.getElementById('filter-toggle').addEventListener('click', () => {
   document.getElementById('filters').classList.toggle('open');
 });
 
-// Listen changes
-document.querySelectorAll('input[name="cat"]').forEach(el => el.addEventListener('change', applyFilters));
-document.getElementById('sort-select').addEventListener('change', applyFilters);
+// Listen sort change
+document.getElementById('sort-select').addEventListener('change', () => applyFilters());
+
+// === ПОИСК НА СТРАНИЦЕ КАТАЛОГА ===
+// Если пользователь печатает в шапке, фильтруем "на лету" без перезагрузки.
+// Это важно, т.к. на главной поиск через перезагрузку (initLayout) тоже работает,
+// но здесь мы переопределяем: пока юзер в каталоге — обновляем результаты сразу.
+function liveSearchSetup() {
+  const hSearch = document.getElementById('header-search');
+  const mSearch = document.getElementById('mobile-search-input');
+  const handler = (input) => () => {
+    currentQuery = input.value.trim();
+    if (currentQuery) {
+      document.getElementById('catalog-heading').innerHTML = `Поиск: <span style="color:var(--green)">${currentQuery}</span>`;
+    } else {
+      document.getElementById('catalog-heading').innerHTML = 'Весь <span style="color:var(--green)">каталог</span>';
+    }
+    applyFilters();
+  };
+  if (hSearch) {
+    // Заменяем стандартный keydown-handler на input — фильтруем при каждом нажатии
+    hSearch.addEventListener('input', handler(hSearch));
+  }
+  if (mSearch) {
+    mSearch.addEventListener('input', handler(mSearch));
+  }
+}
 
 // Heading
 if (urlCat) {
-  const names = { '3D принтеры персональные': '3D <span style="color:var(--green)">Принтеры</span>', 'Для 3D принтеров': 'Аксессуары и <span style="color:var(--green)">расходники</span>' };
+  const names = {
+    '3D принтеры персональные': '3D <span style="color:var(--green)">Принтеры</span>',
+    'Для 3D принтеров': 'Аксессуары и <span style="color:var(--green)">расходники</span>'
+  };
   if (names[urlCat]) document.getElementById('catalog-heading').innerHTML = names[urlCat];
 }
-if (urlQ) document.getElementById('catalog-heading').innerHTML = `Поиск: <span style="color:var(--green)">${urlQ}</span>`;
+if (currentQuery) {
+  document.getElementById('catalog-heading').innerHTML = `Поиск: <span style="color:var(--green)">${currentQuery}</span>`;
+}
 
 // Init
 buildSideFilters();
 renderBrands();
 renderHits();
+liveSearchSetup();
 applyFilters();
-
-// Mobile filter btn
-if (window.innerWidth <= 768) document.getElementById('filter-toggle').style.display = 'block';
 </script>
 </body>
 </html>
