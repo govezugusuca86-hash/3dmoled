@@ -77,8 +77,6 @@ function productCard(p, opts = {}) {
   const oldPrice = p.oldPrice > p.price ? `<span class="price-old">${formatPrice(p.oldPrice)}</span>` : '';
   const root = opts.root !== undefined ? opts.root : '';
   const href = `${root}pages/product.html?id=${p.id}`;
-  // Рейтинг магазина — общие звёзды со ссылкой на страницу отзывов
-  const ratingHtml = (typeof productRatingHtml === 'function') ? productRatingHtml(root) : '';
   return `
 <div class="product-card" data-id="${p.id}">
   <div class="card-img">
@@ -92,7 +90,6 @@ function productCard(p, opts = {}) {
     <div class="card-brand">${p.brand || ''}</div>
     <div class="card-name"><a href="${href}">${p.name}</a></div>
     ${tech}
-    ${ratingHtml}
     <div class="card-price">
       <span class="price-current">${formatPrice(p.price)}</span>
       ${oldPrice}
