@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Отзывы покупателей — 3DMoled</title>
+<meta name="description" content="Реальные отзывы покупателей магазина 3DMoled. Читайте впечатления о 3D принтерах и обслуживании.">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div id="header-root"></div>
+
+<div class="page-header">
+  <h1 style="max-width:1240px;margin:0 auto">Отзывы покупателей</h1>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="reviews-page-layout">
+      <aside class="reviews-summary" id="reviews-summary"></aside>
+      <div class="reviews-list" id="reviews-list"></div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-root"></div>
+
+<script src="../js/products.js"></script>
+<script src="../js/reviews.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/layout.js"></script>
+<script>
+document.getElementById('header-root').innerHTML = renderHeader({ root: '../', page: 'reviews' });
+document.getElementById('footer-root').innerHTML = renderFooter({ root: '../' });
+initLayout('../');
+
+function renderReviewsSummary() {
+  var avg = getAverageRating();
+  var count = reviews.length;
+  var counts = [0, 0, 0, 0, 0];
+  for (var i = 0; i < reviews.length; i++) {
+    counts[reviews[i].rating - 1]++;
+  }
+
+  var html = '<div class="reviews-summary-rating">' +
+    '<div class="reviews-summary-num">' + avg + '</div>' +
+    '<div class="reviews-summary-stars">' + starsHtml(5, 22) + '</div>' +
+    '<div class="reviews-summary-count">' + count + ' отзывов</div>' +
+  '</div>' +
+  '<div class="reviews-bars">';
+
+  for (var s = 5; s >= 1; s--) {
+    var c = counts[s - 1];
+    var pct = count > 0 ? Math.round(c / count * 100) : 0;
+    html += '<div class="reviews-bar">' +
+      '<span class="reviews-bar-label">' + s +
+        ' <svg viewBox="0 0 24 24" width="11" height="11" fill="#facc15" stroke="#facc15" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>' +
+      '</span>' +
+      '<div class="reviews-bar-track"><div class="reviews-bar-fill" style="width:' + pct + '%"></div></div>' +
+      '<span class="reviews-bar-count">' + c + '</span>' +
+    '</div>';
+  }
+
+  html += '</div>';
+  document.getElementById('reviews-summary').innerHTML = html;
+}
+
+function renderReviewsList() {
+  var sorted = reviews.slice().sort(function(a, b) {
+    return new Date(b.date) - new Date(a.date);
+  });
+  var html = '';
+  for (var i = 0; i < sorted.length; i++) {
+    html += reviewCardFull(sorted[i], '../');
+  }
+  document.getElementById('reviews-list').innerHTML = html;
+}
+
+renderReviewsSummary();
+renderReviewsList();
+</script>
+</body>
+</html>
