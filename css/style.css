@@ -20,8 +20,8 @@
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: var(--text); background: var(--bg); font-size: 15px; line-height: 1.6; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: var(--text); background: var(--bg); font-size: 15px; line-height: 1.6; overflow-x: hidden; max-width: 100vw; }
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; }
 button { cursor: pointer; font-family: inherit; }
@@ -72,7 +72,7 @@ button { cursor: pointer; font-family: inherit; }
 .section { padding: 48px 20px; }
 .section-gray { background: var(--bg-gray); }
 .container { max-width: 1240px; margin: 0 auto; }
-.section-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 28px; }
+.section-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 28px; flex-wrap: wrap; gap: 12px; }
 .section-title { font-size: 22px; font-weight: 700; }
 .section-title span { color: var(--green); }
 .link-more { color: var(--green); font-size: 14px; font-weight: 500; }
@@ -262,6 +262,25 @@ button { cursor: pointer; font-family: inherit; }
 .toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%) translateY(80px); background: #1f2937; color: #fff; padding: 12px 20px; border-radius: var(--radius); font-size: 14px; z-index: 300; opacity: 0; transition: all .3s; pointer-events: none; }
 .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
+/* FILTER TOGGLE BUTTON (mobile) */
+.filter-toggle-btn {
+  display: none;
+  align-items: center;
+  gap: 7px;
+  border: 1.5px solid var(--border-dark);
+  background: #fff;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  cursor: pointer;
+  transition: all .15s;
+  font-family: inherit;
+}
+.filter-toggle-btn:hover { border-color: var(--green); color: var(--green); }
+.filter-toggle-btn svg { color: var(--green); flex-shrink: 0; }
+
 /* RESPONSIVE */
 @media (max-width: 1024px) {
   .catalog-layout { grid-template-columns: 200px 1fr; }
@@ -275,19 +294,35 @@ button { cursor: pointer; font-family: inherit; }
   .logo { font-size: 18px; }
   .hero h1 { font-size: 28px; }
   .hero-stat strong { font-size: 22px; }
-  .catalog-layout { grid-template-columns: 1fr; }
-  .filters { position: static; display: none; }
-  .filters.open { display: block; margin-bottom: 16px; }
-  #filter-toggle { display: inline-flex !important; align-items: center; gap: 6px; }
+  .container { padding: 0 16px; }
+  .section { padding: 32px 0; }
+  .catalog-layout { grid-template-columns: 1fr; gap: 0; }
+  .filters {
+    position: static;
+    display: none;
+    width: 100%;
+    max-width: 100%;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+  .filters.open { display: block; }
+  .filter-toggle-btn { display: inline-flex !important; }
   .footer-main { grid-template-columns: 1fr; gap: 28px; }
   .search-wrap { display: none; }
   .vk-float span { display: none; }
-  .vk-float { padding: 13px; }
+  .vk-float { padding: 13px; right: 16px; bottom: 16px; }
+  .back-to-top { right: 16px; bottom: 76px; }
+  .section-head { gap: 12px; }
+  .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
 }
 @media (max-width: 480px) {
-  .product-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
   .hero { padding: 36px 16px; }
   .hero-stats { gap: 20px; }
+  .section-title { font-size: 19px; }
+  .card-body { padding: 10px 12px 12px; }
+  .price-current { font-size: 16px; }
 }
 
 /* HEADER TOP */
@@ -342,3 +377,96 @@ button { cursor: pointer; font-family: inherit; }
 /* GO TO CART BUTTON */
 .btn-go-cart { display:flex;align-items:center;justify-content:center;gap:6px;padding:9px 12px;background:#fff;color:var(--green);border:1.5px solid var(--green);border-radius:var(--radius-sm);font-size:13px;font-weight:500;text-decoration:none;transition:all .15s;white-space:nowrap; }
 .btn-go-cart:hover { background:var(--green);color:#fff; }
+
+/* ============== REVIEWS ============== */
+
+/* Рейтинг в карточке товара (ссылка на страницу отзывов) */
+.product-rating-link { display:inline-flex;align-items:center;gap:6px;text-decoration:none;color:var(--text-muted);font-size:12px;transition:color .15s;margin-bottom:8px; }
+.product-rating-link:hover { color:var(--green); }
+.product-rating-stars { display:inline-flex;gap:1px;line-height:0; }
+.product-rating-score { font-weight:600;color:var(--text); }
+.product-rating-count { color:var(--text-muted); }
+
+/* Блок отзывов на главной */
+.reviews-section { background:var(--bg-gray); }
+.reviews-overall { display:flex;align-items:center;gap:12px; }
+.reviews-overall-num { font-size:32px;font-weight:700;color:var(--text);line-height:1; }
+.reviews-overall-stars { display:inline-flex;gap:1px; }
+.reviews-overall-count { font-size:13px;color:var(--text-muted);margin-left:4px; }
+
+/* Карусель */
+.reviews-carousel { position:relative; }
+.reviews-track { display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:4px 4px 16px;scrollbar-width:thin;-webkit-overflow-scrolling:touch; }
+.reviews-track::-webkit-scrollbar { height:6px; }
+.reviews-track::-webkit-scrollbar-thumb { background:var(--border-dark);border-radius:3px; }
+.reviews-track .review-card { scroll-snap-align:start;flex:0 0 calc((100% - 32px) / 3);min-width:280px; }
+.carousel-btn { position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;background:#fff;border:1.5px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:var(--shadow-md);color:var(--text);z-index:2;transition:all .15s; }
+.carousel-btn:hover { border-color:var(--green);color:var(--green); }
+.carousel-prev { left:-18px; }
+.carousel-next { right:-18px; }
+
+/* Карточка отзыва */
+.review-card { background:#fff;border:1.5px solid var(--border);border-radius:var(--radius-lg);padding:18px;display:flex;flex-direction:column;gap:10px;transition:box-shadow .15s,border-color .15s; }
+.review-card:hover { box-shadow:var(--shadow-md);border-color:var(--green-mid); }
+
+.review-card-header { display:flex;align-items:center;gap:12px; }
+.review-avatar { width:48px;height:48px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid var(--border); }
+.review-avatar-placeholder { border-radius:50%;background:var(--green-light);color:var(--green-dark);display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;border:2px solid var(--green-mid); }
+.review-card-author { flex:1;min-width:0; }
+.review-card-name { font-size:15px;font-weight:600;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis; }
+.review-card-meta { font-size:12px;color:var(--text-muted);margin-top:2px; }
+.review-card-stars { display:flex;gap:1px; }
+.review-card-stars-right { display:flex;gap:1px;margin-left:auto;flex-shrink:0; }
+.review-card-text { font-size:14px;line-height:1.6;color:var(--text);display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden; }
+.review-card-text-full { font-size:15px;line-height:1.65;color:var(--text); }
+.review-verified { display:inline-flex;align-items:center;gap:5px;font-size:12px;color:var(--green-dark);background:var(--green-light);padding:4px 10px;border-radius:20px;align-self:flex-start;font-weight:500; }
+.review-verified svg { flex-shrink:0; }
+
+/* Фото в отзыве */
+.review-photo-wrap { margin-top:2px; }
+.review-photo-thumb { width:100%;max-height:160px;object-fit:cover;border-radius:var(--radius);cursor:zoom-in;transition:opacity .15s; }
+.review-photo-thumb:hover { opacity:.88; }
+.review-photo-wrap-full { margin-top:4px; }
+.review-photo-full { max-width:320px;max-height:240px;object-fit:cover;border-radius:var(--radius);cursor:zoom-in;transition:opacity .15s; }
+.review-photo-full:hover { opacity:.88; }
+
+/* Лайтбокс фото отзыва */
+.review-lightbox { display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:500;align-items:center;justify-content:center; }
+.review-lightbox.open { display:flex; }
+.review-lightbox-inner { position:relative;max-width:90vw;max-height:90vh; }
+.review-lightbox-inner img { max-width:90vw;max-height:90vh;object-fit:contain;border-radius:var(--radius); }
+.review-lightbox-close { position:absolute;top:-12px;right:-12px;width:36px;height:36px;background:#fff;border:none;border-radius:50%;font-size:20px;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:var(--shadow-md);color:var(--text); }
+
+/* Полная карточка (страница отзывов) */
+.review-card--full { padding:22px; }
+.review-card--full .review-card-text-full { -webkit-line-clamp:unset; }
+
+/* Страница отзывов */
+.reviews-page-layout { display:grid;grid-template-columns:280px 1fr;gap:28px;align-items:start; }
+.reviews-summary { background:#fff;border:1.5px solid var(--border);border-radius:var(--radius-lg);padding:24px;position:sticky;top:80px; }
+.reviews-summary-rating { text-align:center;margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--border); }
+.reviews-summary-num { font-size:48px;font-weight:700;color:var(--text);line-height:1; }
+.reviews-summary-stars { display:flex;justify-content:center;gap:1px;margin-top:8px; }
+.reviews-summary-count { font-size:13px;color:var(--text-muted);margin-top:8px; }
+.reviews-bars { display:flex;flex-direction:column;gap:8px; }
+.reviews-bar { display:flex;align-items:center;gap:10px;font-size:13px;padding:4px 0; }
+.reviews-bar-label { width:38px;display:flex;align-items:center;gap:3px;flex-shrink:0; }
+.reviews-bar-track { flex:1;height:6px;background:var(--bg-gray);border-radius:3px;overflow:hidden; }
+.reviews-bar-fill { height:100%;background:#facc15;border-radius:3px;transition:width .3s; }
+.reviews-bar-count { font-size:12px;color:var(--text-muted);width:24px;text-align:right;flex-shrink:0; }
+.reviews-list { display:flex;flex-direction:column;gap:16px; }
+
+/* Reviews responsive */
+@media (max-width:1024px) {
+  .reviews-page-layout { grid-template-columns:1fr; }
+  .reviews-summary { position:static; }
+}
+@media (max-width:768px) {
+  .reviews-track .review-card { flex:0 0 calc(100% - 16px);min-width:0; }
+  .carousel-prev { left:4px; }
+  .carousel-next { right:4px; }
+  .carousel-btn { width:36px;height:36px;opacity:.92; }
+  .reviews-overall-num { font-size:26px; }
+  .reviews-summary-num { font-size:38px; }
+  .review-card { padding:14px; }
+}
