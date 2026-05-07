@@ -58,6 +58,7 @@ function renderHeader(opts = {}) {
     <a href="${root}index.html?cat=3D+принтеры+персональные" class="nav-link${opts.page==='printers'?' active':''}">3D Принтеры</a>
     <a href="${root}index.html?cat=Для+3D+принтеров" class="nav-link${opts.page==='accessories'?' active':''}">Расходники</a>
     <a href="${root}pages/delivery.html" class="nav-link${opts.page==='delivery'?' active':''}">Доставка и оплата</a>
+    <a href="${root}pages/reviews.html" class="nav-link${opts.page==='reviews'?' active':''}">Отзывы</a>
     <a href="${root}pages/about.html" class="nav-link${opts.page==='about'?' active':''}">О магазине</a>
     <a href="${root}pages/contacts.html" class="nav-link${opts.page==='contacts'?' active':''}">Контакты</a>
   </div>
