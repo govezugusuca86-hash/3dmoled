@@ -1,82 +1,256 @@
 // ===== REVIEWS DATA =====
-// Чтобы добавить новый отзыв:
-// 1. Положи avatar и photo в img/reviews/
-// 2. Добавь объект в массив ниже
-// Поля: name, city, date, rating (1-5), text, avatar, photo (опционально), verified (true/false)
+// Фото хранятся на Cloudinary CDN (cloud: drnyjt1c5)
+// Чтобы добавить отзыв — добавь объект в массив reviews
 
-const reviews = [
+var reviews = [
   {
-    id: 'r1',
-    name: 'Сергей К.',
-    city: 'Бузулук',
-    date: '2025-03-12',
-    rating: 5,
-    text: 'Долго думали, решили, и не зря, печатает с коробки, программное обеспечение всё есть, рекомендую! Это первый принтер, но всё понятно, порадовала система AMS, хотим взять ещё одну на 4 катушки! Продавцу огромное спасибо!!!!',
-    avatar: 'img/reviews/avatar1.jpg',
-    photo: 'img/reviews/photo1.jpg',
-    verified: true
+    "id": "r1",
+    "name": "Сергей К.",
+    "city": "Бузулук",
+    "date": "2025-01-15",
+    "rating": 5,
+    "text": "Долго думали, решили, и не зря, печатает с коробки, программное обеспечение всё есть, рекомендую! Это первый принтер, но всё понятно, порадовала система AMS, хотим взять ещё одну на 4 катушки! Продавцу огромное спасибо!!!!",
+    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141534/avatar1_jvk9iv.jpg",
+    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141539/photo1_npmnmb.jpg",
+    "verified": true
   },
   {
-    id: 'r2',
-    name: 'Алексей М.',
-    city: 'Оренбург',
-    date: '2025-05-02',
-    rating: 5,
-    text: 'Заказывал Bambu Lab P1S с доставкой в Оренбург. Пришёл за 3 дня, всё упаковано идеально. Принтер настроился за 15 минут, первая печать — просто огонь. Качество слоёв на 0.2 мм уже отличное, а на 0.08 вообще как заводская деталь. Магазин рекомендую!',
-    avatar: null,
-    photo: null,
-    verified: true
+    "id": "r2",
+    "name": "Дмитрий А.",
+    "city": "Оренбург",
+    "date": "2025-01-28",
+    "rating": 5,
+    "text": "Пока я в шоке, это что-то нереально классное. Я доволен. Работает не громко. Пока только начали печатать, но я уже доволен, разбираться ещё конечно долго, но бесплатные модельки распечатает даже ребенок. Менеджеру отдельное спасибо, помог с оформлением и оплатой, после оплаты выслали на следующий день, благодарю!",
+    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141535/avatar2_qi04wn.jpg",
+    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141539/photo2_tprvj4.jpg",
+    "verified": true
   },
   {
-    id: 'r3',
-    name: 'Дмитрий В.',
-    city: 'Самара',
-    date: '2025-01-28',
-    rating: 5,
-    text: 'Третий принтер беру именно тут. Сначала был Ender-3, потом Elegoo Mars, теперь вот Bambu A1 Combo. Каждый раз консультировали по телефону, помогали с выбором. Цены на уровне маркетплейсов, зато гарантия нормальная и можно спросить если что-то не понятно.',
-    avatar: null,
-    photo: null,
-    verified: true
+    "id": "r3",
+    "name": "Максим В.",
+    "city": "Самара",
+    "date": "2025-02-10",
+    "rating": 5,
+    "text": "Очень понравился принтер, первый, раньше никаких не было, сравнить не с чем. Инструкция очень подробная на русском, собирать и все подключать по ней легко. Сам принтер тоже на русском языке, все легко настраивается, быстрая печать с мобильного приложения, выбрал и отправил на печать. Поддерживает 4 катушки и как понял, что можно еще 5-ую вешать сбоку, но пока и верхних хватает. Внутри есть камера и удобно следить иногда за процессом.",
+    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141538/avatar3_n4vhsz.jpg",
+    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141540/photo3_ajcoes.jpg",
+    "verified": true
   },
   {
-    id: 'r4',
-    name: 'Наталья Р.',
-    city: 'Бузулук',
-    date: '2025-04-15',
-    rating: 5,
-    text: 'Покупала мужу на день рождения Creality K1C. Ничего не понимаю в 3D принтерах, но в магазине всё объяснили, помогли выбрать. Муж в восторге, печатает каждый день! Спасибо за терпение и подробные ответы на все мои вопросы.',
-    avatar: null,
-    photo: null,
-    verified: true
+    "id": "r4",
+    "name": "Андрей Л.",
+    "city": "Бугуруслан",
+    "date": "2025-02-22",
+    "rating": 5,
+    "text": "Отличная доставка, все в целости и сохранности. Отдельное спасибо менеджеру, который рассказал и подсказал как по принтеру, так и по оформлению и оплате! Сам принтер отличный, печатает из под коробки! Спасибо!",
+    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141537/avatar4_vt2ugj.jpg",
+    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141540/photo4_dcwzi9.jpg",
+    "verified": true
   },
   {
-    id: 'r5',
-    name: 'Игорь Л.',
-    city: 'Бугуруслан',
-    date: '2025-02-19',
-    rating: 5,
-    text: 'Взял Elegoo Saturn для печати миниатюр. Детализация потрясающая — каждый элемент чёткий. Доставили быстро, всё было в наличии. Отдельное спасибо за бонусом положенную смолу — приятный сюрприз!',
-    avatar: null,
-    photo: null,
-    verified: true
+    "id": "r5",
+    "name": "Елена П.",
+    "city": "Новотроицк",
+    "date": "2025-03-05",
+    "rating": 5,
+    "text": "Пришел целый. Брали в подарок сыну на ДР. Крутейшая конечно техника. Как я понял, нужно покупать хороший пластик и соблюдать влажность и чистоту при работе. Будем покупать AMS систему для многоцветной печати. Рекомендую продавца.",
+    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141544/avatar5_w9slez.jpg",
+    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141540/photo5_lmkcot.jpg",
+    "verified": true
   },
   {
-    id: 'r6',
-    name: 'Андрей Ш.',
-    city: 'Новотроицк',
-    date: '2025-06-01',
-    rating: 5,
-    text: 'Брал расходники — PLA и PETG пластик. Цены нормальные, выбор хороший. Что удобно — можно заказать по телефону и забрать самовывозом. Буду покупать ещё, когда пластик закончится.',
-    avatar: null,
-    photo: null,
-    verified: false
+    "id": "r6",
+    "name": "Артём С.",
+    "city": "Орск",
+    "date": "2025-03-18",
+    "rating": 5,
+    "text": "Это мой первый принтер, очень долго выбирал сравнивал с различными другими но остановился на этой модели и не пожалел, распаковал включил сделал калибровку в течении 20 минут, загрузил пластик и сразу начал печатать без танцев с бубном. Качество печати пластиком PLA понравилось. Менеджер отвечает на вопросы быстро. Рекомендую к покупке.",
+    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141545/avatar6_f4e3pr.jpg",
+    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141540/photo6_onda2h.jpg",
+    "verified": true
+  },
+  {
+    "id": "r7",
+    "name": "Павел М.",
+    "city": "Тольятти",
+    "date": "2025-03-30",
+    "rating": 5,
+    "text": "Очень давно хотел купить себе принтер. Выбор пал на эту модель, т.к она подходит для начинающих и с ней легко справится. Пока тестируем и учимся. После оформления и оплаты отгрузили на следующий день. Упаковано знатно, ничего не повредилось при доставке, спасибо!",
+    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141537/avatar7_ocy3ei.jpg",
+    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141540/photo7_n8yg5o.jpg",
+    "verified": true
+  },
+  {
+    "id": "r8",
+    "name": "Иван Р.",
+    "city": "Сорочинск",
+    "date": "2025-04-08",
+    "rating": 5,
+    "text": "Для меня он бесшумный, никаких танцев с бубном, в бамбухэнди чего только нет, слайсеры удобный. Качество печати на высоте. Стенки гладкие получаются, поддержки отрываются легко. Вообще огонь. Я доволен. Есть с чем сравнивать.",
+    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141551/avatar8_y8dkki.jpg",
+    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141541/photo8_ysc8m3.jpg",
+    "verified": true
+  },
+  {
+    "id": "r9",
+    "name": "Олег Н.",
+    "city": "Бузулук",
+    "date": "2025-04-20",
+    "rating": 5,
+    "text": "Легкий в управлении, не шумный, удобный интерфейс, печатает на «ура», очень понравился. Долго выбирал, спрашивал у менеджера, но отдал предпочтение этой модели, оформление очень удобное и оплата тоже! Рекомендую к покупке.",
+    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141546/avatar9_sgkbpk.jpg",
+    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141541/photo9_i1sd0z.jpg",
+    "verified": true
+  },
+  {
+    "id": "r10",
+    "name": "Виктор Ш.",
+    "city": "Уфа",
+    "date": "2025-05-02",
+    "rating": 5,
+    "text": "Доставка супер, после оформления и оплаты отправили. Принтер приехал на 2 дня раньше срока, все целое, сборка заняла 5 минут! Калибровка и обновление прошивки еще 25 минут, принтер печатает сразу после калибровки, никаких доп настроек не нужно.",
+    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141549/avatar10_oaka7w.jpg",
+    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141541/photo10_nfjgnq.jpg",
+    "verified": true
+  },
+  {
+    "id": "r11",
+    "name": "Алексей Г.",
+    "city": "Казань",
+    "date": "2025-05-15",
+    "rating": 5,
+    "text": "Доставка отличная, ничего не повредили. Собрали, подключили, установили приложение, он провел тесты и калибровку, всё в идеале. Визуальные впечатления абсолютно восторженные.",
+    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141547/avatar11_cmro9p.jpg",
+    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141541/photo11_lmnzu1.jpg",
+    "verified": true
+  },
+  {
+    "id": "r12",
+    "name": "Роман Д.",
+    "city": "Саратов",
+    "date": "2025-05-27",
+    "rating": 5,
+    "text": "Получил принтер в назначенный срок, коробка целая, упаковано очень качественно, по каждым мелочам видно качественный и оригинальный продукт. Очень доволен. Сборка не составила труда. Принтер однозначно рекомендую у этого продавца.",
+    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141547/avatar12_rj7395.jpg",
+    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141541/photo12_tx8gyo.jpg",
+    "verified": true
+  },
+  {
+    "id": "r13",
+    "name": "Николай Б.",
+    "city": "Пенза",
+    "date": "2025-06-06",
+    "rating": 5,
+    "text": "Принтер пушка! Менеджер помог с выбором и объяснил по оформлению, оплатил — отправили, все четко! Всем рекомендую, удобный в сборке, удобный в настройках, да и вообще просто лучший!",
+    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141549/avatar13_vj1avr.jpg",
+    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141541/photo13_s0s6wp.jpg",
+    "verified": true
+  },
+  {
+    "id": "r14",
+    "name": "Михаил Т.",
+    "city": "Бузулук",
+    "date": "2025-06-18",
+    "rating": 5,
+    "text": "Здорово, принтер просто бомба! Спасибо продавцу, доставили раньше срока за день! Первый принтер, особо сравнивать не с чем. Но свои задачи выполняет. Печатает качественно.",
+    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141536/avatar14_f27a9b.jpg",
+    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141541/photo14_h4sx23.jpg",
+    "verified": true
+  },
+  {
+    "id": "r15",
+    "name": "Наталья Р.",
+    "city": "Бузулук",
+    "date": "2025-06-29",
+    "rating": 5,
+    "text": "Мой первый принтер и я пока довольна, ничего в 3д печати не шарю совсем, но у меня получилось что-то напечатать и я рада! Менеджер всегда был на связи, от момента оформления и оплаты, до момента получения, самый лучший магазин!",
+    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141535/avatar15_sxewnc.jpg",
+    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141541/photo15_exvz8c.jpg",
+    "verified": true
+  },
+  {
+    "id": "r16",
+    "name": "Кирилл Ж.",
+    "city": "Оренбург",
+    "date": "2025-07-10",
+    "rating": 5,
+    "text": "Наш первый 3Д принтер! Довольны! Решили взять флагманский 3D-принтер. Двойная экструзия, высокое качество печати. Высокие стандарты скорости. Работает из коробки, удобное ПО, простота настройки. Добротная, монолитная конструкция.",
+    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141536/avatar16_fop655.jpg",
+    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141542/photo16_yqzkeo.jpg",
+    "verified": true
+  },
+  {
+    "id": "r17",
+    "name": "Евгений Ф.",
+    "city": "Самара",
+    "date": "2025-07-22",
+    "rating": 5,
+    "text": "Доставка быстрая. Пришла посылка за 3-е суток. Упаковка качественная, все в целости и сохранности. Пересмотрел много видеообзоров и нашел ваш магазин с приятными ценами! После оформления и оплаты выслали в этот же вечер. Всё быстро, легко и качественно. Спасибо.",
+    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141536/avatar17_sdefw7.jpg",
+    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141542/photo17_bqqgcw.jpg",
+    "verified": true
+  },
+  {
+    "id": "r18",
+    "name": "Денис О.",
+    "city": "Орск",
+    "date": "2025-08-03",
+    "rating": 5,
+    "text": "Принтер порадовал, соответствует описанию, выглядит надежно. Пластика в комплекте нет, не знал об этом, надо заказывать сразу. Работает из под коробки. Рекомендую!",
+    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141537/avatar18_dppm7b.jpg",
+    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141542/photo18_frgeck.jpg",
+    "verified": true
+  },
+  {
+    "id": "r19",
+    "name": "Антон З.",
+    "city": "Бугуруслан",
+    "date": "2025-08-15",
+    "rating": 5,
+    "text": "Вот и пришел ко мне долгожданный! Менеджер красавчик, все рассказал, объяснил, очень удобная оплата, после нее отправили на следующее утро. Принтер упакован надёжно. Из коробки заработал без танцев с бубном. Цена приятная. Продавца однозначно рекомендую.",
+    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141538/avatar19_cdhqf6.jpg",
+    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141542/photo19_cjlgsm.jpg",
+    "verified": true
+  },
+  {
+    "id": "r20",
+    "name": "Владимир Е.",
+    "city": "Тольятти",
+    "date": "2025-08-28",
+    "rating": 5,
+    "text": "Ставлю 5+, сравнить не с чем так как я новичок в 3d печати, но распечатка и настройка заняла 20 мин. В приложении очень много готовых образов, можно находясь в любой точке планеты запустить принтер через смартфон и наблюдать через встроенную камеру.",
+    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141539/avatar20_prfzsj.jpg",
+    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141542/photo20_y4lwal.jpg",
+    "verified": true
+  },
+  {
+    "id": "r21",
+    "name": "Александр Х.",
+    "city": "Оренбург",
+    "date": "2025-09-08",
+    "rating": 5,
+    "text": "Печатает из коробки, калибровка потока прекрасно подстраивает принтер под филамент сторонних производителей. Сушка в AMS — просто супер. Оставил 4 катушки на ночь, утром сухой материал с отличным качеством печати. Компактный, удалось установить AMS не на принтере, а рядом, отлично работает.",
+    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141539/avatar21_vp4zew.jpg",
+    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141542/photo21_jdwkeb.jpg",
+    "verified": true
+  },
+  {
+    "id": "r22",
+    "name": "Тимур И.",
+    "city": "Бузулук",
+    "date": "2025-09-20",
+    "rating": 5,
+    "text": "Печатает из коробки, калибровка потока прекрасно подстраивает принтер под филамент сторонних производителей. Сушка в AMS — просто супер. Компактный, отлично работает.",
+    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141539/avatar22_cxflmf.jpg",
+    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141543/photo22_xwy8kw.jpg",
+    "verified": true
   }
 ];
 
 // Средний рейтинг
 function getAverageRating() {
   if (!reviews.length) return 0;
-  return (reviews.reduce((s, r) => s + r.rating, 0) / reviews.length).toFixed(1);
+  return (reviews.reduce(function(s, r) { return s + r.rating; }, 0) / reviews.length).toFixed(1);
 }
 
 // Форматирование даты
@@ -100,32 +274,19 @@ function starsHtml(rating, size) {
   return html;
 }
 
-// Генерация аватара (фото или инициал)
-function reviewAvatar(r, size) {
-  size = size || 48;
-  if (r.avatar) {
-    return '<img src="' + r.avatar + '" alt="' + r.name + '" class="review-avatar" style="width:'+size+'px;height:'+size+'px;">';
-  }
-  var initial = r.name.charAt(0).toUpperCase();
-  return '<div class="review-avatar-placeholder" style="width:'+size+'px;height:'+size+'px;font-size:'+Math.round(size*0.42)+'px;">'+initial+'</div>';
-}
-
-// Карточка отзыва для главной (компактная)
+// Карточка отзыва (компактная, для главной)
 function reviewCardSmall(r, root) {
   root = root || '';
-  var avatarSrc = r.avatar ? root + r.avatar : '';
-  var photoHtml = r.photo ? '<div class="review-photo-wrap"><img src="'+root+r.photo+'" alt="Фото от '+r.name+'" class="review-photo-thumb" onclick="openReviewPhoto(this.src)"></div>' : '';
-  var verified = r.verified ? '<span class="review-verified"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Подтверждённый отзыв</span>' : '';
-  // Fix avatar path
   var avatarHtml;
   if (r.avatar) {
-    avatarHtml = '<img src="'+root+r.avatar+'" alt="'+r.name+'" class="review-avatar" style="width:48px;height:48px;">';
+    avatarHtml = '<img src="'+r.avatar+'" alt="'+r.name+'" class="review-avatar" style="width:48px;height:48px;">';
   } else {
     avatarHtml = '<div class="review-avatar-placeholder" style="width:48px;height:48px;font-size:20px;">'+r.name.charAt(0)+'</div>';
   }
+  var photoHtml = r.photo ? '<div class="review-photo-wrap"><img src="'+r.photo+'" alt="Фото от '+r.name+'" class="review-photo-thumb" onclick="openReviewPhoto(this.src)"></div>' : '';
+  var verified = r.verified ? '<span class="review-verified"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Подтверждённый отзыв</span>' : '';
   return '<div class="review-card">' +
-    '<div class="review-card-header">' +
-      avatarHtml +
+    '<div class="review-card-header">' + avatarHtml +
       '<div class="review-card-author">' +
         '<div class="review-card-name">'+r.name+'</div>' +
         '<div class="review-card-meta">'+r.city+' · '+formatReviewDate(r.date)+'</div>' +
@@ -133,25 +294,23 @@ function reviewCardSmall(r, root) {
     '</div>' +
     '<div class="review-card-stars">'+starsHtml(r.rating)+'</div>' +
     '<div class="review-card-text">'+r.text+'</div>' +
-    photoHtml +
-    verified +
+    photoHtml + verified +
   '</div>';
 }
 
-// Карточка отзыва для страницы отзывов (полная)
+// Карточка отзыва (полная, для страницы отзывов)
 function reviewCardFull(r, root) {
   root = root || '../';
   var avatarHtml;
   if (r.avatar) {
-    avatarHtml = '<img src="'+root+r.avatar+'" alt="'+r.name+'" class="review-avatar" style="width:56px;height:56px;">';
+    avatarHtml = '<img src="'+r.avatar+'" alt="'+r.name+'" class="review-avatar" style="width:56px;height:56px;">';
   } else {
     avatarHtml = '<div class="review-avatar-placeholder" style="width:56px;height:56px;font-size:23px;">'+r.name.charAt(0)+'</div>';
   }
-  var photoHtml = r.photo ? '<div class="review-photo-wrap-full"><img src="'+root+r.photo+'" alt="Фото от '+r.name+'" class="review-photo-full" onclick="openReviewPhoto(this.src)"></div>' : '';
+  var photoHtml = r.photo ? '<div class="review-photo-wrap-full"><img src="'+r.photo+'" alt="Фото от '+r.name+'" class="review-photo-full" onclick="openReviewPhoto(this.src)"></div>' : '';
   var verified = r.verified ? '<span class="review-verified"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Подтверждённый отзыв</span>' : '';
   return '<div class="review-card review-card--full">' +
-    '<div class="review-card-header">' +
-      avatarHtml +
+    '<div class="review-card-header">' + avatarHtml +
       '<div class="review-card-author">' +
         '<div class="review-card-name">'+r.name+'</div>' +
         '<div class="review-card-meta">'+r.city+' · '+formatReviewDate(r.date)+'</div>' +
@@ -159,12 +318,11 @@ function reviewCardFull(r, root) {
       '<div class="review-card-stars-right">'+starsHtml(r.rating, 16)+'</div>' +
     '</div>' +
     '<div class="review-card-text-full">'+r.text+'</div>' +
-    photoHtml +
-    verified +
+    photoHtml + verified +
   '</div>';
 }
 
-// Блок рейтинга для карточки товара (звёзды + ссылка)
+// Рейтинг для карточки товара
 function productRatingHtml(root) {
   root = root || '';
   var avg = getAverageRating();
@@ -176,7 +334,7 @@ function productRatingHtml(root) {
   '</a>';
 }
 
-// Лайтбокс для фото отзыва
+// Лайтбокс
 function openReviewPhoto(src) {
   var lb = document.getElementById('review-lightbox');
   if (!lb) {
@@ -198,59 +356,47 @@ function closeReviewPhoto() {
   document.body.style.overflow = '';
 }
 
-// ===== CAROUSEL FOR HOMEPAGE =====
-// Usage: initReviewsCarousel('reviews-home', { root: '', max: 6 })
+// Карусель на главной
 function initReviewsCarousel(containerId, opts) {
   opts = opts || {};
   var root = opts.root || '';
-  var max = opts.max || 6;
+  var max = opts.max || 10;
   var container = document.getElementById(containerId);
   if (!container || !reviews.length) return;
-
   var avg = getAverageRating();
   var count = reviews.length;
   var shown = reviews.slice(0, max);
-
-  var html = '' +
-    '<div class="section-head">' +
+  var html = '<div class="section-head">' +
       '<div>' +
         '<h2 class="section-title">Отзывы <span>покупателей</span></h2>' +
         '<div class="reviews-overall" style="margin-top:10px">' +
-          '<span class="reviews-overall-num">' + avg + '</span>' +
-          '<span class="reviews-overall-stars">' + starsHtml(5, 18) + '</span>' +
-          '<span class="reviews-overall-count">' + count + ' отзывов</span>' +
+          '<span class="reviews-overall-num">'+avg+'</span>' +
+          '<span class="reviews-overall-stars">'+starsHtml(5, 18)+'</span>' +
+          '<span class="reviews-overall-count">'+count+' отзывов</span>' +
         '</div>' +
       '</div>' +
-      '<a href="' + root + 'pages/reviews.html" class="link-more">Все отзывы</a>' +
+      '<a href="'+root+'pages/reviews.html" class="link-more">Все отзывы</a>' +
     '</div>' +
     '<div class="reviews-carousel">' +
       '<button class="carousel-btn carousel-prev" id="rev-prev" aria-label="Назад">' +
         '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>' +
       '</button>' +
       '<div class="reviews-track" id="rev-track">';
-
   for (var i = 0; i < shown.length; i++) {
     html += reviewCardSmall(shown[i], root);
   }
-
   html += '</div>' +
       '<button class="carousel-btn carousel-next" id="rev-next" aria-label="Вперёд">' +
         '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>' +
       '</button>' +
     '</div>';
-
   container.innerHTML = html;
-
-  // Carousel scroll buttons
   var track = document.getElementById('rev-track');
   var prevBtn = document.getElementById('rev-prev');
   var nextBtn = document.getElementById('rev-next');
   if (track && prevBtn && nextBtn) {
-    var scrollAmount = function() {
-      var card = track.querySelector('.review-card');
-      return card ? card.offsetWidth + 16 : 300;
-    };
-    prevBtn.addEventListener('click', function() { track.scrollBy({ left: -scrollAmount(), behavior: 'smooth' }); });
-    nextBtn.addEventListener('click', function() { track.scrollBy({ left: scrollAmount(), behavior: 'smooth' }); });
+    var scrollAmt = function() { var c = track.querySelector('.review-card'); return c ? c.offsetWidth + 16 : 300; };
+    prevBtn.addEventListener('click', function() { track.scrollBy({left: -scrollAmt(), behavior: 'smooth'}); });
+    nextBtn.addEventListener('click', function() { track.scrollBy({left: scrollAmt(), behavior: 'smooth'}); });
   }
 }
