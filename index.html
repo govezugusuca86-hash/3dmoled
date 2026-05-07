@@ -25,6 +25,10 @@ ym(108699019,"init",{ssr:true,webvisor:true,clickmap:true,ecommerce:"dataLayer",
     <img src="img/banner.jpg" alt="3DMoled — Магазин 3D принтеров. В наличии. Доставка. Гарантия." class="banner-img">
   </a>
 </section>
+<!-- REVIEWS CAROUSEL -->
+<section class="section reviews-section">
+  <div class="container" id="reviews-home"></div>
+</section>
 <!-- BRANDS -->
 <section class="section section-gray">
   <div class="container">
@@ -105,6 +109,7 @@ ym(108699019,"init",{ssr:true,webvisor:true,clickmap:true,ecommerce:"dataLayer",
 <div id="footer-root"></div>
 
 <script src="js/products.js"></script>
+<script src="js/reviews.js"></script>
 <script src="js/app.js"></script>
 <script src="js/layout.js"></script>
 <script>
@@ -326,6 +331,7 @@ if (currentQuery) {
 buildSideFilters();
 renderBrands();
 renderHits();
+initReviewsCarousel('reviews-home', { root: '', max: 10 });
 liveSearchSetup();
 applyFilters();
 </script>
