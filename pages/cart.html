@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Корзина — 3DMoled</title>
+<title>Корзина — 3Dxob</title>
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <link rel="stylesheet" href="../css/style.css">
 <!-- Yandex.Metrika counter -->
@@ -24,12 +24,13 @@ ym(108699019,"init",{ssr:true,webvisor:true,clickmap:true,ecommerce:"dataLayer",
 
 <div id="footer-root"></div>
 <script src="../js/products.js"></script>
+<script src="../js/reviews.js"></script>
 <script src="../js/app.js"></script>
 <script src="../js/layout.js"></script>
 <script>
 document.getElementById('header-root').innerHTML = renderHeader({ root: '../' });
 document.getElementById('footer-root').innerHTML = renderFooter({ root: '../' });
-initSearch('#header-search', '../');
+initLayout('../');
 
 function render() {
   const items = Cart.get();
@@ -74,7 +75,7 @@ function render() {
         <span class="summary-total">Итого:</span>
         <span class="summary-total">${formatPrice(total)}</span>
       </div>
-      <a href="https://vk.ru/3dmoled56" target="_blank" style="display:block;margin-top:16px;background:var(--green);color:#fff;text-align:center;padding:14px;border-radius:10px;font-size:16px;font-weight:600">Оформить заказ в VK</a>
+      <a href="https://vk.com/3dxob_shop" target="_blank" style="display:block;margin-top:16px;background:var(--green);color:#fff;text-align:center;padding:14px;border-radius:10px;font-size:16px;font-weight:600">Оформить заказ в VK</a>
       <p style="font-size:12px;color:var(--text-muted);text-align:center;margin-top:10px">Нажимая кнопку, вы откроете чат с менеджером во ВКонтакте</p>
       <a href="../index.html" style="display:block;text-align:center;margin-top:12px;font-size:14px;color:var(--green)">← Продолжить покупки</a>
     </div>
