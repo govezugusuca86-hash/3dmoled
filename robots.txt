@@ -1,3 +1,8 @@
 User-agent: *
 Allow: /
-Sitemap: https://3dmoled.ru/sitemap.xml
+Disallow: /pages/cart.html
+Disallow: /pages/favorites.html
+
+Sitemap: https://3dxob.ru/sitemap.xml
+
+Host: 3dxob.ru
