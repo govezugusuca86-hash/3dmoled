@@ -12,10 +12,10 @@ function renderHeader(opts = {}) {
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.7a16 16 0 0 0 6.29 6.29l.97-1.06a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         +7 (3534) 23-52-37
       </span>
-      <span class="header-top-item">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-        Работаем ежедневно
-      </span>
+      <a href="https://t.me/manager_3dxob" target="_blank" rel="noopener" class="header-top-item header-top-link">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>
+        Telegram
+      </a>
     </div>
   </div>
   <div class="header-main">
@@ -73,9 +73,12 @@ function renderFooter(opts = {}) {
     <div class="footer-brand">
       <div class="logo" style="color:#4ade80;margin-bottom:12px;font-size:20px">3D<span style="color:#9ca3af">xob</span></div>
       <p>Магазин 3D принтеров в Белгороде. Работаем с 2020 года. Доставка по всей России.</p>
-      <div style="margin-top:16px">
-        <a href="https://vk.me/3dxob_shop" target="_blank" style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;background:#0077ff;border-radius:8px;color:#fff">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.408 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4.03 8.57 4.03 8.096c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.677.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.204.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.253-1.406 2.151-3.574 2.151-3.574.119-.254.322-.491.762-.491h1.744c.525 0 .643.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.202 1.253.745.847 1.32 1.558 1.473 2.049.17.491-.085.745-.576.745z"/></svg>
+      <div style="margin-top:16px;display:flex;gap:10px">
+        <a href="https://t.me/manager_3dxob" target="_blank" rel="noopener" aria-label="Telegram" style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;background:#29b6f6;border-radius:8px;color:#fff">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>
+        </a>
+        <a href="https://max.ru/u/f9LHodD0cOLbPms83NhpLUuBMuNHSX0ACmj8j15deTMlhrJ55qC9Y1KHtdQ" target="_blank" rel="noopener" aria-label="MAX" style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;background:#1a1a1a;border-radius:8px;color:#fff">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 4h4l5 7 5-7h4v16h-4V11l-5 7-5-7v9H3V4z"/></svg>
         </a>
       </div>
     </div>
@@ -112,6 +115,14 @@ function renderFooter(opts = {}) {
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink:0;margin-top:2px;color:#4ade80"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
           Белгород, ул. Щорса, 8Д, 1 эт.
         </li>
+        <li style="display:flex;align-items:flex-start;gap:8px">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0;margin-top:2px;color:#29b6f6"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>
+          <a href="https://t.me/manager_3dxob" target="_blank" rel="noopener">Telegram: @manager_3dxob</a>
+        </li>
+        <li style="display:flex;align-items:flex-start;gap:8px">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0;margin-top:2px;color:#1a1a1a"><path d="M3 4h4l5 7 5-7h4v16h-4V11l-5 7-5-7v9H3V4z"/></svg>
+          <a href="https://max.ru/u/f9LHodD0cOLbPms83NhpLUuBMuNHSX0ACmj8j15deTMlhrJ55qC9Y1KHtdQ" target="_blank" rel="noopener">Написать в MAX</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -125,11 +136,6 @@ function renderFooter(opts = {}) {
     </div>
   </div>
 </footer>
-
-<a href="https://vk.me/3dxob_shop" target="_blank" class="vk-float">
-  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.408 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4.03 8.57 4.03 8.096c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.677.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.204.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.253-1.406 2.151-3.574 2.151-3.574.119-.254.322-.491.762-.491h1.744c.525 0 .643.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.202 1.253.745.847 1.32 1.558 1.473 2.049.17.491-.085.745-.576.745z"/></svg>
-  <span>Написать в VK</span>
-</a>
 
 <button class="back-to-top" id="back-to-top" aria-label="Наверх">
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>

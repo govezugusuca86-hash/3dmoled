@@ -32,6 +32,8 @@ document.getElementById('header-root').innerHTML = renderHeader({ root: '../' })
 document.getElementById('footer-root').innerHTML = renderFooter({ root: '../' });
 initLayout('../');
 
+let isSubmitting = false; // защита от двойного клика
+
 function render() {
   const items = Cart.get();
   const root = document.getElementById('cart-root');
@@ -75,9 +77,17 @@ function render() {
         <span class="summary-total">Итого:</span>
         <span class="summary-total">${formatPrice(total)}</span>
       </div>
-      <a href="https://vk.com/3dxob_shop" target="_blank" style="display:block;margin-top:16px;background:var(--green);color:#fff;text-align:center;padding:14px;border-radius:10px;font-size:16px;font-weight:600">Оформить заказ в VK</a>
-      <p style="font-size:12px;color:var(--text-muted);text-align:center;margin-top:10px">Нажимая кнопку, вы откроете чат с менеджером во ВКонтакте</p>
-      <a href="../index.html" style="display:block;text-align:center;margin-top:12px;font-size:14px;color:var(--green)">← Продолжить покупки</a>
+
+      <button id="checkout-btn" class="btn-checkout" onclick="submitOrder()">
+        <span id="checkout-btn-text">Оформить заказ</span>
+      </button>
+      <div id="checkout-error" class="checkout-error"></div>
+
+      <div class="checkout-note">
+        <strong>Мы не звоним клиентам.</strong> После нажатия мы зафиксируем заказ и покажем вам номер. Чтобы мы начали сборку — напишите нам в Telegram или MAX (кнопки появятся на следующем шаге).
+      </div>
+
+      <a href="../index.html" style="display:block;text-align:center;margin-top:14px;font-size:14px;color:var(--green)">← Продолжить покупки</a>
     </div>
   </div>`;
 }
@@ -91,6 +101,42 @@ function changeQty(id, delta) {
   render();
 }
 function removeItem(id) { Cart.remove(id); render(); showToast('Товар удалён'); }
+
+async function submitOrder() {
+  if (isSubmitting) return;
+  if (Cart.get().length === 0) return;
+
+  isSubmitting = true;
+  setTimeout(function () { isSubmitting = false; }, 10000); // 10 сек блокировка
+
+  const btn = document.getElementById('checkout-btn');
+  const btnText = document.getElementById('checkout-btn-text');
+  const errBox = document.getElementById('checkout-error');
+
+  btn.disabled = true;
+  btn.classList.remove('btn-checkout--error');
+  errBox.classList.remove('show');
+  btnText.textContent = 'Оформляем…';
+
+  // Метрика
+  try { if (typeof ym === 'function') ym(108699019, 'reachGoal', 'order_submit'); } catch (e) {}
+
+  try {
+    const result = await Cart.submitOrder();
+    // Сохраняем заказ для success-страницы
+    sessionStorage.setItem('gg_last_order', JSON.stringify(result));
+    Cart.clear();
+    window.location.href = 'success.html';
+  } catch (err) {
+    console.error('Ошибка оформления:', err);
+    btn.classList.add('btn-checkout--error');
+    btnText.textContent = 'Попробовать ещё раз';
+    btn.disabled = false;
+    errBox.textContent = 'Не удалось оформить заказ. Проверьте интернет-соединение и попробуйте ещё раз. Если ошибка повторяется — напишите нам в Telegram, мы оформим заказ вручную.';
+    errBox.classList.add('show');
+    isSubmitting = false;
+  }
+}
 
 render();
 </script>
