@@ -7,11 +7,11 @@
 // URL веб-приложения Google Apps Script (см. SETUP_GUIDE.md).
 // Если пусто или сервер недоступен — заказ оформится в офлайн-режиме
 // с локальным номером и пометкой isPending.
-window.ORDER_WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbzIjRjcdKspENMAJwmVBnc_QoeFlWeQD_xcxoE3n8D_kp6tT9comeUv2VEl9Celt-WL/exec';
+window.ORDER_WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbx7YM0QEcPn__H6bL8RZiLW5PQ215RS0PljmniBxTXSJQRZ_Eg9WWtRiZsf-gLdczBMng/exec';
 
 // Контакты менеджера для виджета и success-страницы.
 window.TG_URL  = 'https://t.me/manager_3dxob';
-window.MAX_URL = 'https://script.google.com/macros/s/AKfycbx7YM0QEcPn__H6bL8RZiLW5PQ215RS0PljmniBxTXSJQRZ_Eg9WWtRiZsf-gLdczBMng/exec';
+window.MAX_URL = 'https://max.ru/u/f9LHodD0cOLbPms83NhpLUuBMuNHSX0ACmj8j15deTMlhrJ55qC9Y1KHtdQ';
 
 // Префикс номера заказа и стартовое значение для офлайн-fallback.
 const ORDER_PREFIX = '3DX-';
