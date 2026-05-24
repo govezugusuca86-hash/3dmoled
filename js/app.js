@@ -11,7 +11,7 @@ window.ORDER_WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbzIjRjcdKspE
 
 // Контакты менеджера для виджета и success-страницы.
 window.TG_URL  = 'https://t.me/manager_3dxob';
-window.MAX_URL = 'https://max.ru/u/f9LHodD0cOLbPms83NhpLUuBMuNHSX0ACmj8j15deTMlhrJ55qC9Y1KHtdQ';
+window.MAX_URL = 'https://script.google.com/macros/s/AKfycbx7YM0QEcPn__H6bL8RZiLW5PQ215RS0PljmniBxTXSJQRZ_Eg9WWtRiZsf-gLdczBMng/exec';
 
 // Префикс номера заказа и стартовое значение для офлайн-fallback.
 const ORDER_PREFIX = '3DX-';
