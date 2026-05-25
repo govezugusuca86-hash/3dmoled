@@ -1,5 +1,5 @@
 // ===== REVIEWS DATA =====
-// Фото хранятся на Cloudinary CDN (cloud: drnyjt1c5)
+// Фото хранятся на Cloudinary CDN (cloud: dldf74clk, папка 3dxob/reviews)
 // Чтобы добавить отзыв — добавь объект в массив reviews
 
 var reviews = [
@@ -10,8 +10,8 @@ var reviews = [
     "date": "2025-01-15",
     "rating": 5,
     "text": "Долго думали, решили, и не зря, печатает с коробки, программное обеспечение всё есть, рекомендую! Это первый принтер, но всё понятно, порадовала система AMS, хотим взять ещё одну на 4 катушки! Продавцу огромное спасибо!!!!",
-    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141534/avatar1_jvk9iv.jpg",
-    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141539/photo1_npmnmb.jpg",
+    "avatar": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/avatar1.webp",
+    "photo": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/photo1.webp",
     "verified": true
   },
   {
@@ -21,8 +21,8 @@ var reviews = [
     "date": "2025-01-28",
     "rating": 5,
     "text": "Пока я в шоке, это что-то нереально классное. Я доволен. Работает не громко. Пока только начали печатать, но я уже доволен, разбираться ещё конечно долго, но бесплатные модельки распечатает даже ребенок. Менеджеру отдельное спасибо, помог с оформлением и оплатой, после оплаты выслали на следующий день, благодарю!",
-    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141535/avatar2_qi04wn.jpg",
-    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141539/photo2_tprvj4.jpg",
+    "avatar": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/avatar2.webp",
+    "photo": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/photo2.webp",
     "verified": true
   },
   {
@@ -32,8 +32,8 @@ var reviews = [
     "date": "2025-02-10",
     "rating": 5,
     "text": "Очень понравился принтер, первый, раньше никаких не было, сравнить не с чем. Инструкция очень подробная на русском, собирать и все подключать по ней легко. Сам принтер тоже на русском языке, все легко настраивается, быстрая печать с мобильного приложения, выбрал и отправил на печать. Поддерживает 4 катушки и как понял, что можно еще 5-ую вешать сбоку, но пока и верхних хватает. Внутри есть камера и удобно следить иногда за процессом.",
-    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141538/avatar3_n4vhsz.jpg",
-    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141540/photo3_ajcoes.jpg",
+    "avatar": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/avatar3.webp",
+    "photo": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/photo3.webp",
     "verified": true
   },
   {
@@ -43,8 +43,8 @@ var reviews = [
     "date": "2025-02-22",
     "rating": 5,
     "text": "Отличная доставка, все в целости и сохранности. Отдельное спасибо менеджеру, который рассказал и подсказал как по принтеру, так и по оформлению и оплате! Сам принтер отличный, печатает из под коробки! Спасибо!",
-    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141537/avatar4_vt2ugj.jpg",
-    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141540/photo4_dcwzi9.jpg",
+    "avatar": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/avatar4.webp",
+    "photo": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/photo4.webp",
     "verified": true
   },
   {
@@ -54,8 +54,8 @@ var reviews = [
     "date": "2025-03-05",
     "rating": 5,
     "text": "Пришел целый. Брали в подарок сыну на ДР. Крутейшая конечно техника. Как я понял, нужно покупать хороший пластик и соблюдать влажность и чистоту при работе. Будем покупать AMS систему для многоцветной печати. Рекомендую продавца.",
-    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141544/avatar5_w9slez.jpg",
-    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141540/photo5_lmkcot.jpg",
+    "avatar": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/avatar5.webp",
+    "photo": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/photo5.webp",
     "verified": true
   },
   {
@@ -65,8 +65,8 @@ var reviews = [
     "date": "2025-03-18",
     "rating": 5,
     "text": "Это мой первый принтер, очень долго выбирал сравнивал с различными другими но остановился на этой модели и не пожалел, распаковал включил сделал калибровку в течении 20 минут, загрузил пластик и сразу начал печатать без танцев с бубном. Качество печати пластиком PLA понравилось. Менеджер отвечает на вопросы быстро. Рекомендую к покупке.",
-    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141545/avatar6_f4e3pr.jpg",
-    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141540/photo6_onda2h.jpg",
+    "avatar": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/avatar6.webp",
+    "photo": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/photo6.webp",
     "verified": true
   },
   {
@@ -76,8 +76,8 @@ var reviews = [
     "date": "2025-03-30",
     "rating": 5,
     "text": "Очень давно хотел купить себе принтер. Выбор пал на эту модель, т.к она подходит для начинающих и с ней легко справится. Пока тестируем и учимся. После оформления и оплаты отгрузили на следующий день. Упаковано знатно, ничего не повредилось при доставке, спасибо!",
-    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141537/avatar7_ocy3ei.jpg",
-    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141540/photo7_n8yg5o.jpg",
+    "avatar": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/avatar7.webp",
+    "photo": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/photo7.webp",
     "verified": true
   },
   {
@@ -87,8 +87,8 @@ var reviews = [
     "date": "2025-04-08",
     "rating": 5,
     "text": "Для меня он бесшумный, никаких танцев с бубном, в бамбухэнди чего только нет, слайсеры удобный. Качество печати на высоте. Стенки гладкие получаются, поддержки отрываются легко. Вообще огонь. Я доволен. Есть с чем сравнивать.",
-    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141551/avatar8_y8dkki.jpg",
-    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141541/photo8_ysc8m3.jpg",
+    "avatar": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/avatar8.webp",
+    "photo": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/photo8.webp",
     "verified": true
   },
   {
@@ -98,8 +98,8 @@ var reviews = [
     "date": "2025-04-20",
     "rating": 5,
     "text": "Легкий в управлении, не шумный, удобный интерфейс, печатает на «ура», очень понравился. Долго выбирал, спрашивал у менеджера, но отдал предпочтение этой модели, оформление очень удобное и оплата тоже! Рекомендую к покупке.",
-    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141546/avatar9_sgkbpk.jpg",
-    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141541/photo9_i1sd0z.jpg",
+    "avatar": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/avatar9.webp",
+    "photo": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/photo9.webp",
     "verified": true
   },
   {
@@ -109,8 +109,8 @@ var reviews = [
     "date": "2025-05-02",
     "rating": 5,
     "text": "Доставка супер, после оформления и оплаты отправили. Принтер приехал на 2 дня раньше срока, все целое, сборка заняла 5 минут! Калибровка и обновление прошивки еще 25 минут, принтер печатает сразу после калибровки, никаких доп настроек не нужно.",
-    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141549/avatar10_oaka7w.jpg",
-    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141541/photo10_nfjgnq.jpg",
+    "avatar": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/avatar10.webp",
+    "photo": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/photo10.webp",
     "verified": true
   },
   {
@@ -120,8 +120,8 @@ var reviews = [
     "date": "2025-05-15",
     "rating": 5,
     "text": "Доставка отличная, ничего не повредили. Собрали, подключили, установили приложение, он провел тесты и калибровку, всё в идеале. Визуальные впечатления абсолютно восторженные.",
-    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141547/avatar11_cmro9p.jpg",
-    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141541/photo11_lmnzu1.jpg",
+    "avatar": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/avatar11.webp",
+    "photo": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/photo11.webp",
     "verified": true
   },
   {
@@ -131,8 +131,8 @@ var reviews = [
     "date": "2025-05-27",
     "rating": 5,
     "text": "Получил принтер в назначенный срок, коробка целая, упаковано очень качественно, по каждым мелочам видно качественный и оригинальный продукт. Очень доволен. Сборка не составила труда. Принтер однозначно рекомендую у этого продавца.",
-    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141547/avatar12_rj7395.jpg",
-    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141541/photo12_tx8gyo.jpg",
+    "avatar": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/avatar12.webp",
+    "photo": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/photo12.webp",
     "verified": true
   },
   {
@@ -142,8 +142,8 @@ var reviews = [
     "date": "2025-06-06",
     "rating": 5,
     "text": "Принтер пушка! Менеджер помог с выбором и объяснил по оформлению, оплатил — отправили, все четко! Всем рекомендую, удобный в сборке, удобный в настройках, да и вообще просто лучший!",
-    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141549/avatar13_vj1avr.jpg",
-    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141541/photo13_s0s6wp.jpg",
+    "avatar": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/avatar13.webp",
+    "photo": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/photo13.webp",
     "verified": true
   },
   {
@@ -153,8 +153,8 @@ var reviews = [
     "date": "2025-06-18",
     "rating": 5,
     "text": "Здорово, принтер просто бомба! Спасибо продавцу, доставили раньше срока за день! Первый принтер, особо сравнивать не с чем. Но свои задачи выполняет. Печатает качественно.",
-    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141536/avatar14_f27a9b.jpg",
-    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141541/photo14_h4sx23.jpg",
+    "avatar": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/avatar14.webp",
+    "photo": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/photo14.webp",
     "verified": true
   },
   {
@@ -164,8 +164,8 @@ var reviews = [
     "date": "2025-06-29",
     "rating": 5,
     "text": "Мой первый принтер и я пока довольна, ничего в 3д печати не шарю совсем, но у меня получилось что-то напечатать и я рада! Менеджер всегда был на связи, от момента оформления и оплаты, до момента получения, самый лучший магазин!",
-    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141535/avatar15_sxewnc.jpg",
-    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141541/photo15_exvz8c.jpg",
+    "avatar": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/avatar15.webp",
+    "photo": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/photo15.webp",
     "verified": true
   },
   {
@@ -175,8 +175,8 @@ var reviews = [
     "date": "2025-07-10",
     "rating": 5,
     "text": "Наш первый 3Д принтер! Довольны! Решили взять флагманский 3D-принтер. Двойная экструзия, высокое качество печати. Высокие стандарты скорости. Работает из коробки, удобное ПО, простота настройки. Добротная, монолитная конструкция.",
-    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141536/avatar16_fop655.jpg",
-    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141542/photo16_yqzkeo.jpg",
+    "avatar": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/avatar16.webp",
+    "photo": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/photo16.webp",
     "verified": true
   },
   {
@@ -186,8 +186,8 @@ var reviews = [
     "date": "2025-07-22",
     "rating": 5,
     "text": "Доставка быстрая. Пришла посылка за 3-е суток. Упаковка качественная, все в целости и сохранности. Пересмотрел много видеообзоров и нашел ваш магазин с приятными ценами! После оформления и оплаты выслали в этот же вечер. Всё быстро, легко и качественно. Спасибо.",
-    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141536/avatar17_sdefw7.jpg",
-    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141542/photo17_bqqgcw.jpg",
+    "avatar": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/avatar17.webp",
+    "photo": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/photo17.webp",
     "verified": true
   },
   {
@@ -197,8 +197,8 @@ var reviews = [
     "date": "2025-08-03",
     "rating": 5,
     "text": "Принтер порадовал, соответствует описанию, выглядит надежно. Пластика в комплекте нет, не знал об этом, надо заказывать сразу. Работает из под коробки. Рекомендую!",
-    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141537/avatar18_dppm7b.jpg",
-    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141542/photo18_frgeck.jpg",
+    "avatar": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/avatar18.webp",
+    "photo": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/photo18.webp",
     "verified": true
   },
   {
@@ -208,8 +208,8 @@ var reviews = [
     "date": "2025-08-15",
     "rating": 5,
     "text": "Вот и пришел ко мне долгожданный! Менеджер красавчик, все рассказал, объяснил, очень удобная оплата, после нее отправили на следующее утро. Принтер упакован надёжно. Из коробки заработал без танцев с бубном. Цена приятная. Продавца однозначно рекомендую.",
-    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141538/avatar19_cdhqf6.jpg",
-    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141542/photo19_cjlgsm.jpg",
+    "avatar": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/avatar19.webp",
+    "photo": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/photo19.webp",
     "verified": true
   },
   {
@@ -219,8 +219,8 @@ var reviews = [
     "date": "2025-08-28",
     "rating": 5,
     "text": "Ставлю 5+, сравнить не с чем так как я новичок в 3d печати, но распечатка и настройка заняла 20 мин. В приложении очень много готовых образов, можно находясь в любой точке планеты запустить принтер через смартфон и наблюдать через встроенную камеру.",
-    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141539/avatar20_prfzsj.jpg",
-    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141542/photo20_y4lwal.jpg",
+    "avatar": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/avatar20.webp",
+    "photo": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/photo20.webp",
     "verified": true
   },
   {
@@ -230,8 +230,8 @@ var reviews = [
     "date": "2025-09-08",
     "rating": 5,
     "text": "Печатает из коробки, калибровка потока прекрасно подстраивает принтер под филамент сторонних производителей. Сушка в AMS — просто супер. Оставил 4 катушки на ночь, утром сухой материал с отличным качеством печати. Компактный, удалось установить AMS не на принтере, а рядом, отлично работает.",
-    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141539/avatar21_vp4zew.jpg",
-    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141542/photo21_jdwkeb.jpg",
+    "avatar": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/avatar21.webp",
+    "photo": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/photo21.webp",
     "verified": true
   },
   {
@@ -241,8 +241,8 @@ var reviews = [
     "date": "2025-09-20",
     "rating": 5,
     "text": "Печатает из коробки, калибровка потока прекрасно подстраивает принтер под филамент сторонних производителей. Сушка в AMS — просто супер. Компактный, отлично работает.",
-    "avatar": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141539/avatar22_cxflmf.jpg",
-    "photo": "https://res.cloudinary.com/drnyjt1c5/image/upload/v1778141543/photo22_xwy8kw.jpg",
+    "avatar": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/avatar22.webp",
+    "photo": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/photo22.webp",
     "verified": true
   }
 ];
