@@ -1,5 +1,29 @@
 const products = [
   {
+    "id": "58598",
+    "category": "3D принтеры персональные",
+    "name": "Bambu Lab X2D",
+    "brand": "Bambu Lab",
+    "technology": "FDM",
+    "price": 98890,
+    "oldPrice": 119890,
+    "discount": 18,
+    "inStock": true,
+    "photos": [
+      "https://res.cloudinary.com/dldf74clk/image/upload/v1779730013/1_upfsah.jpg",
+      "https://res.cloudinary.com/dldf74clk/image/upload/v1779730014/2_g4mo81.jpg",
+      "https://res.cloudinary.com/dldf74clk/image/upload/v1779730015/3_u3fnku.jpg"
+    ],
+    "description": "Bambu Lab X2D — это эволюция серии X1 с уникальной двухсопловой системой: основное сопло формирует модель, а вспомогательное печатает поддержки из другого материала, что позволяет удалять их вручную без следов и шлифовки. Благодаря механическому переключателю сопел, лёгкой голове без вибраций и активному нагреву камеры до 65 °C, принтер обеспечивает идеально гладкую поверхность напечатанных деталей.",
+    "specs": {
+      "Технология": "FDM",
+      "Поддерживаемые материалы": "ABS, ASA, HIPS, PA, PC, PET, PETG, PLA, PVA, TPU, и др.",
+      "Поле": "256x256x256",
+      "Производитель": "Bambu Lab",
+      "Гарантия": "12 месяцев"
+    }
+  },
+  {
     "id": "47183",
     "category": "3D принтеры персональные",
     "name": "Bambu Lab P1S Combo с AMS системой (EU-версия)",
