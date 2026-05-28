@@ -1,8 +1,20 @@
 User-agent: *
 Allow: /
+
+# Технические страницы — не для индексации
 Disallow: /pages/cart.html
 Disallow: /pages/favorites.html
+Disallow: /pages/success.html
+Disallow: /pages/checkout.html
 
-Sitemap: https://3dxob.ru/sitemap.xml
+# Параметры сортировки/фильтрации каталога
+Disallow: /*?sort=
+Disallow: /*?filter=
+Disallow: /*&sort=
+Disallow: /*&filter=
 
-Host: 3dxob.ru
+# Карта сайта
+Sitemap: https://www.3dxob.ru/sitemap.xml
+
+# Скорость обхода — щадящая, чтобы не нагружать Vercel
+Crawl-delay: 1

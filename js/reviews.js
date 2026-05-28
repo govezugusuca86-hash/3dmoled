@@ -208,7 +208,7 @@ var reviews = [
     "date": "2025-08-15",
     "rating": 5,
     "text": "Вот и пришел ко мне долгожданный! Менеджер красавчик, все рассказал, объяснил, очень удобная оплата, после нее отправили на следующее утро. Принтер упакован надёжно. Из коробки заработал без танцев с бубном. Цена приятная. Продавца однозначно рекомендую.",
-    "avatar": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/avatar19.webp",
+    "avatar": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/avatar22.webp",
     "photo": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/photo19.webp",
     "verified": true
   },
@@ -241,7 +241,7 @@ var reviews = [
     "date": "2025-09-20",
     "rating": 5,
     "text": "Печатает из коробки, калибровка потока прекрасно подстраивает принтер под филамент сторонних производителей. Сушка в AMS — просто супер. Компактный, отлично работает.",
-    "avatar": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/avatar22.webp",
+    "avatar": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/avatar19.webp",
     "photo": "https://res.cloudinary.com/dldf74clk/image/upload/3dxob/reviews/photo22.webp",
     "verified": true
   }
