@@ -7,7 +7,7 @@
 // URL веб-приложения Google Apps Script (см. SETUP_GUIDE.md).
 // Если пусто или сервер недоступен — заказ оформится в офлайн-режиме
 // с локальным номером и пометкой isPending.
-window.ORDER_WEBHOOK_URL = 'https://script.google.com/macros/s/PASTE_DEPLOY_ID_HERE/exec';
+window.ORDER_WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbx7YM0QEcPn__H6bL8RZiLW5PQ215RS0PljmniBxTXSJQRZ_Eg9WWtRiZsf-gLdczBMng/exec';
 
 // Контакты менеджера для виджета и success-страницы.
 window.TG_URL  = 'https://t.me/manager_3dxob';
