@@ -3,8 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Товар — 3Dxob</title>
-<meta name="description" content="Купить 3D принтер в магазине 3Dxob">
+<link rel="canonical" href="https://www.3dxob.ru/pages/product.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Карточка товара 3Dxob">
+<meta property="og:description" content="Купить 3D-принтер в магазине 3Dxob. Доставка по России.">
+<meta property="og:url" content="https://www.3dxob.ru/pages/product.html">
+<meta property="og:site_name" content="3Dxob">
+<meta property="og:image" content="https://res.cloudinary.com/dldf74clk/image/upload/f_auto,q_auto,w_1200/v1779730795/photo_2026-05-22_18-40-26_dasamw.jpg">
+<meta property="og:locale" content="ru_RU">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Карточка товара 3Dxob">
+<meta name="twitter:description" content="Купить 3D-принтер в магазине 3Dxob. Доставка по России.">
+<meta name="twitter:image" content="https://res.cloudinary.com/dldf74clk/image/upload/f_auto,q_auto,w_1200/v1779730795/photo_2026-05-22_18-40-26_dasamw.jpg">
+<title>3D принтер — 3Dxob</title>
+<meta name="description" content="Купить 3D-принтер в магазине 3Dxob. Доставка по России.">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <link rel="stylesheet" href="../css/style.css">
 <!-- Yandex.Metrika counter -->
@@ -67,8 +79,51 @@ const product = products.find(p => p.id === id);
 if (!product) {
   document.getElementById('product-root').innerHTML = `<div class="empty-state"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><h3>Товар не найден</h3><p>Возможно, он был удалён или ссылка устарела</p><a href="../index.html" class="btn btn-primary">Вернуться в каталог</a></div>`;
 } else {
-  document.title = `${product.name} — 3Dxob`;
-  document.querySelector('meta[name="description"]').content = `Купить ${product.name} за ${product.price.toLocaleString('ru-RU')} ₽. ${product.description.slice(0,120)}`;
+  document.title = `${product.name} — купить за ${product.price.toLocaleString('ru-RU')} ₽ — 3Dxob`;
+  const descShort = `Купить ${product.name} за ${product.price.toLocaleString('ru-RU')} ₽. ${(product.description||'').slice(0,140).replace(/\s+/g,' ').trim()}. Доставка по России, гарантия 12 мес.`;
+  document.querySelector('meta[name="description"]').content = descShort;
+
+  // === Динамический SEO для карточки товара ===
+  const canonicalUrl = `https://www.3dxob.ru/pages/product.html?id=${product.id}`;
+  const heroImage = (product.photos && product.photos[0]) || 'https://res.cloudinary.com/dldf74clk/image/upload/f_auto,q_auto,w_1200/v1779730795/photo_2026-05-22_18-40-26_dasamw.jpg';
+
+  // canonical
+  const canEl = document.querySelector('link[rel="canonical"]');
+  if (canEl) canEl.setAttribute('href', canonicalUrl);
+
+  // OG
+  const setMeta = (sel, val) => { const el = document.querySelector(sel); if (el) el.setAttribute('content', val); };
+  setMeta('meta[property="og:title"]', product.name + ' — 3Dxob');
+  setMeta('meta[property="og:description"]', descShort);
+  setMeta('meta[property="og:url"]', canonicalUrl);
+  setMeta('meta[property="og:image"]', heroImage);
+  setMeta('meta[property="og:type"]', 'product');
+  setMeta('meta[name="twitter:title"]', product.name);
+  setMeta('meta[name="twitter:description"]', descShort);
+  setMeta('meta[name="twitter:image"]', heroImage);
+
+  // Schema.org Product
+  const ldjson = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": product.name,
+    "image": product.photos || [],
+    "description": (product.description || '').slice(0, 500),
+    "brand": { "@type": "Brand", "name": product.brand || '' },
+    "sku": product.id,
+    "offers": {
+      "@type": "Offer",
+      "url": canonicalUrl,
+      "priceCurrency": "RUB",
+      "price": product.price,
+      "availability": product.inStock !== false ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
+      "seller": { "@type": "Organization", "name": "3Dxob" }
+    }
+  };
+  const ldScript = document.createElement('script');
+  ldScript.type = 'application/ld+json';
+  ldScript.textContent = JSON.stringify(ldjson);
+  document.head.appendChild(ldScript);
   
   // Breadcrumb
   document.getElementById('bc-cat-link').innerHTML = `<a href="../index.html?cat=${encodeURIComponent(product.category)}">${product.category}</a>`;
